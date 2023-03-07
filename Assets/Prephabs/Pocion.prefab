@@ -107,7 +107,7 @@ MonoBehaviour:
   PerfectColor: {r: 0, g: 1, b: 1, a: 1}
   falloDelay: 0
   InitialFalloDelay: 3
-  delayColor: 0.2
+  scorePoints: {fileID: 0}
 --- !u!58 &6594210670638413474
 CircleCollider2D:
   m_ObjectHideFlags: 0
