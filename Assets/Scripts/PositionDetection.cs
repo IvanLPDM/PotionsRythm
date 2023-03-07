@@ -39,12 +39,18 @@ public class PositionDetection : MonoBehaviour
             {
                 ListBalls.PotionsInGameL[0].SendMessage("Perfect");
                 particulaAciertoL.Play();
+                Destroy(ListBalls.PotionsInGameL[0]);
+                ListBalls.PotionsInGameL.RemoveAt(0);
+           
             }
             else if (distanciaL <= 0.5)
             {
                 ListBalls.PotionsInGameL[0].SendMessage("Acierto");
                 particulaAciertoL.Play();
-             }
+                Destroy(ListBalls.PotionsInGameL[0]);
+                ListBalls.PotionsInGameL.RemoveAt(0);
+                
+            }
             else
             {
                 GameObject.Find("Main Camera").SendMessage("Shaking");
@@ -58,11 +64,17 @@ public class PositionDetection : MonoBehaviour
         {
             ListBalls.PotionsInGameR[0].SendMessage("Perfect");
             particulaAciertoR.Play();
+
+            Destroy(ListBalls.PotionsInGameR[0]);
+            ListBalls.PotionsInGameR.RemoveAt(0);
         }
         else if (distanciaR <= 0.5)
         {
             ListBalls.PotionsInGameR[0].SendMessage("Acierto");
             particulaAciertoR.Play();
+
+            Destroy(ListBalls.PotionsInGameR[0]);
+            ListBalls.PotionsInGameR.RemoveAt(0);
         }
         else
         {

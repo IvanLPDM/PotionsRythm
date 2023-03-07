@@ -11043,7 +11043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 857, y: -74}
+  m_AnchoredPosition: {x: 393, y: -397}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2100899108
@@ -11141,6 +11141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pocion
       objectReference: {fileID: 0}
+    - target: {fileID: 2885711169170746446, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
+      propertyPath: scorePoints
+      value: 
+      objectReference: {fileID: 357962588}
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_RootOrder
       value: 4

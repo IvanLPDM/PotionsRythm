@@ -4,7 +4,7 @@
 
 //public class GuardarCanciones : MonoBehaviour
 //{
-//    public List<GameObject> NotasInput;
+//    //public List<GameObject> NotasInput;
 
 //    public string archivoDeGuardado;
 
@@ -14,23 +14,23 @@
 //    {
 //        archivoDeGuardado = Application.dataPath + "/datosJuego.json";
 
-//        Pociones = GameObject.FindGameObjectWithTag("ListaDePociones");
+//        NotasInput = GameObject.FindGameObjectWithTag("ListaDePociones");
 //    }
 
-//    private void CargarDatos()
-//    {
-//        if(File.Exists(archivoDeGuardado))
-//        {
-//            string contenido = File.ReadAllText(archivoDeGuardado);
-//            guardadoCancion = JsonUtility.FromJson<guardadoCancion>(contenido);
+    //private void CargarDatos()
+    //{
+    //    if (File.Exists(archivoDeGuardado))
+    //    {
+    //        string contenido = File.ReadAllText(archivoDeGuardado);
+    //        guardadoCancion = JsonUtility.FromJson<guardadoCancion>(contenido);
 
-//            Debug.Log(guardadoCancion.Potions[0].transform);
-//        }
-//        else
-//        {
-//            Debug.Log("El archivo no existe");
-//        }
-//    }
+    //        Debug.Log(guardadoCancion.Potions[0].transform);
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("El archivo no existe");
+    //    }
+    //}
 
 
 //}

@@ -40,6 +40,9 @@ public class Pocion : MonoBehaviour
        // Delete
         if (transform.position.y < -3.5)
         {
+            GameObject.Find("ScoreManager").SendMessage("BadTouch");
+            GameObject.Find("Main Camera").SendMessage("Shaking");
+
             Destroy(gameObject);
         }
 
