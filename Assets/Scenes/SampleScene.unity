@@ -21684,10 +21684,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pocion
       objectReference: {fileID: 0}
-    - target: {fileID: 2885711169170746446, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
-      propertyPath: scorePoints
-      value: 
-      objectReference: {fileID: 357962588}
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_RootOrder
       value: 3
