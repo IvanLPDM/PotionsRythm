@@ -65,24 +65,27 @@ public class PositionDetection : MonoBehaviour
     {
         if (ListBalls.PotionsInGameL.Count != 0)
         {
-            ListBalls.PotionsInGameR[0].SendMessage("Perfect");
-            particulaAciertoR.Play();
+            if (distanciaL <= 0.1)
+            {
+                ListBalls.PotionsInGameR[0].SendMessage("Perfect");
+                particulaAciertoR.Play();
 
-            Destroy(ListBalls.PotionsInGameR[0]);
-            ListBalls.PotionsInGameR.RemoveAt(0);
-        }
-        else if (distanciaR <= 0.5)
-        {
-            ListBalls.PotionsInGameR[0].SendMessage("Acierto");
-            particulaAciertoR.Play();
+                Destroy(ListBalls.PotionsInGameR[0]);
+                ListBalls.PotionsInGameR.RemoveAt(0);
+            }
+            else if (distanciaR <= 0.5)
+            {
+                ListBalls.PotionsInGameR[0].SendMessage("Acierto");
+                particulaAciertoR.Play();
 
-            Destroy(ListBalls.PotionsInGameR[0]);
-            ListBalls.PotionsInGameR.RemoveAt(0);
-        }
-        else
-        {
-            GameObject.Find("Main Camera").SendMessage("Shaking");
-            ListBalls.PotionsInGameR[0].SendMessage("Fallo");
+                Destroy(ListBalls.PotionsInGameR[0]);
+                ListBalls.PotionsInGameR.RemoveAt(0);
+            }
+            else
+            {
+                GameObject.Find("Main Camera").SendMessage("Shaking");
+                ListBalls.PotionsInGameR[0].SendMessage("Fallo");
+            }
         }
     }
 }

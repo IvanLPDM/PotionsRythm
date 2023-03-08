@@ -34,7 +34,7 @@ public class Pocion : MonoBehaviour
             OriginColorTime -= 0.1f;
 
         pos = transform.position;
-        pos.y -= velocity;
+        pos.y -= velocity * Time.deltaTime;
         transform.position = pos;
 
        // Delete
