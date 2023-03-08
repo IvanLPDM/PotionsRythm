@@ -35,6 +35,8 @@ public class PositionDetection : MonoBehaviour
 
     public void CheckCollisionLeft()
     {
+        if(ListBalls.PotionsInGameL.Count != 0)
+        {
             if (distanciaL <= 0.1)
             {
                 ListBalls.PotionsInGameL[0].SendMessage("Perfect");
@@ -56,11 +58,12 @@ public class PositionDetection : MonoBehaviour
                 GameObject.Find("Main Camera").SendMessage("Shaking");
                 ListBalls.PotionsInGameL[0].SendMessage("Fallo");
             }
+        }  
     }
 
     public void CheckCollisionRight()
     {
-        if (distanciaR <= 0.1)
+        if (ListBalls.PotionsInGameL.Count != 0)
         {
             ListBalls.PotionsInGameR[0].SendMessage("Perfect");
             particulaAciertoR.Play();

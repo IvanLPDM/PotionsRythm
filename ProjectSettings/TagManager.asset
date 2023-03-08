@@ -14,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Detector
-  - 
+  - background
   - 
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 2828565805
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
