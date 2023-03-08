@@ -35,6 +35,8 @@ public class PositionDetection : MonoBehaviour
 
     public void CheckCollisionLeft()
     {
+        if(ListBalls.PotionsInGameL.Count != 0)
+        {
             if (distanciaL <= 0.1)
             {
                 ListBalls.PotionsInGameL[0].SendMessage("Perfect");
@@ -44,30 +46,35 @@ public class PositionDetection : MonoBehaviour
             {
                 ListBalls.PotionsInGameL[0].SendMessage("Acierto");
                 particulaAciertoL.Play();
-             }
+            }
             else
             {
                 GameObject.Find("Main Camera").SendMessage("Shaking");
                 ListBalls.PotionsInGameL[0].SendMessage("Fallo");
             }
+        }  
     }
 
     public void CheckCollisionRight()
     {
-        if (distanciaR <= 0.1)
+        if (ListBalls.PotionsInGameL.Count != 0)
         {
-            ListBalls.PotionsInGameR[0].SendMessage("Perfect");
-            particulaAciertoR.Play();
+            if (distanciaR <= 0.1)
+            {
+                ListBalls.PotionsInGameR[0].SendMessage("Perfect");
+                particulaAciertoR.Play();
+            }
+            else if (distanciaR <= 0.5)
+            {
+                ListBalls.PotionsInGameR[0].SendMessage("Acierto");
+                particulaAciertoR.Play();
+            }
+            else
+            {
+                GameObject.Find("Main Camera").SendMessage("Shaking");
+                ListBalls.PotionsInGameR[0].SendMessage("Fallo");
+            }
         }
-        else if (distanciaR <= 0.5)
-        {
-            ListBalls.PotionsInGameR[0].SendMessage("Acierto");
-            particulaAciertoR.Play();
-        }
-        else
-        {
-            GameObject.Find("Main Camera").SendMessage("Shaking");
-            ListBalls.PotionsInGameR[0].SendMessage("Fallo");
-        }
+            
     }
 }
