@@ -2,29 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ListaDePociones : MonoBehaviour
 {
     public GameObject PotionPrefab;
     private float time = 0;
+    public float timeTranscurred = 0;
 
     public List<GameObject> PotionsInGameL;
     public List<GameObject> PotionsInGameR;
     public List<GameObject> Potions;
+    public List<float> timing;
 
     void Start()
     {
-        GeneratePotions();
+        GameObject.Find("LoadLevel").SendMessage("Load");
     }
 
     void Update()
     {
 
-        time++;
+        time += 1 * Time.deltaTime;
+        
 
         //Aqui entraria la cancion y le diria cuando puede generar pociones
-        if(time % 100 == 0)
+        if(timing.Count != 0)
         {
-            ExecutePotion();
+            if (timing[0] - 1.6 - time <= 0.01) //1.858648f
+            {
+                ExecutePotion();
+                timing.RemoveAt(0);
+            }
         }
 
         RemoveGame();
@@ -34,8 +42,6 @@ public class ListaDePociones : MonoBehaviour
     {
         if (Potions.Count != 0)
         {
-            //int numRand = Random.Range(1, 2);
-
             Potions[0].SetActive(true);
             PotionPrefab = Potions[0];
 
@@ -48,7 +54,7 @@ public class ListaDePociones : MonoBehaviour
         }
     }
 
-    public void RemoveGame()
+        public void RemoveGame()
     {
         if (PotionsInGameL.Count != 0)
         { 
@@ -67,21 +73,22 @@ public class ListaDePociones : MonoBehaviour
         }
     }
 
-    public void GeneratePotions()
-    {
-        for(int i = 0; i < 70; i++)
-        {
-            int numRand = 0;
-            numRand = Random.Range(0, 2);
+    //public void GeneratePotions()
+    //{
+    //    for(int i = 0; i < 0; i++)
+    //    {
+    //        int numRand = 0;
+    //        numRand = Random.Range(0, 2);
 
-            if (numRand == 0)
-                Potions.Add(Instantiate(PotionPrefab, new Vector2(0.77f, 3.8f), Quaternion.identity));
-            else
-                Potions.Add(Instantiate(PotionPrefab, new Vector2(-0.77f, 3.8f), Quaternion.identity));
+    //        if (numRand == 0)
+    //            Potions.Add(Instantiate(PotionPrefab, new Vector2(0.77f, 3.8f), Quaternion.identity));
+    //        else
+    //            Potions.Add(Instantiate(PotionPrefab, new Vector2(-0.77f, 3.8f), Quaternion.identity));
 
-            Potions[i].SetActive(false);
+            
+    //        Potions[i].SetActive(false);
 
-            //Potions[i].
-        }
-    }
+    //        //Potions[i].
+    //    }
+    //}
 }

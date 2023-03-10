@@ -19,6 +19,11 @@ public class Pocion : MonoBehaviour
     public float falloDelay;
     public float InitialFalloDelay;
 
+    [Header("Guardado")]
+    public int Direccion;
+
+    public float timeToCreate;
+
 
     private float OriginColorTime;
 
