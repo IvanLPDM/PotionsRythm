@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6d8c93abe312346b34c61c23b17469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 2
+  velocity: 4
   pos: {x: 0, y: 0, z: 0}
   renderero: {fileID: 2885711169170746432}
   originalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -107,6 +107,8 @@ MonoBehaviour:
   PerfectColor: {r: 0, g: 1, b: 1, a: 1}
   falloDelay: 0
   InitialFalloDelay: 3
+  Direccion: 0
+  timeToCreate: 0
 --- !u!58 &6594210670638413474
 CircleCollider2D:
   m_ObjectHideFlags: 0
