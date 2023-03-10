@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Rendering.Universal;
 
 public class Score : MonoBehaviour
 {
@@ -15,6 +16,14 @@ public class Score : MonoBehaviour
     private Vector3 originalScale;
     private float RotationChange;
 
+    public Bloom bloom;
+
+    public Light2D light;
+    public Color colorx2;
+    public Color colorx3;
+    public Color colorx4;
+    public Color colorx5;
+
     public float multiplicador;
     public float goodTouchs;
     private float scoreWin;
@@ -25,8 +34,6 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-
         multiplicador = 1;
         score = 0.0f;
 
@@ -39,7 +46,6 @@ public class Score : MonoBehaviour
         RectTransform.localScale = originalScale;
 
         scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
-
     }
 
     // Update is called once per frame
@@ -60,6 +66,11 @@ public class Score : MonoBehaviour
         else if (goodTouchs >= 20)
         {
             multiplicador = 2;
+
+            var tint = bloom.tint;
+            tint.value = colorx2;
+            bloom.tint = tint;
+
         }
         else
         {
@@ -76,10 +87,6 @@ public class Score : MonoBehaviour
         //scale
         UiScore.text = scoretext;
         RectTransform.localScale += scaleChange;
-
-        //rotation
-        //RotationChange++;
-        //RectTransform.rotation = Quaternion.Euler(0,0,RotationChange);
 
         if (RectTransform.localScale.y > 1f)
         {

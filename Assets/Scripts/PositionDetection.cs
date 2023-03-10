@@ -63,7 +63,7 @@ public class PositionDetection : MonoBehaviour
 
     public void CheckCollisionRight()
     {
-        if (ListBalls.PotionsInGameL.Count != 0)
+        if (ListBalls.PotionsInGameR.Count != 0)
         {
             if (distanciaL <= 0.1)
             {

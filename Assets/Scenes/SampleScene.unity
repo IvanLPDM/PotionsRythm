@@ -779,6 +779,12 @@ MonoBehaviour:
   score: 0
   UiScore: {fileID: 2000081473}
   RectTransform: {fileID: 2000081475}
+  bloom: {fileID: 0}
+  light: {fileID: 52913668}
+  colorx2: {r: 0, g: 1, b: 0.11449838, a: 1}
+  colorx3: {r: 0, g: 0, b: 0, a: 0}
+  colorx4: {r: 0, g: 0, b: 0, a: 0}
+  colorx5: {r: 0, g: 0, b: 0, a: 0}
   multiplicador: 0
   goodTouchs: 0
 --- !u!4 &357962589
@@ -22724,8 +22730,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 36acba5373b328b4fb23bb6c8ed85638, type: 2}
-  m_sharedMaterial: {fileID: 6160549330651393034, guid: 36acba5373b328b4fb23bb6c8ed85638, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9a9ba003d6c192a438c61e92c59b832e, type: 2}
+  m_sharedMaterial: {fileID: -864651562343321999, guid: 9a9ba003d6c192a438c61e92c59b832e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
