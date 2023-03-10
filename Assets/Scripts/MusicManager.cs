@@ -24,7 +24,7 @@ public class MusicManager : MonoBehaviour
         beatTime = 60f / (float)BPM;
         yield return new WaitForSeconds(timeStart);
         song.Play();
-
+        //Bit actual = song.time / beatTime;
         //Acceder al beat proximity sin referencia
         //float b = MusicManager.BeatProximity;
     }
