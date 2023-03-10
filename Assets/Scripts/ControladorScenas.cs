@@ -21,4 +21,9 @@ public class ControladorScenas : MonoBehaviour
     {
         SceneManager.LoadScene(name);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
