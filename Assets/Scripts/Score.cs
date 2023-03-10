@@ -12,6 +12,7 @@ public class Score : MonoBehaviour
 
     public TextMeshProUGUI UiScore;
     public RectTransform RectTransform;
+    public TextMeshProUGUI UiMultiplier;
 
     private Vector3 scaleChange;
     private Vector3 originalScale;
@@ -21,6 +22,8 @@ public class Score : MonoBehaviour
     private Bloom bloom;
 
     public Light2D light;
+
+    public Color InitialColor;
     public Color colorx2;
     public Color colorx3;
     public Color colorx4;
@@ -30,6 +33,7 @@ public class Score : MonoBehaviour
     public float goodTouchs;
     private float scoreWin;
     private string scoretext;
+    private string multipliertext;
 
     private float delayScoreUI;
 
@@ -43,6 +47,7 @@ public class Score : MonoBehaviour
         score = 0.0f;
 
         UiScore.enabled = false;
+        UiMultiplier.enabled = false;
 
         originalScale = new Vector3(0.5f, 0.5f, 0.5f);
 
@@ -56,17 +61,40 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(goodTouchs >= 80)
+        UiMultiplier.text = multipliertext;
+
+        if (goodTouchs >= 80)
         {
-            multiplicador = 10;
+            multiplicador = 5;
+
+            var tint = bloom.tint;
+            tint.value = colorx5;
+            bloom.tint = tint;
+
+            UiMultiplier.enabled = true;
+            multipliertext = "x5";
         }
         else if (goodTouchs >= 60)
         {
-            multiplicador = 8;
+            multiplicador = 4;
+
+            var tint = bloom.tint;
+            tint.value = colorx4;
+            bloom.tint = tint;
+
+            UiMultiplier.enabled = true;
+            multipliertext = "x4";
         }
         else if (goodTouchs >= 40)
         {
-            multiplicador = 4;
+            multiplicador = 3;
+
+            var tint = bloom.tint;
+            tint.value = colorx3;
+            bloom.tint = tint;
+
+            UiMultiplier.enabled = true;
+            multipliertext = "x3";
         }
         else if (goodTouchs >= 20)
         {
@@ -75,18 +103,28 @@ public class Score : MonoBehaviour
             var tint = bloom.tint;
             tint.value = colorx2;
             bloom.tint = tint;
+
+            UiMultiplier.enabled = true;
+            multipliertext = "x2";
         }
         else
         {
             multiplicador = 1;
+
+            var tint = bloom.tint;
+            tint.value = InitialColor;
+            bloom.tint = tint;
+
+            UiMultiplier.enabled = true;
+            multipliertext = "x1";
         }
 
-        if (delayScoreUI > 0)
-        {
-            delayScoreUI -= 0.1f;
-        }
-        else
-            //UiScore.enabled = false;
+        //if (delayScoreUI > 0)
+        //{
+        //    delayScoreUI -= 0.1f;
+        //}
+        //else
+        //    //UiScore.enabled = false;
 
         //scale
         UiScore.text = scoretext;
