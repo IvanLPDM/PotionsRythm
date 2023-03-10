@@ -7,6 +7,7 @@ public class ListaDePociones : MonoBehaviour
 {
     public GameObject PotionPrefab;
     private float time = 0;
+    public float timeTranscurred = 0;
 
     public List<GameObject> PotionsInGameL;
     public List<GameObject> PotionsInGameR;
@@ -22,22 +23,17 @@ public class ListaDePociones : MonoBehaviour
     {
 
         time += 1 * Time.deltaTime;
-
         
 
         //Aqui entraria la cancion y le diria cuando puede generar pociones
         if(timing.Count != 0)
         {
-            if (timing[0] - time <= 0.01)
+            if (timing[0] - 1.6 - time <= 0.01) //1.858648f
             {
-                Debug.Log(time);
                 ExecutePotion();
                 timing.RemoveAt(0);
             }
         }
-        
-
-        
 
         RemoveGame();
     }
