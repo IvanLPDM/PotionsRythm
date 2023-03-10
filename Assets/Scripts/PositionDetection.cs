@@ -55,7 +55,7 @@ public class PositionDetection : MonoBehaviour
             }
             else
             {
-                GameObject.Find("Main Camera").SendMessage("Shaking");
+                Camera.main.gameObject.GetComponent<Shake>().StartShake();
                 ListBalls.PotionsInGameL[0].SendMessage("Fallo");
             }
         }  
