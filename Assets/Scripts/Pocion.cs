@@ -46,8 +46,7 @@ public class Pocion : MonoBehaviour
         if (transform.position.y < -3.5)
         {
             GameObject.Find("ScoreManager").SendMessage("BadTouch");
-            GameObject.Find("Main Camera").SendMessage("Shaking");
-
+            Camera.main.gameObject.GetComponent<Shake>().StartShake();
             Destroy(gameObject);
         }
 

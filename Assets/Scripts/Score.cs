@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.Rendering;
 
 public class Score : MonoBehaviour
 {
@@ -16,7 +17,8 @@ public class Score : MonoBehaviour
     private Vector3 originalScale;
     private float RotationChange;
 
-    public Bloom bloom;
+    public Volume ppVolume;
+    private Bloom bloom;
 
     public Light2D light;
     public Color colorx2;
@@ -34,6 +36,9 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ppVolume.profile.TryGet<Bloom>(out bloom);
+
+
         multiplicador = 1;
         score = 0.0f;
 
@@ -70,7 +75,6 @@ public class Score : MonoBehaviour
             var tint = bloom.tint;
             tint.value = colorx2;
             bloom.tint = tint;
-
         }
         else
         {
