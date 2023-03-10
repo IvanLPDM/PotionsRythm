@@ -3,28 +3,49 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Rendering.Universal;
 
 public class Score : MonoBehaviour
 {
     public float score;
 
     public TextMeshProUGUI UiScore;
+    public RectTransform RectTransform;
+
+    private Vector3 scaleChange;
+    private Vector3 originalScale;
+    private float RotationChange;
+
+    public Bloom bloom;
+
+    public Light2D light;
+    public Color colorx2;
+    public Color colorx3;
+    public Color colorx4;
+    public Color colorx5;
 
     public float multiplicador;
     public float goodTouchs;
     private float scoreWin;
+    private string scoretext;
 
     private float delayScoreUI;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-
         multiplicador = 1;
         score = 0.0f;
 
         UiScore.enabled = false;
+
+        originalScale = new Vector3(0.5f, 0.5f, 0.5f);
+
+        RotationChange = 0;
+
+        RectTransform.localScale = originalScale;
+
+        scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
     }
 
     // Update is called once per frame
@@ -45,6 +66,11 @@ public class Score : MonoBehaviour
         else if (goodTouchs >= 20)
         {
             multiplicador = 2;
+
+            var tint = bloom.tint;
+            tint.value = colorx2;
+            bloom.tint = tint;
+
         }
         else
         {
@@ -58,8 +84,14 @@ public class Score : MonoBehaviour
         else
             //UiScore.enabled = false;
 
+        //scale
+        UiScore.text = scoretext;
+        RectTransform.localScale += scaleChange;
 
-        UiScore.text = "+" + scoreWin;
+        if (RectTransform.localScale.y > 1f)
+        {
+            RectTransform.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 
     public void BadTouch()
@@ -67,6 +99,10 @@ public class Score : MonoBehaviour
         goodTouchs = 0;
 
         scoreWin = 0;
+
+        scoretext = "Miss";
+
+        RectTransform.localScale = originalScale;
     }
     
     public void NiceTouch()
@@ -81,6 +117,10 @@ public class Score : MonoBehaviour
         score += 10 * multiplicador;
        
         goodTouchs++;
+
+        scoretext = "Good";
+
+        RectTransform.localScale = originalScale;
     }
 
     public void PerfectTouch()
@@ -93,6 +133,10 @@ public class Score : MonoBehaviour
 
         score += 25 * multiplicador;
         goodTouchs++;
+
+        scoretext = "Perfect";
+
+        RectTransform.localScale = originalScale;
     }
 
     public void TextLeft()
