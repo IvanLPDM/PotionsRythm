@@ -35,6 +35,6 @@ public class MusicManager : MonoBehaviour
         //beatproximity: closer to 0 = closer to beat;
         //beatproximity: closer to 1 = further from beat;
         BeatProximity = Mathf.Sqrt(Mathf.Abs(Mathf.Sin(Mathf.Deg2Rad * (90f + 180f * (AdjustedSongTime / beatTime)))));
-        test.transform.localScale = Vector3.one + Vector3.one * BeatProximity;
+        test.transform.localScale = Vector3.one * BeatProximity;
     }
 }

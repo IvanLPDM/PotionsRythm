@@ -13,6 +13,7 @@ public class Score : MonoBehaviour
     public TextMeshProUGUI UiScore;
     public RectTransform RectTransform;
     public TextMeshProUGUI UiMultiplier;
+    public TextMeshProUGUI UiScorenumber;
 
     private Vector3 scaleChange;
     private Vector3 originalScale;
@@ -157,7 +158,8 @@ public class Score : MonoBehaviour
         delayScoreUI = 8f;
 
         score += 10 * multiplicador;
-       
+        UiScorenumber.text = score.ToString();
+
         goodTouchs++;
 
         scoretext = "Good";
@@ -174,6 +176,8 @@ public class Score : MonoBehaviour
         delayScoreUI = 8f;
 
         score += 25 * multiplicador;
+        UiScorenumber.text = score.ToString();
+
         goodTouchs++;
 
         scoretext = "Perfect";
