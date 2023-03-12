@@ -15,6 +15,8 @@ public class Score : MonoBehaviour
     public TextMeshProUGUI UiMultiplier;
     public TextMeshProUGUI UiScorenumber;
 
+    public AudioSource audiosource;
+
     private Vector3 scaleChange;
     private Vector3 originalScale;
     private float RotationChange;
@@ -146,6 +148,8 @@ public class Score : MonoBehaviour
         scoretext = "Miss";
 
         RectTransform.localScale = originalScale;
+
+        audiosource.Play();
     }
     
     public void NiceTouch()
