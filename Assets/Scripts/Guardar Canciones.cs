@@ -14,12 +14,12 @@
 //    {
 //        archivoDeGuardado = Application.dataPath + "/datosJuego.json";
 
-//        Pociones = GameObject.FindGameObjectWithTag("ListaDePociones");
+//        NotasInput = GameObject.FindGameObjectWithTag("ListaDePociones");
 //    }
 
 //    private void CargarDatos()
 //    {
-//        if(File.Exists(archivoDeGuardado))
+//        if (File.Exists(archivoDeGuardado))
 //        {
 //            string contenido = File.ReadAllText(archivoDeGuardado);
 //            guardadoCancion = JsonUtility.FromJson<guardadoCancion>(contenido);

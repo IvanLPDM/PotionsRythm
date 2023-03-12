@@ -19,6 +19,11 @@ public class Pocion : MonoBehaviour
     public float falloDelay;
     public float InitialFalloDelay;
 
+    [Header("Guardado")]
+    public int Direccion;
+
+    public float timeToCreate;
+
 
     private float OriginColorTime;
 
@@ -34,12 +39,14 @@ public class Pocion : MonoBehaviour
             OriginColorTime -= 0.1f;
 
         pos = transform.position;
-        pos.y -= velocity;
+        pos.y -= velocity * Time.deltaTime;
         transform.position = pos;
 
        // Delete
         if (transform.position.y < -3.5)
         {
+            GameObject.Find("ScoreManager").SendMessage("BadTouch");
+            Camera.main.gameObject.GetComponent<Shake>().StartShake();
             Destroy(gameObject);
         }
 

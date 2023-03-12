@@ -4,33 +4,32 @@ using UnityEngine;
 
 public class Shake : MonoBehaviour
 {
-    public bool start = false;
-    public float duration;
     public AnimationCurve curve;
+    private float lastShakeTime;
+    private float shakeDuration;
+    Vector3 startPosition;
+    private void Start()
+    {
+        Vector3 startPosition = transform.position;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(start)
+        float elapsed = (Time.time - lastShakeTime) / shakeDuration;
+        if (elapsed <= 1f)
         {
-            start = false;
-            StartCoroutine(Shaking());
+            float strength = curve.Evaluate(elapsed);
+            transform.position = startPosition + Random.insideUnitSphere * strength + Vector3.back *10f ;
+        }
+        else
+        {
+            transform.position = startPosition + Vector3.back * 10f;
         }
     }
-
-    IEnumerator Shaking()
+    public void StartShake(float duration = 0.2f)
     {
-        Vector3 startPosition = transform.position;
-        float elapsedTime = 0f;
-
-        while(elapsedTime < duration)
-        {
-            elapsedTime += Time.deltaTime;
-            float strength = curve.Evaluate(elapsedTime / duration);
-            transform.position = startPosition + Random.insideUnitSphere * strength;
-            yield return null;  
-        }
-
-        transform.position = startPosition;
+        shakeDuration = duration;
+        lastShakeTime = Time.time;
     }
 }
