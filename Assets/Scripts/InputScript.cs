@@ -30,15 +30,18 @@ public class InputScript : MonoBehaviour
             
         }
 
+
         if (Input.GetKeyDown(KeyCode.A)) //Left
         {
             GameObject.Find("GameManager").SendMessage("CheckCollisionLeft");
-            //bola.transform.position = new Vector2(transform.position.x, 3);
         }
-        else if (Input.GetKeyDown(KeyCode.D)) //Right
+        
+        
+        if (Input.GetKeyDown(KeyCode.D)) //Right
         {
             GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
-            //bola.transform.position.y = 3;
         }
+
+
     }
 }
