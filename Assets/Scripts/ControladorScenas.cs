@@ -14,7 +14,10 @@ public class ControladorScenas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene("SelectorNiveles");
+        }
     }
 
     public void ChangeScene(string name)
@@ -26,4 +29,6 @@ public class ControladorScenas : MonoBehaviour
     {
         Application.Quit();
     }
+
+    
 }
