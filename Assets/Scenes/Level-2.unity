@@ -23239,7 +23239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4fd1beeaabbcfd4aafa403c2c060bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: Cancion3
+  FileName: patata
   PotionsGame: {fileID: 109498736}
 --- !u!4 &1944910663
 Transform:
