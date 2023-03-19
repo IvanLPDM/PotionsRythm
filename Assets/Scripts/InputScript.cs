@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class InputScript : MonoBehaviour
 {
+
+    private Vector3 scalechange;
+    Vector3 originalscale;
+
+    public Transform transform;
+    public Transform transform1;
+
+    private void Start()
+    {
+        scalechange = new Vector3(0.01f, 0.01f, 0.01f);
+
+        originalscale = new Vector3(0.75f, 0.75f, 0.75f);
+        transform.localScale = originalscale;
+        transform1.localScale = originalscale;
+    }
+
     void Update()
     {
         if(Input.touchCount > 0)
@@ -30,16 +46,30 @@ public class InputScript : MonoBehaviour
             
         }
 
+        transform.localScale += scalechange;
+        transform1.localScale += scalechange;
+
+        if (transform.localScale.y > 1f)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+        if (transform1.localScale.y > 1f)
+        {
+            transform1.localScale = new Vector3(1f, 1f, 1f);
+        }
+
 
         if (Input.GetKeyDown(KeyCode.A)) //Left
         {
             GameObject.Find("GameManager").SendMessage("CheckCollisionLeft");
+            transform.localScale = originalscale;
         }
         
         
         if (Input.GetKeyDown(KeyCode.D)) //Right
         {
             GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
+            transform1.localScale = originalscale;
         }
 
 
