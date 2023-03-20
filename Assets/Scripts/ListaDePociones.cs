@@ -72,23 +72,4 @@ public class ListaDePociones : MonoBehaviour
             }
         }
     }
-
-    //public void GeneratePotions()
-    //{
-    //    for(int i = 0; i < 0; i++)
-    //    {
-    //        int numRand = 0;
-    //        numRand = Random.Range(0, 2);
-
-    //        if (numRand == 0)
-    //            Potions.Add(Instantiate(PotionPrefab, new Vector2(0.77f, 3.8f), Quaternion.identity));
-    //        else
-    //            Potions.Add(Instantiate(PotionPrefab, new Vector2(-0.77f, 3.8f), Quaternion.identity));
-
-            
-    //        Potions[i].SetActive(false);
-
-    //        //Potions[i].
-    //    }
-    //}
 }
