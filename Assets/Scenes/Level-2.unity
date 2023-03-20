@@ -23719,6 +23719,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pocion
       objectReference: {fileID: 0}
+    - target: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -23729,7 +23733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.11
+      value: 2.232
       objectReference: {fileID: 0}
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_LocalPosition.z
