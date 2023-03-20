@@ -26,10 +26,12 @@ public class PositionDetection : MonoBehaviour
         if (ListBalls.PotionsInGameR.Count != 0)
         {
             distanciaR = ListBalls.PotionsInGameR[0].transform.position.y - trigger.transform.position.y;
-            //Debug.Log(distancia);
+            //Debug.Log(distanciaR);
 
             if (distanciaR < 0)
                 distanciaR = distanciaR * -1;
+
+            //Debug.Log(distanciaR);
         }
     }
 
@@ -65,7 +67,7 @@ public class PositionDetection : MonoBehaviour
     {
         if (ListBalls.PotionsInGameR.Count != 0)
         {
-            if (distanciaL <= 0.1)
+            if (distanciaR <= 0.1)
             {
                 ListBalls.PotionsInGameR[0].SendMessage("Perfect");
                 particulaAciertoR.Play();
