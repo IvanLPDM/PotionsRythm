@@ -45,7 +45,6 @@ public class Score : MonoBehaviour
     {
         ppVolume.profile.TryGet<Bloom>(out bloom);
 
-
         multiplicador = 1;
         score = 0.0f;
 
