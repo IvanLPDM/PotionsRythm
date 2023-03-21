@@ -17,8 +17,6 @@ public class PocionLarga : MonoBehaviour
         rect.transform.localScale = new Vector3 (rect.transform.localScale.x, rectLarge, rect.transform.localScale.z);
         rect.transform.position = new Vector3(transform.position.x, transform.position.y + distanciaLinea / 2, 0);
 
-        Debug.Log(distanciaLinea);
-
         GlowRect.transform.localScale = new Vector3(GlowRect.transform.localScale.x, rectLarge, GlowRect.transform.localScale.z);
         GlowRect.transform.position = new Vector3(transform.position.x, transform.position.y + distanciaLinea / 2, 0);
     }
