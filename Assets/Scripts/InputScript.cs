@@ -83,6 +83,22 @@ public class InputScript : MonoBehaviour
         light3R.intensity -= 1.75f * Time.deltaTime;
         light4R.intensity -= 1.75f * Time.deltaTime;
 
+        if(light1L.intensity <= 0f && light2L.intensity <= 0f && light3L.intensity <= 0f && light4L.intensity <= 0f)
+        {
+            light1L.intensity = 0f;
+            light2L.intensity = 0f;
+            light3L.intensity = 0f;
+            light4L.intensity = 0f;
+        }
+
+        if (light1R.intensity <= 0f && light2R.intensity <= 0f && light3R.intensity <= 0f && light4R.intensity <= 0f)
+        {
+            light1R.intensity = 0f;
+            light2R.intensity = 0f;
+            light3R.intensity = 0f;
+            light4R.intensity = 0f;
+        }
+
         if (light1L.intensity < 0.4 && light2L.intensity < 0.4f && light3L.intensity < 0.4f && light4L.intensity < 0.4f && scorecs.miss == false)
         {
             light1L.intensity += 1.75f * Time.deltaTime;
