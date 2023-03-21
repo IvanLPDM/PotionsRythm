@@ -17,11 +17,11 @@ public class ListaDePociones : MonoBehaviour
 
     public List<float> timing;
     public List<float> Large;
-    public List<int> Mode; 
+    public List<PotionsType> Mode; 
 
     void Start()
     {
-        //GameObject.Find("LoadLevel").SendMessage("Load");
+        GameObject.Find("LoadLevel").SendMessage("Load");
     }
 
     void Update()
@@ -47,14 +47,30 @@ public class ListaDePociones : MonoBehaviour
     {
         if (Potions.Count != 0)
         {
-            Potions[0].SetActive(true);
-            PotionPrefab = Potions[0];
+            if(Mode[0] == PotionsType.NORMAL)
+            {
+                Potions[0].SetActive(true);
+                PotionPrefab = Potions[0];
 
-            if(PotionPrefab.transform.position.x == -0.77f)
-                PotionsInGameL.Add(PotionPrefab);
-            else if (PotionPrefab.transform.position.x == 0.77f)
-                PotionsInGameR.Add(PotionPrefab);
+                if (PotionPrefab.transform.position.x == -0.77f)
+                    PotionsInGameL.Add(PotionPrefab);
+                else if (PotionPrefab.transform.position.x == 0.77f)
+                    PotionsInGameR.Add(PotionPrefab);
+            }
+            else if(Mode[0] == PotionsType.LARGE)
+            {
+                Potions[0].SetActive(true);                
+                PotionLarge = Potions[0];
 
+
+                if (PotionLarge.transform.position.x == -0.77f)
+                    PotionsInGameL.Add(PotionLarge);
+                else if (PotionLarge.transform.position.x == 0.77f)
+                    PotionsInGameR.Add(PotionLarge);
+            }
+
+            Large.RemoveAt(0);
+            Mode.RemoveAt(0);
             Potions.RemoveAt(0);
         }
     }

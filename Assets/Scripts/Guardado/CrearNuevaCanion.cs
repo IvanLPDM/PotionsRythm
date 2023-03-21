@@ -42,19 +42,24 @@ public class CrearNuevaCanion : MonoBehaviour
 {
     public List<SavedPotion> PotionsToSave = new List<SavedPotion>();
     private float time;
-    private float timeSavedPotion;
+    private float timeSavedPotionL;
+    private float timeSavedPotionR;
     public string FileName;
     public ListaDePociones PotionsGame;
 
-    private float StartTimeLarge;
-    private float large;
-    private bool StartSave;
+    private float StartTimeLargeL;
+    private float largeL;
+    private bool StartSaveL;
+
+    private float StartTimeLargeR;
+    private float largeR;
+    private bool StartSaveR;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartSave = false;
-        StartTimeLarge = 0.0f;
+        StartSaveL = false;
+        StartTimeLargeL = 0.0f;
     }
 
     // Update is called once per frame
@@ -65,47 +70,72 @@ public class CrearNuevaCanion : MonoBehaviour
         //Aqui entraria la cancion y le diria cuando puede generar pociones
         if (Input.GetKeyDown(KeyCode.A))
         {
-            StartSave = true;
-            timeSavedPotion = time;
+            StartSaveL = true;
+            timeSavedPotionL = time;
             //Si es mantenida que guarde mantenida sino normal, y que se guarde el tiempo mantenido desde Input
         }
 
-        if(StartSave == true)
+        if(StartSaveL == true)
         {
             if (Input.GetKey(KeyCode.A)) //Left
             {
                 //Empezar a contar
-                StartTimeLarge += 1 * Time.deltaTime;
+                StartTimeLargeL += 1 * Time.deltaTime;
             }
 
             if (Input.GetKeyUp(KeyCode.A)) //Left
             {
                 //Dejar de contar
-                if (StartTimeLarge >= 0.15f)
+                if (StartTimeLargeL >= 0.15f)
                 {
-                    large = time - StartTimeLarge;
+                    largeL = StartTimeLargeL * 2;
 
-                    PotionsToSave.Add(new SavedPotion(0, time, PotionsType.LARGE, large));
-                    Debug.Log("Guardado Izquierda min:" + time);
+                    PotionsToSave.Add(new SavedPotion(0, timeSavedPotionL, PotionsType.LARGE, largeL));
+                    Debug.Log("Guardado Izquierda min:" + timeSavedPotionL);
                     //Llamar funcion de mantenida   
                 }
                 else
                 {
-                    PotionsToSave.Add(new SavedPotion(0, time, PotionsType.NORMAL, 0.0f));
-                    Debug.Log("Guardado Izquierda min:" + time);
+                    PotionsToSave.Add(new SavedPotion(0, timeSavedPotionL, PotionsType.NORMAL, 0.0f));
+                    Debug.Log("Guardado Izquierda min:" + timeSavedPotionL);
                 }
-                StartTimeLarge = 0.0f;
+                StartTimeLargeL = 0.0f;
             } 
         }
-        
-
 
         if (Input.GetKeyDown(KeyCode.D))
         {
-            PotionsToSave.Add(new SavedPotion(1, time, PotionsType.NORMAL, 0.0f));
-            Debug.Log("Guardado Derecha min:" + time);
-
+            StartSaveR = true;
+            timeSavedPotionR = time;
             //Si es mantenida que guarde mantenida sino normal, y que se guarde el tiempo mantenido desde Input
+        }
+
+        if (StartSaveR == true)
+        {
+            if (Input.GetKey(KeyCode.D)) //Left
+            {
+                //Empezar a contar
+                StartTimeLargeR += 1 * Time.deltaTime;
+            }
+
+            if (Input.GetKeyUp(KeyCode.D)) //Left
+            {
+                //Dejar de contar
+                if (StartTimeLargeR >= 0.15f)
+                {
+                    largeR = StartTimeLargeR * 2;
+
+                    PotionsToSave.Add(new SavedPotion(1, timeSavedPotionR, PotionsType.LARGE, largeR));
+                    Debug.Log("Guardado Derecha min:" + timeSavedPotionR);
+                    //Llamar funcion de mantenida   
+                }
+                else
+                {
+                    PotionsToSave.Add(new SavedPotion(1, timeSavedPotionR, PotionsType.NORMAL, 0.0f));
+                    Debug.Log("Guardado Derecha min:" + timeSavedPotionR);
+                }
+                StartTimeLargeR = 0.0f;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.G))
