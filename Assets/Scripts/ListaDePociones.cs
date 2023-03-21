@@ -16,7 +16,7 @@ public class ListaDePociones : MonoBehaviour
 
     void Start()
     {
-        //GameObject.Find("LoadLevel").SendMessage("Load");
+        GameObject.Find("LoadLevel").SendMessage("Load");
     }
 
     void Update()

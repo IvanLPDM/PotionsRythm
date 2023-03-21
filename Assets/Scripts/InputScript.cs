@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.Rendering;
 
 public class InputScript : MonoBehaviour
 {
@@ -10,6 +12,18 @@ public class InputScript : MonoBehaviour
 
     public Transform transform;
     public Transform transform1;
+
+    public Light2D light1L;
+    public Light2D light2L;
+    public Light2D light3L;
+    public Light2D light4L;
+
+    public Light2D light1R;
+    public Light2D light2R;
+    public Light2D light3R;
+    public Light2D light4R;
+
+    public Score scorecs;
 
     private void Start()
     {
@@ -58,11 +72,46 @@ public class InputScript : MonoBehaviour
             transform1.localScale = new Vector3(1f, 1f, 1f);
         }
 
+        //luces ventanas
+        light1L.intensity -= 1.75f * Time.deltaTime;
+        light2L.intensity -= 1.75f * Time.deltaTime;
+        light3L.intensity -= 1.75f * Time.deltaTime;
+        light4L.intensity -= 1.75f * Time.deltaTime;
+
+        light1R.intensity -= 1.75f * Time.deltaTime;
+        light2R.intensity -= 1.75f * Time.deltaTime;
+        light3R.intensity -= 1.75f * Time.deltaTime;
+        light4R.intensity -= 1.75f * Time.deltaTime;
+
+        if (light1L.intensity < 0.4 && light2L.intensity < 0.4f && light3L.intensity < 0.4f && light4L.intensity < 0.4f && scorecs.miss == false)
+        {
+            light1L.intensity += 1.75f * Time.deltaTime;
+            light2L.intensity += 1.75f * Time.deltaTime;
+            light3L.intensity += 1.75f * Time.deltaTime;
+            light4L.intensity += 1.75f * Time.deltaTime;
+        }
+
+        if (light1R.intensity < 0.4 && light2R.intensity < 0.4f && light3R.intensity < 0.4f && light4R.intensity < 0.4f && scorecs.miss == false)
+        {
+            light1R.intensity += 1.75f * Time.deltaTime;
+            light2R.intensity += 1.75f * Time.deltaTime;
+            light3R.intensity += 1.75f * Time.deltaTime;
+            light4R.intensity += 1.75f * Time.deltaTime;
+        }
+
 
         if (Input.GetKeyDown(KeyCode.A)) //Left
         {
             GameObject.Find("GameManager").SendMessage("CheckCollisionLeft");
             transform.localScale = originalscale;
+
+            if(scorecs.miss == false)
+            {
+                light1L.intensity = 0.9f;
+                light2L.intensity = 0.9f;
+                light3L.intensity = 0.9f;
+                light4L.intensity = 0.9f;
+            }
         }
         
         
@@ -70,6 +119,14 @@ public class InputScript : MonoBehaviour
         {
             GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
             transform1.localScale = originalscale;
+
+            if (scorecs.miss == false)
+            {
+                light1R.intensity = 0.9f;
+                light2R.intensity = 0.9f;
+                light3R.intensity = 0.9f;
+                light4R.intensity = 0.9f;
+            }
         }
 
 
