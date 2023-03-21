@@ -6,13 +6,18 @@ using UnityEngine;
 public class ListaDePociones : MonoBehaviour
 {
     public GameObject PotionPrefab;
+    public GameObject PotionLarge;
+
     private float time = 0;
     public float timeTranscurred = 0;
 
     public List<GameObject> PotionsInGameL;
     public List<GameObject> PotionsInGameR;
     public List<GameObject> Potions;
+
     public List<float> timing;
+    public List<float> Large;
+    public List<int> Mode; 
 
     void Start()
     {

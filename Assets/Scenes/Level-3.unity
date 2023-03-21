@@ -729,12 +729,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PotionPrefab: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
+  PotionLarge: {fileID: 1286760010}
   timeTranscurred: 0
   PotionsInGameL: []
   PotionsInGameR:
   - {fileID: 1286760010}
   Potions: []
   timing: []
+  Large: []
+  Mode: 
 --- !u!4 &109498737
 Transform:
   m_ObjectHideFlags: 0
@@ -1845,7 +1848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364846625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8788632, y: -0.0033, z: 0.105676815}
+  m_LocalPosition: {x: 1.8788632, y: -0.02, z: 0.105676815}
   m_LocalScale: {x: 0.0748, y: 6.078014, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3644,6 +3647,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1258197726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258197728}
+  - component: {fileID: 1258197727}
+  m_Layer: 0
+  m_Name: Square
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1258197727
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258197726}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1258197728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258197726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.41, y: -2.71, z: -6.67}
+  m_LocalScale: {x: 1, y: 3.2553, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1267338359
 GameObject:
@@ -8714,7 +8801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.55
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8772,7 +8859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rect: {fileID: 249548082}
-  rectLarge: 5
+  rectLarge: 3.456
   GlowRect: {fileID: 318730287}
 --- !u!1 &1619455433
 GameObject:
@@ -13673,6 +13760,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2da17817327aa9f45b8490f99c33087c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timePulsedL: 0
+  totalTimeL: 0
+  timePulsedR: 0
+  totalTimeR: 0
 --- !u!4 &1676806253
 Transform:
   m_ObjectHideFlags: 0
@@ -23654,7 +23745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1944910662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23667,7 +23758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4fd1beeaabbcfd4aafa403c2c060bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: Cancion5
+  FileName: PruebaInputLarge
   PotionsGame: {fileID: 109498736}
 --- !u!4 &1944910663
 Transform:

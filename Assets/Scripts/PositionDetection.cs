@@ -90,4 +90,15 @@ public class PositionDetection : MonoBehaviour
             }
         }
     }
+
+    public void CheckCollisionMantLeft()
+    {
+
+    }
+
+
+    public void CheckCollisionMantRight()
+    {
+        //Comparar si 
+    }
 }

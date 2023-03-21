@@ -31,6 +31,10 @@ public class LoadSong : MonoBehaviour
                 else
                     PotionsGame.Potions.Add(Instantiate(PotionsGame.PotionPrefab, new Vector2(-0.77f, 3.8f), Quaternion.identity));
 
+                //Guardar en una lista como de largas son si son mantenidas
+
+
+
                 PotionsGame.timing.Add(data[i].time);
                 PotionsGame.Potions[i].SetActive(false);
             }
