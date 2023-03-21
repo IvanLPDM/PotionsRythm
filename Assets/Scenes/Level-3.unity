@@ -731,7 +731,8 @@ MonoBehaviour:
   PotionPrefab: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
   timeTranscurred: 0
   PotionsInGameL: []
-  PotionsInGameR: []
+  PotionsInGameR:
+  - {fileID: 1286760010}
   Potions: []
   timing: []
 --- !u!4 &109498737
@@ -8514,6 +8515,11 @@ Transform:
   m_Father: {fileID: 1943661805}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1 &1286760010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
+  m_PrefabInstance: {fileID: 1466509698}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1400181282
 GameObject:
   m_ObjectHideFlags: 0
@@ -8704,11 +8710,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.77
+      value: 0.76
       objectReference: {fileID: 0}
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.43
+      value: 2.55
       objectReference: {fileID: 0}
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8753,6 +8759,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
   m_PrefabInstance: {fileID: 1466509698}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1466509703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286760010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf32b6ca8dc641d49a69ff4216d0c1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rect: {fileID: 249548082}
+  rectLarge: 53.7
+  GlowRect: {fileID: 318730287}
 --- !u!1 &1619455433
 GameObject:
   m_ObjectHideFlags: 0
