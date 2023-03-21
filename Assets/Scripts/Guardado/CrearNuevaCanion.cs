@@ -88,7 +88,9 @@ public class CrearNuevaCanion : MonoBehaviour
                 //Dejar de contar
                 if (StartTimeLargeL >= 0.15f)
                 {
-                    largeL = StartTimeLargeL * 2;
+                    largeL = StartTimeLargeL;
+
+                    Debug.Log(largeL);
 
                     PotionsToSave.Add(new SavedPotion(0, timeSavedPotionL, PotionsType.LARGE, largeL));
                     Debug.Log("Guardado Izquierda min:" + timeSavedPotionL);
@@ -123,7 +125,7 @@ public class CrearNuevaCanion : MonoBehaviour
                 //Dejar de contar
                 if (StartTimeLargeR >= 0.15f)
                 {
-                    largeR = StartTimeLargeR * 2;
+                    largeR = StartTimeLargeR;
 
                     PotionsToSave.Add(new SavedPotion(1, timeSavedPotionR, PotionsType.LARGE, largeR));
                     Debug.Log("Guardado Derecha min:" + timeSavedPotionR);

@@ -23,6 +23,7 @@ public class PocionLarga : MonoBehaviour
 
     public void ChangeLarge(float large)
     {
+        large = large * 3;
         float distanciaLinea = (large + 0.8f) / 2;
 
         rect.transform.localScale = new Vector3(rect.transform.localScale.x, large, rect.transform.localScale.z);
