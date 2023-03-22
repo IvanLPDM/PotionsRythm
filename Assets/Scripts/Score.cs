@@ -36,7 +36,7 @@ public class Score : MonoBehaviour
     public float multiplicador;
     public float goodTouchs;
     private float scoreWin;
-    private string scoretext;
+    public string scoretext;
     private string multipliertext;
 
     private float delayScoreUI;
