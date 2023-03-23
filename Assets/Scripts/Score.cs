@@ -25,6 +25,7 @@ public class Score : MonoBehaviour
     private Bloom bloom;
 
     public Light2D light;
+    public bool miss;
 
     public Color InitialColor;
     public Color colorx2;
@@ -40,6 +41,8 @@ public class Score : MonoBehaviour
 
     private float delayScoreUI;
 
+    public healthBar healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,13 +54,15 @@ public class Score : MonoBehaviour
         UiScore.enabled = false;
         UiMultiplier.enabled = false;
 
-        originalScale = new Vector3(0.5f, 0.5f, 0.5f);
+        originalScale = new Vector3(0.75f, 0.75f, 0.75f);
 
         RotationChange = 0;
 
         RectTransform.localScale = originalScale;
 
-        scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
+        scaleChange = new Vector3(1f, 1f, 1f);
+
+        miss = false;
     }
 
     // Update is called once per frame
@@ -118,7 +123,6 @@ public class Score : MonoBehaviour
             bloom.tint = tint;
 
             UiMultiplier.enabled = true;
-            multipliertext = "x1";
         }
 
         //if (delayScoreUI > 0)
@@ -130,7 +134,7 @@ public class Score : MonoBehaviour
 
         //scale
         UiScore.text = scoretext;
-        RectTransform.localScale += scaleChange;
+        RectTransform.localScale += scaleChange * Time.deltaTime;
 
         if (RectTransform.localScale.y > 1f)
         {
@@ -149,6 +153,10 @@ public class Score : MonoBehaviour
         RectTransform.localScale = originalScale;
 
         audiosource.Play();
+
+        miss = true;
+
+        healthBar.currentHealth -= healthBar.levelMiss;
     }
     
     public void NiceTouch()
@@ -168,6 +176,10 @@ public class Score : MonoBehaviour
         scoretext = "Good";
 
         RectTransform.localScale = originalScale;
+
+        miss = false;
+
+        healthBar.currentHealth += healthBar.levelHealing;
     }
 
     public void PerfectTouch()
@@ -186,6 +198,10 @@ public class Score : MonoBehaviour
         scoretext = "Perfect";
 
         RectTransform.localScale = originalScale;
+
+        miss = false;
+
+        healthBar.currentHealth += healthBar.levelHealing;
     }
 
     public void TextLeft()
