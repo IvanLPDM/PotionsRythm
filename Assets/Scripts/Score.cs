@@ -10,10 +10,12 @@ public class Score : MonoBehaviour
 {
     public float score;
 
+    //ui scene
     public TextMeshProUGUI UiScore;
     public RectTransform RectTransform;
     public TextMeshProUGUI UiMultiplier;
     public TextMeshProUGUI UiScorenumber;
+    public TextMeshProUGUI UiHighScore;
 
     public AudioSource audiosource;
 
@@ -21,6 +23,7 @@ public class Score : MonoBehaviour
     private Vector3 originalScale;
     private float RotationChange;
 
+    //feedback color
     public Volume ppVolume;
     private Bloom bloom;
 
@@ -33,14 +36,14 @@ public class Score : MonoBehaviour
     public Color colorx4;
     public Color colorx5;
 
+    //datos score y multiplicador
     public float multiplicador;
     public float goodTouchs;
     private float scoreWin;
     private string scoretext;
     private string multipliertext;
 
-    private float delayScoreUI;
-
+    //sliders
     public healthBar healthBar;
     public multiplierBar multiplierbar;
 
@@ -51,6 +54,8 @@ public class Score : MonoBehaviour
 
         multiplicador = 1;
         score = 0.0f;
+
+        UiHighScore.text = PlayerPrefs.GetFloat("HighScore", 0).ToString();
 
         UiScore.enabled = false;
         UiMultiplier.enabled = false;
@@ -135,6 +140,15 @@ public class Score : MonoBehaviour
         {
             RectTransform.localScale = new Vector3(1f, 1f, 1f);
         }
+
+        //highscore
+
+        if(score > PlayerPrefs.GetFloat("HighScore", 0))
+        {
+            PlayerPrefs.SetFloat("HighScore", score);
+            UiHighScore.text = score.ToString();
+        }
+        
     }
 
     public void BadTouch()
@@ -162,7 +176,6 @@ public class Score : MonoBehaviour
         scoreWin += 10 * multiplicador;
 
         UiScore.enabled = true;
-        delayScoreUI = 8f;
 
         score += 10 * multiplicador;
         UiScorenumber.text = score.ToString();
@@ -185,7 +198,6 @@ public class Score : MonoBehaviour
         scoreWin += 25 * multiplicador;
 
         UiScore.enabled = true;
-        delayScoreUI = 8f;
 
         score += 25 * multiplicador;
         UiScorenumber.text = score.ToString();
