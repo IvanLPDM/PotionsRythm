@@ -42,6 +42,7 @@ public class Score : MonoBehaviour
     private float delayScoreUI;
 
     public healthBar healthBar;
+    public multiplierBar multiplierbar;
 
     // Start is called before the first frame update
     void Start()
@@ -123,14 +124,8 @@ public class Score : MonoBehaviour
             bloom.tint = tint;
 
             UiMultiplier.enabled = true;
+            multipliertext = " ";
         }
-
-        //if (delayScoreUI > 0)
-        //{
-        //    delayScoreUI -= 0.1f;
-        //}
-        //else
-        //    //UiScore.enabled = false;
 
         //scale
         UiScore.text = scoretext;
@@ -157,6 +152,7 @@ public class Score : MonoBehaviour
         miss = true;
 
         healthBar.currentHealth -= healthBar.levelMiss;
+        multiplierbar.takeDamage();
     }
     
     public void NiceTouch()
@@ -180,6 +176,7 @@ public class Score : MonoBehaviour
         miss = false;
 
         healthBar.currentHealth += healthBar.levelHealing;
+        multiplierbar.currentHealth += multiplierbar.levelHealing;
     }
 
     public void PerfectTouch()
@@ -202,6 +199,7 @@ public class Score : MonoBehaviour
         miss = false;
 
         healthBar.currentHealth += healthBar.levelHealing;
+        multiplierbar.currentHealth += multiplierbar.levelHealing;
     }
 
     public void TextLeft()
