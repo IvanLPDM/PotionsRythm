@@ -11,8 +11,8 @@ public class healthBar : MonoBehaviour
     public float currentHealth;
     public float leveldamage;
     public float levelHealing;
+    public float levelMiss;
 
-    public PositionDetection positionDetection;
     float lastNoteState;
 
     private void Start()
@@ -24,15 +24,6 @@ public class healthBar : MonoBehaviour
     {
 
         takeDamage(leveldamage);
-
-        //if(positionDetection.checkHealthStateL == 1 || positionDetection.checkHealthStateL == 2 || positionDetection.checkHealthStateR == 1 || positionDetection.checkHealthStateR == 2)
-        //{
-        //    currentHealth += levelHealing;
-        //}
-        //if (positionDetection.checkHealthStateL == 3 || positionDetection.checkHealthStateR == 3)
-        //{
-        //    currentHealth -= levelHealing;
-        //}
 
         if (currentHealth >= maxHealth)
         {
@@ -58,7 +49,7 @@ public class healthBar : MonoBehaviour
 
     void takeDamage(float damage)
     {
-        currentHealth -= damage;
+        currentHealth -= damage * Time.deltaTime;
 
         setHealth(currentHealth);
     }
