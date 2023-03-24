@@ -108,6 +108,7 @@ public class Score : MonoBehaviour
 
             UiMultiplier.enabled = true;
             multipliertext = "x3";
+
         }
         else if (goodTouchs >= 20)
         {
@@ -119,6 +120,7 @@ public class Score : MonoBehaviour
 
             UiMultiplier.enabled = true;
             multipliertext = "x2";
+
         }
         else
         {
