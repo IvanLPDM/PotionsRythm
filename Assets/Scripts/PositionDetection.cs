@@ -120,7 +120,7 @@ public class PositionDetection : MonoBehaviour
                     ListBalls.PotionsInGameR[0].SendMessage("Fallo");
                 }
             }
-            else//Comprobar si le ha dado en el momento
+            else
             {
                 if (distanciaR <= 0.1)
                 {
@@ -148,7 +148,6 @@ public class PositionDetection : MonoBehaviour
 
     public void CheckCollisionMantLeft(float duracionInput)
     {
-        Debug.Log("FUNCION LLAMDA");
         //Comparar la duracion del Input con la duracion de la nota
         float puntuacion = ListBalls.LargeInGameL[0] - duracionInput;
 
@@ -157,8 +156,12 @@ public class PositionDetection : MonoBehaviour
             Camera.main.gameObject.GetComponent<Shake>().StartShake();
             ListBalls.PotionsInGameL[0].SendMessage("Fallo");
             Debug.Log("Fallo");
+
+            Destroy(ListBalls.PotionsInGameL[0]);
+            ListBalls.PotionsInGameL.RemoveAt(0);
+            ListBalls.LargeInGameL.RemoveAt(0);
         }
-        else if (puntuacion <= 0.25)
+        else if (puntuacion <= 0.5)
         {
             ListBalls.PotionsInGameL[0].SendMessage("Perfect");
             particulaAciertoL.Play();
@@ -168,7 +171,7 @@ public class PositionDetection : MonoBehaviour
             ListBalls.LargeInGameL.RemoveAt(0);
             Debug.Log("Perfecto");
         }
-        else if (puntuacion <= 0.5f)
+        else if (puntuacion <= 0.80f)
         {
             ListBalls.PotionsInGameL[0].SendMessage("Acierto");
             particulaAciertoL.Play();
@@ -181,8 +184,40 @@ public class PositionDetection : MonoBehaviour
     }
 
 
-    public void CheckCollisionMantRight()
+    public void CheckCollisionMantRight(float duracionInput)
     {
-        //Comparar si 
+        //Comparar la duracion del Input con la duracion de la nota
+        float puntuacion = ListBalls.LargeInGameR[0] - duracionInput;
+
+        if (puntuacion < 0)
+        {
+            Camera.main.gameObject.GetComponent<Shake>().StartShake();
+            ListBalls.PotionsInGameR[0].SendMessage("Fallo");
+            Debug.Log("Fallo");
+
+            Destroy(ListBalls.PotionsInGameR[0]);
+            ListBalls.PotionsInGameR.RemoveAt(0);
+            ListBalls.LargeInGameR.RemoveAt(0);
+        }
+        else if (puntuacion <= 0.5)
+        {
+            ListBalls.PotionsInGameR[0].SendMessage("Perfect");
+            particulaAciertoR.Play();
+
+            Destroy(ListBalls.PotionsInGameR[0]);
+            ListBalls.PotionsInGameR.RemoveAt(0);
+            ListBalls.LargeInGameR.RemoveAt(0);
+            Debug.Log("Perfecto");
+        }
+        else if (puntuacion <= 0.80f)
+        {
+            ListBalls.PotionsInGameR[0].SendMessage("Acierto");
+            particulaAciertoR.Play();
+
+            Destroy(ListBalls.PotionsInGameR[0]);
+            ListBalls.PotionsInGameR.RemoveAt(0);
+            ListBalls.LargeInGameR.RemoveAt(0);
+            Debug.Log("Bien");
+        }
     }
 }

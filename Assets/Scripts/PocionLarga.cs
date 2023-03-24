@@ -25,7 +25,7 @@ public class PocionLarga : MonoBehaviour
 
     public void ChangeLarge(float large)
     {
-        large = large * 3;
+        large = large * 6f;
         float distanciaLinea = (large + 0.8f) / 2;
 
         rect.transform.localScale = new Vector3(rect.transform.localScale.x, large, rect.transform.localScale.z);
@@ -42,6 +42,7 @@ public class PocionLarga : MonoBehaviour
         transform.position = new Vector3(transform.position.x, -2.4f, transform.position.z);
 
         rect.transform.position = new Vector3(transform.position.x, rect.transform.position.y - time, 0);
+        GlowRect.transform.position = new Vector3(transform.position.x, rect.transform.position.y - time, 0);
     }
 
     // Update is called once per frame

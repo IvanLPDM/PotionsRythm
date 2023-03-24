@@ -36,7 +36,6 @@ public class ListaDePociones : MonoBehaviour
 
         time += 1 * Time.deltaTime;
         
-
         //Aqui entraria la cancion y le diria cuando puede generar pociones
         if(timing.Count != 0)
         {
@@ -46,7 +45,6 @@ public class ListaDePociones : MonoBehaviour
                 timing.RemoveAt(0);
             }
         }
-
         RemoveGame();
     }
 
@@ -106,21 +104,13 @@ public class ListaDePociones : MonoBehaviour
         {
             LargeInGameR.RemoveAt(0);
         }
-        else
+        else if(direccion == 2)
         {
             LargeInGameL.RemoveAt(0);
         }
 
     }
 
-    public void LargeAntenaR()
-    {
-        if(LargeInGameR[0] > 0)
-        {
-            PotionsInGameR[0].SendMessage("Stay");
-        }
-    }
-    
     public void LargeAntenaL()
     {
         if (LargeInGameL[0] > 0)
@@ -128,4 +118,15 @@ public class ListaDePociones : MonoBehaviour
             PotionsInGameL[0].SendMessage("Stay");
         }
     }
+
+    public void LargeAntenaR()
+    {
+        if(LargeInGameR[0] > 0)
+        {
+            Debug.Log("Bien");
+            PotionsInGameR[0].SendMessage("Stay");
+        }
+    }
+    
+    
 }

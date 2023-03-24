@@ -728,6 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab03a3c144b03374ebe10b1faf37a37e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Save: {fileID: 1944910661}
   PotionPrefab: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
   PotionLarge: {fileID: 1286760010}
   timeTranscurred: 0
@@ -735,8 +736,9 @@ MonoBehaviour:
   PotionsInGameR: []
   Potions: []
   timing: []
-  Large: []
   Mode: 
+  LargeInGameL: []
+  LargeInGameR: []
 --- !u!4 &109498737
 Transform:
   m_ObjectHideFlags: 0
@@ -931,7 +933,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fe2fd4152273d034295074b15aeabf1e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cb8d8d2d4d0a50649b2851a187201fe9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -9130,6 +9132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect: {fileID: 249548082}
   rectLarge: 1
+  time: 0
   GlowRect: {fileID: 318730287}
 --- !u!1 &1558020579
 GameObject:
@@ -14076,8 +14079,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2da17817327aa9f45b8490f99c33087c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MantenidoLeft: 0
+  MantenidoRight: 0
   timePulsedL: 0
   totalTimeL: 0
+  Save: {fileID: 1944910661}
   timePulsedR: 0
   totalTimeR: 0
 --- !u!4 &1676806253
