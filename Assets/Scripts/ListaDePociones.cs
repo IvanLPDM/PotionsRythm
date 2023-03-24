@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ListaDePociones : MonoBehaviour
 {
+    public GameObject Save;
+
     public GameObject PotionPrefab;
     public GameObject PotionLarge;
 
@@ -16,12 +18,17 @@ public class ListaDePociones : MonoBehaviour
     public List<GameObject> Potions;
 
     public List<float> timing;
-    public List<float> Large;
-    public List<PotionsType> Mode; 
+    public List<PotionsType> Mode;
+
+    public List<float> LargeInGameL;
+    public List<float> LargeInGameR;
 
     void Start()
     {
-        GameObject.Find("LoadLevel").SendMessage("Load");
+        if (!Save.activeInHierarchy)
+        {
+            GameObject.Find("LoadLevel").SendMessage("Load");
+        }
     }
 
     void Update()
@@ -69,7 +76,6 @@ public class ListaDePociones : MonoBehaviour
                     PotionsInGameR.Add(PotionLarge);
             }
 
-            Large.RemoveAt(0);
             Mode.RemoveAt(0);
             Potions.RemoveAt(0);
         }
@@ -91,6 +97,35 @@ public class ListaDePociones : MonoBehaviour
             {
                 PotionsInGameR.RemoveAt(0);
             }
+        }
+    }
+
+    public void DeleteInfo(int direccion)
+    {
+        if(direccion == 1)
+        {
+            LargeInGameR.RemoveAt(0);
+        }
+        else
+        {
+            LargeInGameL.RemoveAt(0);
+        }
+
+    }
+
+    public void LargeAntenaR()
+    {
+        if(LargeInGameR[0] > 0)
+        {
+            PotionsInGameR[0].SendMessage("Stay");
+        }
+    }
+    
+    public void LargeAntenaL()
+    {
+        if (LargeInGameL[0] > 0)
+        {
+            PotionsInGameL[0].SendMessage("Stay");
         }
     }
 }

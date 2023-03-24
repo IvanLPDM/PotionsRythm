@@ -7,6 +7,8 @@ public class PocionLarga : MonoBehaviour
     public GameObject rect;
     public float rectLarge;
 
+    public float time;
+
     public GameObject GlowRect;
 
     // Start is called before the first frame update
@@ -31,6 +33,15 @@ public class PocionLarga : MonoBehaviour
 
         GlowRect.transform.localScale = new Vector3(GlowRect.transform.localScale.x, large, GlowRect.transform.localScale.z);
         GlowRect.transform.position = new Vector3(transform.position.x, transform.position.y + distanciaLinea / 2, 0);
+    }
+
+    public void Stay()
+    {
+        time = 4 * Time.deltaTime;
+
+        transform.position = new Vector3(transform.position.x, -2.4f, transform.position.z);
+
+        rect.transform.position = new Vector3(transform.position.x, rect.transform.position.y - time, 0);
     }
 
     // Update is called once per frame
