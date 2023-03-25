@@ -2,2060 +2,1652 @@
 <ArrayOfSavedPotion xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SavedPotion>
     <direccion>1</direccion>
-    <time>4.549045</time>
-    <mode>LARGE</mode>
-    <duration>0.85614</duration>
+    <time>4.41903162</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>5.433866</time>
-    <mode>LARGE</mode>
-    <duration>0.6561248</duration>
+    <time>4.716617</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>6.143427</time>
-    <mode>LARGE</mode>
-    <duration>1.46526182</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>7.80546951</time>
+    <time>4.79982758</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>8.206397</time>
+    <time>5.19482851</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>8.525957</time>
-    <mode>LARGE</mode>
-    <duration>0.152634978</duration>
+    <direccion>1</direccion>
+    <time>5.26613</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>8.773551</time>
+    <time>5.412152</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>8.90681</time>
+    <time>5.57604551</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>9.199157</time>
+    <direccion>0</direccion>
+    <time>5.700771</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>9.424347</time>
+    <time>6.11194</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>9.660766</time>
-    <mode>LARGE</mode>
-    <duration>1.62727118</duration>
+    <time>6.25554037</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>11.4328241</time>
-    <mode>LARGE</mode>
-    <duration>0.82369554</duration>
+    <direccion>0</direccion>
+    <time>6.417205</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>12.316081</time>
-    <mode>LARGE</mode>
-    <duration>0.7138009</duration>
+    <time>6.569054</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>13.1281252</time>
+    <time>6.832727</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>13.5371351</time>
+    <direccion>0</direccion>
+    <time>6.96850824</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>13.9535074</time>
-    <mode>LARGE</mode>
-    <duration>0.7412296</duration>
+    <time>7.116074</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>14.862607</time>
-    <mode>LARGE</mode>
-    <duration>2.666068</duration>
+    <time>7.496517</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
+  </SavedPotion>
+  <SavedPotion>
+    <direccion>1</direccion>
+    <time>7.996896</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>18.0161076</time>
+    <time>8.341841</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>18.12442</time>
+    <time>8.446619</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>18.284687</time>
+    <time>8.8117075</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>18.4876461</time>
-    <mode>LARGE</mode>
-    <duration>0.8361031</duration>
+    <time>8.972627</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>19.32848</time>
-    <mode>LARGE</mode>
-    <duration>0.779512644</duration>
+    <time>9.106328</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>20.0814381</time>
-    <mode>LARGE</mode>
-    <duration>0.411738425</duration>
+    <time>9.225918</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>21.2421379</time>
+    <time>9.400277</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>21.550581</time>
+    <direccion>1</direccion>
+    <time>9.829317</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
+  </SavedPotion>
+  <SavedPotion>
+    <direccion>1</direccion>
+    <time>10.3016329</time>
+    <mode>NORMAL</mode>
+    <duration>0.181349486</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>21.9834728</time>
+    <time>10.7955894</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>23.03091</time>
+    <direccion>1</direccion>
+    <time>11.7207718</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>23.66636</time>
+    <time>12.0664063</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>20.59245</time>
-    <mode>LARGE</mode>
-    <duration>4.45419741</duration>
+    <time>12.1498566</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>25.8003731</time>
+    <time>12.4762249</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>26.6485615</time>
+    <time>12.6487722</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>25.2571964</time>
-    <mode>LARGE</mode>
-    <duration>2.856115</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>28.1328411</time>
+    <time>12.7676344</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>28.4631233</time>
+    <time>12.8826857</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>28.6354465</time>
+    <time>12.9696064</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>28.8514462</time>
+    <direccion>1</direccion>
+    <time>13.0822992</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>29.0773525</time>
+    <time>13.4832878</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>29.2816219</time>
-    <mode>LARGE</mode>
-    <duration>0.151371688</duration>
+    <time>13.6587629</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>29.5224762</time>
+    <direccion>1</direccion>
+    <time>13.8103533</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>29.7351131</time>
+    <time>13.8942213</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>29.91273</time>
+    <direccion>1</direccion>
+    <time>14.189724</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>30.1177177</time>
+    <time>14.3639107</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>30.29755</time>
+    <direccion>0</direccion>
+    <time>14.4521408</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>30.4601955</time>
+    <time>14.71332</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>30.5874214</time>
+    <direccion>1</direccion>
+    <time>15.01309</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>30.7847672</time>
+    <direccion>1</direccion>
+    <time>15.453289</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>30.9578476</time>
+    <time>15.7469988</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>31.0682411</time>
+    <time>15.8732624</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>31.2637978</time>
+    <time>16.1881752</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>31.4012985</time>
+    <time>16.32686</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>31.555788</time>
+    <time>16.44693</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>31.7887669</time>
-    <mode>LARGE</mode>
-    <duration>0.8117279</duration>
+    <time>16.6151218</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
+  </SavedPotion>
+  <SavedPotion>
+    <direccion>0</direccion>
+    <time>16.7674789</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>32.62984</time>
-    <mode>LARGE</mode>
-    <duration>0.8988974</duration>
+    <time>17.248188</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>33.50559</time>
-    <mode>LARGE</mode>
-    <duration>0.8295349</duration>
+    <time>17.4683647</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>34.357563</time>
-    <mode>LARGE</mode>
-    <duration>0.857334554</duration>
+    <time>17.59122</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>35.25489</time>
+    <direccion>1</direccion>
+    <time>17.76153</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>35.6266136</time>
-    <mode>LARGE</mode>
-    <duration>0.1759001</duration>
+    <time>18.0388031</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>36.0332451</time>
-    <mode>LARGE</mode>
-    <duration>0.854374349</duration>
+    <time>18.135704</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
+  </SavedPotion>
+  <SavedPotion>
+    <direccion>1</direccion>
+    <time>18.2590942</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>36.9535</time>
+    <time>18.5064659</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>37.290905</time>
+    <time>18.8479958</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>37.709465</time>
-    <mode>LARGE</mode>
-    <duration>0.8533586</duration>
+    <time>19.1542664</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>38.6421242</time>
-    <mode>LARGE</mode>
-    <duration>0.7887135</duration>
+    <time>19.4649162</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>39.4818535</time>
-    <mode>LARGE</mode>
-    <duration>0.8939497</duration>
+    <time>19.5590229</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>40.3972359</time>
-    <mode>LARGE</mode>
-    <duration>0.771050334</duration>
+    <time>20.04405</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>41.1689529</time>
-    <mode>LARGE</mode>
-    <duration>0.716205657</duration>
+    <time>20.1888485</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>42.0835571</time>
+    <time>20.21026</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>42.45721</time>
+    <direccion>0</direccion>
+    <time>20.3674564</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>42.88606</time>
-    <mode>LARGE</mode>
-    <duration>0.7906279</duration>
+    <time>20.5121555</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>43.7989731</time>
+    <time>21.0053043</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>44.18292</time>
-    <mode>LARGE</mode>
-    <duration>0.152283221</duration>
+    <time>21.1293583</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>44.5931053</time>
-    <mode>LARGE</mode>
-    <duration>0.896347761</duration>
+    <time>21.3655262</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>45.5197</time>
-    <mode>LARGE</mode>
-    <duration>0.821816266</duration>
+    <time>21.649</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>46.3713379</time>
-    <mode>LARGE</mode>
-    <duration>0.810355246</duration>
+    <time>21.80609</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>47.2668839</time>
-    <mode>LARGE</mode>
-    <duration>0.7226018</duration>
+    <time>21.91432</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>48.1097946</time>
-    <mode>LARGE</mode>
-    <duration>0.7345571</duration>
+    <time>22.26205</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>48.9796829</time>
-    <mode>LARGE</mode>
-    <duration>0.215281069</duration>
+    <direccion>1</direccion>
+    <time>22.7512779</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>49.3404655</time>
-    <mode>LARGE</mode>
-    <duration>0.1552111</duration>
+    <direccion>0</direccion>
+    <time>23.09282</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>49.7987251</time>
-    <mode>LARGE</mode>
-    <duration>0.75596863</duration>
+    <time>23.2188683</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>50.6768837</time>
+    <direccion>1</direccion>
+    <time>23.60098</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>51.0679932</time>
+    <time>23.714325</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>51.4925537</time>
-    <mode>LARGE</mode>
-    <duration>0.7603307</duration>
+    <direccion>1</direccion>
+    <time>23.81216</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>52.4461136</time>
-    <mode>LARGE</mode>
-    <duration>0.6262644</duration>
+    <time>23.90123</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>53.2163849</time>
-    <mode>LARGE</mode>
-    <duration>0.8323937</duration>
+    <time>24.0226</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>54.1207428</time>
-    <mode>LARGE</mode>
-    <duration>0.6878105</duration>
+    <time>24.1329651</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>54.93413</time>
-    <mode>LARGE</mode>
-    <duration>0.760624468</duration>
+    <time>24.2222786</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>55.7895126</time>
-    <mode>LARGE</mode>
-    <duration>0.178701922</duration>
+    <direccion>1</direccion>
+    <time>24.59202</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>56.1947021</time>
+    <direccion>1</direccion>
+    <time>24.8244438</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>56.6338043</time>
-    <mode>LARGE</mode>
-    <duration>0.73884356</duration>
+    <time>25.00349</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>57.3921738</time>
+    <time>25.1965351</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>57.56007</time>
+    <time>25.36696</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>57.90556</time>
-    <mode>LARGE</mode>
-    <duration>0.180039167</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>58.32303</time>
-    <mode>LARGE</mode>
-    <duration>0.827788234</duration>
+    <time>25.5277157</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>59.26253</time>
-    <mode>LARGE</mode>
-    <duration>0.5901956</duration>
+    <time>25.9514771</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>60.0337524</time>
-    <mode>LARGE</mode>
-    <duration>0.7420168</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>60.918396</time>
-    <mode>LARGE</mode>
-    <duration>0.719761133</duration>
+    <time>26.490696</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>61.7507248</time>
-    <mode>LARGE</mode>
-    <duration>0.834853649</duration>
+    <time>26.667284</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>62.6731834</time>
+    <time>26.9005184</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>63.04854</time>
+    <time>27.03369</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>63.4823647</time>
-    <mode>LARGE</mode>
-    <duration>0.7678898</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>64.3022461</time>
+    <time>27.523428</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>64.46606</time>
+    <time>27.9477768</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>64.79709</time>
+    <time>28.3399868</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>65.21306</time>
-    <mode>LARGE</mode>
-    <duration>0.779606</duration>
+    <time>28.7947731</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>66.11445</time>
-    <mode>LARGE</mode>
-    <duration>0.653517365</duration>
+    <time>29.2227211</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>66.9368</time>
-    <mode>LARGE</mode>
-    <duration>0.7008733</duration>
+    <time>29.6751652</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>67.79091</time>
-    <mode>LARGE</mode>
-    <duration>0.6595155</duration>
+    <time>29.6568565</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>68.56846</time>
-    <mode>LARGE</mode>
-    <duration>0.746943533</duration>
+    <direccion>0</direccion>
+    <time>30.0810642</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>69.55753</time>
+    <time>30.101635</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>69.91764</time>
-    <mode>LARGE</mode>
-    <duration>0.1537528</duration>
+    <time>32.0065651</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
+  </SavedPotion>
+  <SavedPotion>
+    <direccion>0</direccion>
+    <time>33.1263962</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>70.35723</time>
-    <mode>LARGE</mode>
-    <duration>0.591607034</duration>
+    <time>33.2510834</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>71.11143</time>
+    <time>33.4374428</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>71.2738953</time>
+    <time>33.6022034</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>71.6675949</time>
+    <time>33.7703476</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>72.12248</time>
+    <time>33.9550667</time>
     <mode>LARGE</mode>
-    <duration>0.810218334</duration>
+    <duration>0.8351116</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>72.96719</time>
+    <time>34.9077568</time>
     <mode>LARGE</mode>
-    <duration>0.6289708</duration>
+    <duration>0.8302245</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>73.78272</time>
+    <time>35.82744</time>
     <mode>LARGE</mode>
-    <duration>0.725228965</duration>
+    <duration>0.808304548</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>74.63215</time>
+    <time>36.68564</time>
     <mode>LARGE</mode>
-    <duration>0.724329531</duration>
+    <duration>0.7371496</duration>
+  </SavedPotion>
+  <SavedPotion>
+    <direccion>1</direccion>
+    <time>37.6043625</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>75.44969</time>
-    <mode>LARGE</mode>
-    <duration>0.7931475</duration>
+    <time>37.9127235</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>76.3761749</time>
+    <time>38.0410652</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>76.76237</time>
+    <time>38.3980675</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>77.1965942</time>
-    <mode>LARGE</mode>
-    <duration>0.78898555</duration>
+    <direccion>1</direccion>
+    <time>38.5232468</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>78.07536</time>
+    <direccion>0</direccion>
+    <time>38.818943</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>78.49254</time>
+    <time>38.9360161</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>78.8662643</time>
-    <mode>LARGE</mode>
-    <duration>0.745998442</duration>
-  </SavedPotion>
-  <SavedPotion>
     <direccion>0</direccion>
-    <time>79.75931</time>
-    <mode>LARGE</mode>
-    <duration>0.7012874</duration>
+    <time>39.02931</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>80.57274</time>
-    <mode>LARGE</mode>
-    <duration>0.7440032</duration>
+    <direccion>0</direccion>
+    <time>39.20485</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>81.42847</time>
-    <mode>LARGE</mode>
-    <duration>0.725381136</duration>
+    <time>39.34773</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>82.27686</time>
-    <mode>LARGE</mode>
-    <duration>0.8119524</duration>
+    <time>39.85436</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>83.2541656</time>
-    <mode>LARGE</mode>
-    <duration>0.178001031</duration>
+    <direccion>1</direccion>
+    <time>40.2102623</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>83.64004</time>
-    <mode>LARGE</mode>
-    <duration>0.1521641</duration>
+    <direccion>1</direccion>
+    <time>40.349926</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>84.03745</time>
-    <mode>LARGE</mode>
-    <duration>0.6783175</duration>
+    <time>40.6539078</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>84.7685547</time>
+    <time>40.88675</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>84.93725</time>
+    <direccion>0</direccion>
+    <time>40.8443451</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>85.28586</time>
-    <mode>LARGE</mode>
-    <duration>0.154663369</duration>
+    <time>41.0719872</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>85.70822</time>
-    <mode>LARGE</mode>
-    <duration>0.877255261</duration>
+    <direccion>0</direccion>
+    <time>41.31204</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>86.69928</time>
+    <time>41.4573059</time>
     <mode>LARGE</mode>
-    <duration>0.613356531</duration>
+    <duration>0.733667</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>87.5045547</time>
+    <time>42.282032</time>
     <mode>LARGE</mode>
-    <duration>0.7825209</duration>
+    <duration>0.8270444</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>88.38348</time>
+    <time>43.14709</time>
     <mode>LARGE</mode>
-    <duration>0.7305418</duration>
+    <duration>0.9791641</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>89.1487</time>
+    <time>44.1475868</time>
     <mode>LARGE</mode>
-    <duration>0.745107055</duration>
+    <duration>0.805308342</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>90.03936</time>
+    <time>44.983242</time>
     <mode>LARGE</mode>
-    <duration>0.2000256</duration>
+    <duration>1.7042402</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>90.48294</time>
-    <mode>NORMAL</mode>
-    <duration>0</duration>
+    <time>46.78335</time>
+    <mode>LARGE</mode>
+    <duration>1.69398022</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>90.89745</time>
+    <direccion>1</direccion>
+    <time>48.73318</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>91.58601</time>
+    <direccion>0</direccion>
+    <time>49.03733</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>91.7314148</time>
+    <direccion>0</direccion>
+    <time>49.2002144</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>92.15324</time>
+    <time>49.5352478</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>92.5545654</time>
-    <mode>LARGE</mode>
-    <duration>0.6324449</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>93.28094</time>
+    <time>49.6802254</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>93.6396</time>
+    <time>49.79792</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>94.18476</time>
+    <time>49.92632</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>94.39757</time>
+    <time>50.1091423</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>95.21745</time>
-    <mode>LARGE</mode>
-    <duration>0.547616065</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>95.9096</time>
+    <time>50.44429</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>96.0572739</time>
+    <time>50.5703049</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>96.85462</time>
-    <mode>LARGE</mode>
-    <duration>0.177037492</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>97.28378</time>
-    <mode>LARGE</mode>
-    <duration>0.152269617</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>97.6891</time>
-    <mode>LARGE</mode>
-    <duration>0.6900971</duration>
+    <time>50.67421</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>98.49443</time>
+    <time>50.7908936</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>98.61543</time>
+    <time>50.9327354</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>98.99379</time>
-    <mode>LARGE</mode>
-    <duration>0.155170813</duration>
+    <time>51.1916542</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>99.4148254</time>
+    <time>51.29393</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>99.97227</time>
+    <time>51.41193</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>100.226074</time>
+    <time>51.5732574</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>100.379982</time>
+    <direccion>1</direccion>
+    <time>51.89804</time>
     <mode>LARGE</mode>
-    <duration>0.485486358</duration>
+    <duration>0.1692565</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>101.000854</time>
+    <time>52.37537</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>101.205742</time>
-    <mode>LARGE</mode>
-    <duration>0.495516479</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>102.130623</time>
-    <mode>LARGE</mode>
-    <duration>0.482028037</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>102.745888</time>
+    <direccion>1</direccion>
+    <time>52.6900024</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>102.8957</time>
-    <mode>LARGE</mode>
-    <duration>0.7121801</duration>
+    <time>52.7759056</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>103.765518</time>
-    <mode>LARGE</mode>
-    <duration>0.154817209</duration>
+    <time>53.0909576</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>104.153519</time>
-    <mode>LARGE</mode>
-    <duration>0.1518309</duration>
+    <time>53.2529869</time>
+    <mode>NORMAL</mode>
+    <duration>0.209984288</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>104.561325</time>
-    <mode>LARGE</mode>
-    <duration>0.6328763</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>105.33329</time>
+    <time>53.4625</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>105.465034</time>
+    <direccion>0</direccion>
+    <time>53.59852</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>105.83181</time>
+    <direccion>0</direccion>
+    <time>53.7489</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>106.283371</time>
-    <mode>LARGE</mode>
-    <duration>0.645633042</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>107.054955</time>
+    <time>54.1359024</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>107.27491</time>
-    <mode>LARGE</mode>
-    <duration>0.5035371</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>107.931404</time>
+    <time>54.36854</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>108.151466</time>
-    <mode>LARGE</mode>
-    <duration>0.542502165</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>108.906288</time>
-    <mode>LARGE</mode>
-    <duration>0.535327733</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>109.596657</time>
+    <time>54.4875259</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>109.766876</time>
-    <mode>LARGE</mode>
-    <duration>0.712524533</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>110.607979</time>
-    <mode>LARGE</mode>
-    <duration>0.202157155</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>111.009682</time>
-    <mode>LARGE</mode>
-    <duration>0.340139359</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>111.495811</time>
-    <mode>LARGE</mode>
-    <duration>0.5857826</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>112.104225</time>
+    <time>54.5796928</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>112.35482</time>
+    <time>54.8864</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>112.658043</time>
-    <mode>LARGE</mode>
-    <duration>0.6809184</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>114.090446</time>
-    <mode>LARGE</mode>
-    <duration>0.546647251</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>114.742607</time>
+    <time>55.0358276</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>114.935867</time>
-    <mode>LARGE</mode>
-    <duration>0.537095249</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>115.604614</time>
+    <time>55.21657</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>115.79837</time>
-    <mode>LARGE</mode>
-    <duration>0.5452389</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>116.46</time>
+    <direccion>1</direccion>
+    <time>55.21657</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>116.644722</time>
-    <mode>LARGE</mode>
-    <duration>0.671839833</duration>
+    <direccion>1</direccion>
+    <time>55.6344337</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>117.541092</time>
-    <mode>LARGE</mode>
-    <duration>0.2601583</duration>
+    <time>56.04862</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>117.956322</time>
-    <mode>LARGE</mode>
-    <duration>0.197436213</duration>
+    <time>56.3456726</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>118.317352</time>
-    <mode>LARGE</mode>
-    <duration>0.676656067</duration>
+    <time>56.4528275</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>119.032082</time>
+    <direccion>1</direccion>
+    <time>56.7993355</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>119.20723</time>
+    <time>56.9289055</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>119.569405</time>
-    <mode>LARGE</mode>
-    <duration>0.2848476</duration>
+    <time>57.0222054</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>119.987267</time>
-    <mode>LARGE</mode>
-    <duration>0.6303685</duration>
+    <time>57.1426659</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>120.742844</time>
+    <time>57.2373619</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>120.89756</time>
-    <mode>LARGE</mode>
-    <duration>0.584923863</duration>
+    <time>57.3855934</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>121.620049</time>
+    <time>57.790535</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>121.800743</time>
-    <mode>LARGE</mode>
-    <duration>0.5879204</duration>
+    <time>57.9629173</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>122.516838</time>
+    <time>58.14066</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>122.672462</time>
-    <mode>LARGE</mode>
-    <duration>0.5401112</duration>
+    <direccion>0</direccion>
+    <time>58.1219444</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>123.299126</time>
+    <time>58.359726</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>123.4863</time>
-    <mode>LARGE</mode>
-    <duration>0.8799912</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>124.319405</time>
-    <mode>LARGE</mode>
-    <duration>0.200791955</duration>
+    <time>58.6213379</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>124.663895</time>
-    <mode>LARGE</mode>
-    <duration>0.17944397</duration>
+    <time>58.75948</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>125.120613</time>
-    <mode>LARGE</mode>
-    <duration>0.6331588</duration>
+    <time>58.844677</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>125.82206</time>
+    <time>59.0089531</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>125.968269</time>
-    <mode>LARGE</mode>
-    <duration>0.155706033</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>126.5096</time>
-    <mode>LARGE</mode>
-    <duration>0.265643626</duration>
+    <time>59.2818146</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>126.793243</time>
-    <mode>LARGE</mode>
-    <duration>0.351695418</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>127.164467</time>
-    <mode>LARGE</mode>
-    <duration>0.369261235</duration>
+    <time>59.77185</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>127.623894</time>
+    <time>60.0901337</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>127.774109</time>
-    <mode>LARGE</mode>
-    <duration>0.6124292</duration>
+    <direccion>0</direccion>
+    <time>60.18265</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>128.483261</time>
+    <time>60.494957</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>128.625092</time>
-    <mode>LARGE</mode>
-    <duration>0.6304621</duration>
+    <time>60.64122</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>129.344437</time>
+    <direccion>0</direccion>
+    <time>60.76953</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>129.511917</time>
-    <mode>LARGE</mode>
-    <duration>0.596457541</duration>
+    <time>60.8558</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>130.214127</time>
+    <time>61.0558128</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>130.3853</time>
-    <mode>LARGE</mode>
-    <duration>0.654308558</duration>
+    <time>61.212326</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>131.216278</time>
+    <time>61.567997</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>131.5919</time>
-    <mode>LARGE</mode>
-    <duration>0.17504932</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>132.0014</time>
-    <mode>LARGE</mode>
-    <duration>0.658193052</duration>
+    <time>61.80661</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>132.7822</time>
-    <mode>LARGE</mode>
-    <duration>0.218049586</duration>
+    <time>61.9339256</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>133.069626</time>
-    <mode>LARGE</mode>
-    <duration>0.151774719</duration>
+    <time>62.3044472</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>133.378174</time>
-    <mode>LARGE</mode>
-    <duration>0.305624664</duration>
+    <time>62.3481674</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>133.72403</time>
-    <mode>LARGE</mode>
-    <duration>0.6487443</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>134.4281</time>
+    <time>62.5509377</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>134.604126</time>
+    <time>62.66008</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>134.722656</time>
-    <mode>LARGE</mode>
-    <duration>0.5051332</duration>
+    <time>62.9811935</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>135.34877</time>
+    <time>63.4826965</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>135.500626</time>
-    <mode>LARGE</mode>
-    <duration>0.6003679</duration>
+    <direccion>0</direccion>
+    <time>63.7791176</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>136.206711</time>
+    <time>63.90203</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>136.389954</time>
+    <time>64.24896</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>136.542831</time>
-    <mode>LARGE</mode>
-    <duration>0.514501452</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>137.035934</time>
+    <time>64.39861</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>137.202835</time>
-    <mode>LARGE</mode>
-    <duration>0.867879331</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>138.103378</time>
-    <mode>LARGE</mode>
-    <duration>0.1512322</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>138.479156</time>
+    <time>64.50593</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>138.8762</time>
-    <mode>LARGE</mode>
-    <duration>0.6555334</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>139.536774</time>
+    <time>64.6295853</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>139.704544</time>
+    <time>64.75333</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>140.038879</time>
-    <mode>LARGE</mode>
-    <duration>0.6141934</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>140.682678</time>
-    <mode>LARGE</mode>
-    <duration>0.175988436</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>141.045258</time>
-    <mode>LARGE</mode>
-    <duration>0.151738018</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>141.487671</time>
-    <mode>LARGE</mode>
-    <duration>0.6327799</duration>
+    <time>64.92603</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>142.259979</time>
-    <mode>LARGE</mode>
-    <duration>0.9643866</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>143.224976</time>
-    <mode>LARGE</mode>
-    <duration>0.9458718</duration>
+    <time>65.28401</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>144.082</time>
-    <mode>LARGE</mode>
-    <duration>0.70142585</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>144.959808</time>
-    <mode>LARGE</mode>
-    <duration>0.154738024</duration>
+    <time>65.4307861</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>145.334564</time>
-    <mode>LARGE</mode>
-    <duration>0.151038513</duration>
+    <time>65.5923</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>145.7676</time>
-    <mode>LARGE</mode>
-    <duration>0.6373439</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>146.426971</time>
+    <time>65.7239151</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>146.61618</time>
+    <time>65.96294</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>147.009888</time>
-    <mode>LARGE</mode>
-    <duration>0.204477578</duration>
+    <time>66.06599</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>147.421692</time>
-    <mode>LARGE</mode>
-    <duration>0.7372033</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>148.210159</time>
+    <time>66.2243652</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>148.382584</time>
+    <time>66.7416458</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>148.981033</time>
-    <mode>LARGE</mode>
-    <duration>0.17677702</duration>
+    <time>67.1650162</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>149.222992</time>
-    <mode>LARGE</mode>
-    <duration>0.372138172</duration>
+    <time>67.46545</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>150.034378</time>
-    <mode>LARGE</mode>
-    <duration>0.510042548</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>150.727676</time>
+    <time>67.57099</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>150.894485</time>
-    <mode>LARGE</mode>
-    <duration>0.6848734</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>151.789078</time>
-    <mode>LARGE</mode>
-    <duration>0.151797116</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>152.109665</time>
-    <mode>LARGE</mode>
-    <duration>0.1520991</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>152.537155</time>
-    <mode>LARGE</mode>
-    <duration>0.7383292</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>153.298019</time>
+    <time>67.8996</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>153.514328</time>
-    <mode>LARGE</mode>
-    <duration>0.4500468</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>154.010254</time>
-    <mode>LARGE</mode>
-    <duration>0.5489914</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>154.634888</time>
-    <mode>LARGE</mode>
-    <duration>0.351337224</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>155.088608</time>
+    <time>68.07781</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>155.282776</time>
-    <mode>LARGE</mode>
-    <duration>0.5646332</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>155.933289</time>
+    <time>68.14044</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>156.097168</time>
-    <mode>LARGE</mode>
-    <duration>0.698648036</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>156.894638</time>
-    <mode>LARGE</mode>
-    <duration>0.501118541</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>157.5927</time>
+    <time>68.32131</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>157.772018</time>
-    <mode>LARGE</mode>
-    <duration>0.6787171</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>158.682709</time>
+    <time>68.45533</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>159.064667</time>
-    <mode>LARGE</mode>
-    <duration>0.1557933</duration>
+    <time>68.92559</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>159.489655</time>
-    <mode>LARGE</mode>
-    <duration>0.7144576</duration>
+    <time>69.14164</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>160.180542</time>
+    <direccion>1</direccion>
+    <time>69.28708</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>160.3746</time>
-    <mode>LARGE</mode>
-    <duration>0.215396509</duration>
+    <time>69.63896</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>160.636551</time>
-    <mode>LARGE</mode>
-    <duration>0.472135633</duration>
+    <time>69.8194962</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>161.127258</time>
-    <mode>LARGE</mode>
-    <duration>0.6810679</duration>
+    <time>69.94917</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>161.8469</time>
+    <time>70.30447</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>162.0314</time>
-    <mode>LARGE</mode>
-    <duration>0.588082731</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>162.685364</time>
+    <time>70.82066</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>162.888443</time>
-    <mode>LARGE</mode>
-    <duration>0.701634645</duration>
+    <time>71.16022</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>163.7018</time>
-    <mode>LARGE</mode>
-    <duration>0.6807956</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>164.416656</time>
+    <time>71.2605</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>164.62381</time>
-    <mode>LARGE</mode>
-    <duration>0.767002642</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>165.473114</time>
-    <mode>LARGE</mode>
-    <duration>0.304090351</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>165.920044</time>
-    <mode>LARGE</mode>
-    <duration>0.176381126</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>167.08078</time>
+    <time>71.62382</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>166.296844</time>
-    <mode>LARGE</mode>
-    <duration>1.30723155</duration>
+    <time>71.7713242</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>167.275513</time>
-    <mode>LARGE</mode>
-    <duration>0.896819949</duration>
+    <time>71.91844</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>168.127792</time>
-    <mode>LARGE</mode>
-    <duration>0.5474479</duration>
+    <time>72.02074</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>168.5658</time>
-    <mode>LARGE</mode>
-    <duration>0.808253169</duration>
+    <time>72.12212</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>169.660126</time>
+    <time>72.28174</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>168.980743</time>
-    <mode>LARGE</mode>
-    <duration>1.053768</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>169.83577</time>
-    <mode>LARGE</mode>
-    <duration>0.754788637</duration>
+    <time>72.6848145</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>170.782532</time>
-    <mode>LARGE</mode>
-    <duration>0.346850842</duration>
+    <time>72.8039551</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>171.3252</time>
+    <time>72.96446</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>170.544479</time>
-    <mode>LARGE</mode>
-    <duration>1.448305</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>172.410019</time>
+    <time>73.1037445</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>171.542938</time>
-    <mode>LARGE</mode>
-    <duration>1.35073316</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>172.827515</time>
-    <mode>LARGE</mode>
-    <duration>0.5858607</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>173.567108</time>
+    <time>73.3807755</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>173.976929</time>
+    <time>73.53773</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>173.2188</time>
-    <mode>LARGE</mode>
-    <duration>1.12989032</duration>
+    <time>73.6510544</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>174.12883</time>
-    <mode>LARGE</mode>
-    <duration>0.547581</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>174.608612</time>
-    <mode>LARGE</mode>
-    <duration>0.8325887</duration>
+    <time>74.0642853</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>174.9592</time>
-    <mode>LARGE</mode>
-    <duration>0.7526261</duration>
+    <time>74.57728</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>175.641968</time>
+    <time>74.88848</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>175.816147</time>
-    <mode>LARGE</mode>
-    <duration>0.6504335</duration>
+    <direccion>1</direccion>
+    <time>75.03315</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>176.497574</time>
+    <time>75.34262</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>176.647873</time>
-    <mode>LARGE</mode>
-    <duration>0.7158923</duration>
+    <time>75.52687</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>177.384033</time>
+    <time>75.7065048</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>177.579681</time>
-    <mode>LARGE</mode>
-    <duration>0.6462506</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>178.273438</time>
+    <time>75.88175</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>178.42395</time>
-    <mode>LARGE</mode>
-    <duration>0.7286909</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>179.32164</time>
-    <mode>LARGE</mode>
-    <duration>0.153706178</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>179.594009</time>
-    <mode>LARGE</mode>
-    <duration>0.171314284</duration>
+    <time>76.2794647</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>180.016434</time>
-    <mode>LARGE</mode>
-    <duration>0.744101346</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>180.82016</time>
+    <time>76.5381241</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>180.984558</time>
-    <mode>LARGE</mode>
-    <duration>0.390777647</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>181.4399</time>
-    <mode>LARGE</mode>
-    <duration>0.503004134</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>0</direccion>
-    <time>182.115692</time>
-    <mode>LARGE</mode>
-    <duration>0.194909722</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>0</direccion>
-    <time>182.420731</time>
+    <direccion>1</direccion>
+    <time>76.80258</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>182.5969</time>
+    <time>77.02571</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>
-    <time>182.7745</time>
-    <mode>LARGE</mode>
-    <duration>0.5030752</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>183.342636</time>
+    <time>77.16623</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>183.5128</time>
-    <mode>LARGE</mode>
-    <duration>0.653185546</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
-    <time>184.264862</time>
+    <time>77.40303</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>184.481186</time>
-    <mode>LARGE</mode>
-    <duration>0.481621772</duration>
   </SavedPotion>
   <SavedPotion>
-    <direccion>1</direccion>
-    <time>185.081085</time>
+    <direccion>0</direccion>
+    <time>77.805954</time>
     <mode>NORMAL</mode>
     <duration>0</duration>
-  </SavedPotion>
-  <SavedPotion>
-    <direccion>1</direccion>
-    <time>185.257309</time>
-    <mode>LARGE</mode>
-    <duration>0.572917938</duration>
   </SavedPotion>
 </ArrayOfSavedPotion>

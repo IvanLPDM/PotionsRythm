@@ -728,12 +728,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab03a3c144b03374ebe10b1faf37a37e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Save: {fileID: 1944910661}
   PotionPrefab: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
+  PotionLarge: {fileID: 448763788}
   timeTranscurred: 0
   PotionsInGameL: []
   PotionsInGameR: []
   Potions: []
   timing: []
+  Mode: 
+  LargeInGameL: []
+  LargeInGameR: []
 --- !u!4 &109498737
 Transform:
   m_ObjectHideFlags: 0
@@ -1288,7 +1293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &448763789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1303,6 +1308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FileName: Cancion2
   PotionsGame: {fileID: 109498736}
+  potionsType: 0
 --- !u!4 &448763790
 Transform:
   m_ObjectHideFlags: 0
@@ -13245,6 +13251,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2da17817327aa9f45b8490f99c33087c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MantenidoLeft: 0
+  MantenidoRight: 0
+  timePulsedL: 0
+  totalTimeL: 0
+  Save: {fileID: 0}
+  timePulsedR: 0
+  totalTimeR: 0
 --- !u!4 &1676806253
 Transform:
   m_ObjectHideFlags: 0
@@ -23226,7 +23239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1944910662
 MonoBehaviour:
   m_ObjectHideFlags: 0
