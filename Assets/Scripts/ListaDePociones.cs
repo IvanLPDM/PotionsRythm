@@ -5,18 +5,30 @@ using UnityEngine;
 
 public class ListaDePociones : MonoBehaviour
 {
+    public GameObject Save;
+
     public GameObject PotionPrefab;
+    public GameObject PotionLarge;
+
     private float time = 0;
     public float timeTranscurred = 0;
 
     public List<GameObject> PotionsInGameL;
     public List<GameObject> PotionsInGameR;
     public List<GameObject> Potions;
+
     public List<float> timing;
+    public List<PotionsType> Mode;
+
+    public List<float> LargeInGameL;
+    public List<float> LargeInGameR;
 
     void Start()
     {
-        GameObject.Find("LoadLevel").SendMessage("Load");
+        if (!Save.activeInHierarchy)
+        {
+            GameObject.Find("LoadLevel").SendMessage("Load");
+        }
     }
 
     void Update()
@@ -24,7 +36,6 @@ public class ListaDePociones : MonoBehaviour
 
         time += 1 * Time.deltaTime;
         
-
         //Aqui entraria la cancion y le diria cuando puede generar pociones
         if(timing.Count != 0)
         {
@@ -34,7 +45,6 @@ public class ListaDePociones : MonoBehaviour
                 timing.RemoveAt(0);
             }
         }
-
         RemoveGame();
     }
 
@@ -42,14 +52,29 @@ public class ListaDePociones : MonoBehaviour
     {
         if (Potions.Count != 0)
         {
-            Potions[0].SetActive(true);
-            PotionPrefab = Potions[0];
+            if(Mode[0] == PotionsType.NORMAL)
+            {
+                Potions[0].SetActive(true);
+                PotionPrefab = Potions[0];
 
-            if(PotionPrefab.transform.position.x == -0.77f)
-                PotionsInGameL.Add(PotionPrefab);
-            else if (PotionPrefab.transform.position.x == 0.77f)
-                PotionsInGameR.Add(PotionPrefab);
+                if (PotionPrefab.transform.position.x == -0.77f)
+                    PotionsInGameL.Add(PotionPrefab);
+                else if (PotionPrefab.transform.position.x == 0.77f)
+                    PotionsInGameR.Add(PotionPrefab);
+            }
+            else if(Mode[0] == PotionsType.LARGE)
+            {
+                Potions[0].SetActive(true);                
+                PotionLarge = Potions[0];
 
+
+                if (PotionLarge.transform.position.x == -0.77f)
+                    PotionsInGameL.Add(PotionLarge);
+                else if (PotionLarge.transform.position.x == 0.77f)
+                    PotionsInGameR.Add(PotionLarge);
+            }
+
+            Mode.RemoveAt(0);
             Potions.RemoveAt(0);
         }
     }
@@ -72,4 +97,36 @@ public class ListaDePociones : MonoBehaviour
             }
         }
     }
+
+    public void DeleteInfo(int direccion)
+    {
+        if(direccion == 1)
+        {
+            LargeInGameR.RemoveAt(0);
+        }
+        else if(direccion == 2)
+        {
+            LargeInGameL.RemoveAt(0);
+        }
+
+    }
+
+    public void LargeAntenaL()
+    {
+        if (LargeInGameL[0] > 0)
+        {
+            PotionsInGameL[0].SendMessage("Stay");
+        }
+    }
+
+    public void LargeAntenaR()
+    {
+        if(LargeInGameR[0] > 0)
+        {
+            Debug.Log("Bien");
+            PotionsInGameR[0].SendMessage("Stay");
+        }
+    }
+    
+    
 }

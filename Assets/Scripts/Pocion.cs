@@ -46,6 +46,16 @@ public class Pocion : MonoBehaviour
         if (transform.position.y < -3.5)
         {
             GameObject.Find("ScoreManager").SendMessage("BadTouch");
+
+            if (transform.position.x == 0.77f)
+            {
+                GameObject.Find("CreadorPociones").SendMessage("DeleteInfo", 1);
+            }
+            else if (transform.position.x == -0.77f)
+            {
+                GameObject.Find("CreadorPociones").SendMessage("DeleteInfo", 2);
+            }
+
             Camera.main.gameObject.GetComponent<Shake>().StartShake();
             Destroy(gameObject);
         }

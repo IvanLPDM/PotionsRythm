@@ -10,6 +10,7 @@ public class LoadSong : MonoBehaviour
     public string FileName;
     public ListaDePociones PotionsGame;
 
+    public PotionsType potionsType;
 
     public void Load()
     {
@@ -26,10 +27,37 @@ public class LoadSong : MonoBehaviour
             for (int i = 0; i < data.Count; i++)
             {
                 //Añadir lo guardado en la lista de pociones
-                if (data[i].direccion == 1)
-                    PotionsGame.Potions.Add(Instantiate(PotionsGame.PotionPrefab, new Vector2(0.77f, 3.8f), Quaternion.identity));
-                else
-                    PotionsGame.Potions.Add(Instantiate(PotionsGame.PotionPrefab, new Vector2(-0.77f, 3.8f), Quaternion.identity));
+                if(data[i].mode == PotionsType.NORMAL)
+                {
+                    if (data[i].direccion == 1) //Left
+                    {
+                        PotionsGame.Potions.Add(Instantiate(PotionsGame.PotionPrefab, new Vector2(0.77f, 3.8f), Quaternion.identity));
+                        PotionsGame.LargeInGameR.Add(data[i].duration);
+                    }
+                    else //Right
+                    {
+                        PotionsGame.Potions.Add(Instantiate(PotionsGame.PotionPrefab, new Vector2(-0.77f, 3.8f), Quaternion.identity));
+                        PotionsGame.LargeInGameL.Add(data[i].duration);
+                    }
+                }
+                else if (data[i].mode == PotionsType.LARGE)
+                {
+                    GameObject.Find("PocionLarga").SendMessage("ChangeLarge", data[i].duration);
+
+                    if (data[i].direccion == 1) //Right
+                    {
+                        PotionsGame.Potions.Add(Instantiate(PotionsGame.PotionLarge, new Vector2(0.77f, 3.8f), Quaternion.identity));
+                        PotionsGame.LargeInGameR.Add(data[i].duration);
+                    }
+                    else //Left
+                    {
+                        PotionsGame.Potions.Add(Instantiate(PotionsGame.PotionLarge, new Vector2(-0.77f, 3.8f), Quaternion.identity));
+                        PotionsGame.LargeInGameL.Add(data[i].duration);
+                    }
+                }
+
+                //Guardar en una lista como de largas son si son mantenida
+                PotionsGame.Mode.Add(data[i].mode);
 
                 PotionsGame.timing.Add(data[i].time);
                 PotionsGame.Potions[i].SetActive(false);
