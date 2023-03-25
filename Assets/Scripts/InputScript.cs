@@ -17,16 +17,6 @@ public class InputScript : MonoBehaviour
     public float timePulsedR;
     public float totalTimeR;
 
-    void Start()
-    {
-        timePulsedL = 0.0f;
-        totalTimeL = 0.0f;
-
-        MantenidoRight = false;
-        MantenidoLeft = false;
-    }
-
-
     private Vector3 scalechange;
     Vector3 originalscale;
 
@@ -45,13 +35,19 @@ public class InputScript : MonoBehaviour
 
     public Score scorecs;
 
-    private void Start()
-    {
+    void Start()
+    {
+        timePulsedL = 0.0f;
+        totalTimeL = 0.0f;
+
+        MantenidoRight = false;
+        MantenidoLeft = false;
+
         scalechange = new Vector3(0.01f, 0.01f, 0.01f);
 
         originalscale = new Vector3(0.75f, 0.75f, 0.75f);
         transform.localScale = originalscale;
-        transform1.localScale = originalscale;
+        transform1.localScale = originalscale;
     }
 
     void Update()
@@ -80,47 +76,138 @@ public class InputScript : MonoBehaviour
 
         }
 
+        if (transform.localScale.y > 1f)
+
+        {
+
+            transform.localScale = new Vector3(1f, 1f, 1f);
+
+        }
+        if (transform1.localScale.y > 1f)
+
+        {
+
+            transform1.localScale = new Vector3(1f, 1f, 1f);
+
+        }
+
+        //luces ventanas
+        light1L.intensity -= 1.75f * Time.deltaTime;
+        light2L.intensity -= 1.75f * Time.deltaTime;
+        light3L.intensity -= 1.75f * Time.deltaTime;
+        light4L.intensity -= 1.75f * Time.deltaTime;
+
+
+
+        light1R.intensity -= 1.75f * Time.deltaTime;
+        light2R.intensity -= 1.75f * Time.deltaTime;
+        light3R.intensity -= 1.75f * Time.deltaTime;
+        light4R.intensity -= 1.75f * Time.deltaTime;
+
+        if (light1L.intensity <= 0f && light2L.intensity <= 0f && light3L.intensity <= 0f && light4L.intensity <= 0f)
+
+        {
+
+            light1L.intensity = 0f;
+
+            light2L.intensity = 0f;
+
+            light3L.intensity = 0f;
+
+            light4L.intensity = 0f;
+
+        }
+
+        if (light1R.intensity <= 0f && light2R.intensity <= 0f && light3R.intensity <= 0f && light4R.intensity <= 0f)
+
+        {
+
+            light1R.intensity = 0f;
+
+            light2R.intensity = 0f;
+
+            light3R.intensity = 0f;
+
+            light4R.intensity = 0f;
+
+        }
+
+        if (light1L.intensity < 0.4 && light2L.intensity < 0.4f && light3L.intensity < 0.4f && light4L.intensity < 0.4f && scorecs.miss == false)
+
+        {
+
+            light1L.intensity += 1.75f * Time.deltaTime;
+
+            light2L.intensity += 1.75f * Time.deltaTime;
+
+            light3L.intensity += 1.75f * Time.deltaTime;
+
+            light4L.intensity += 1.75f * Time.deltaTime;
+
+        }
+
+        if (light1R.intensity < 0.4 && light2R.intensity < 0.4f && light3R.intensity < 0.4f && light4R.intensity < 0.4f && scorecs.miss == false)
+
+        {
+
+            light1R.intensity += 1.75f * Time.deltaTime;
+
+            light2R.intensity += 1.75f * Time.deltaTime;
+
+            light3R.intensity += 1.75f * Time.deltaTime;
+
+            light4R.intensity += 1.75f * Time.deltaTime;
+
+        }
+
         if (!Save.activeInHierarchy)
         {
+
+            transform.localScale += scalechange;
+            transform1.localScale += scalechange;
             //Pulsaci�n normal Left
             if (Input.GetKeyDown(KeyCode.A)) //Left
             {
                 GameObject.Find("GameManager").SendMessage("CheckCollisionLeft");
+
+                transform.localScale = originalscale;
+
+                if (scorecs.miss == false)
+
+                {
+
+                    light1L.intensity = 0.9f;
+
+                    light2L.intensity = 0.9f;
+
+                    light3L.intensity = 0.9f;
+
+                    light4L.intensity = 0.9f;
+
+                }
             }
-        transform.localScale += scalechange;
-        transform1.localScale += scalechange;
+
 
             if (Input.GetKeyDown(KeyCode.D)) //Right
             {
                 GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
+
+                transform1.localScale = originalscale;
+
+                if (scorecs.miss == false)
+
+                {
+
+                    light1R.intensity = 0.9f;
+
+                    light2R.intensity = 0.9f;
+
+                    light3R.intensity = 0.9f;
+
+                    light4R.intensity = 0.9f;
+
+                }
             }
-
-
-            //if (MantenidoRight == true)
-            //{
-            //    //Mantenida Right
-            //    if (Input.GetKey(KeyCode.D)) //Right
-            //    {
-            //        //Empezar a contar
-            //        GameObject.Find("CreadorPociones").SendMessage("LargeAntenaR");
-            //        timePulsedR += 1 * Time.deltaTime;
-            //    }
-            //    if (Input.GetKeyUp(KeyCode.D)) //Right
-            //    {
-            //        //Dejar de contar
-            //        totalTimeR = timePulsedR;
-
-            //        if (totalTimeR >= 1.0f)
-            //        {
-            //            MantenidoRight = false;
-            //            totalTimeR = timePulsedR;
-            //            //Llamar funcion de mantenida
-            //            GameObject.Find("GameManager").SendMessage("CheckCollisionMantRight", totalTimeR);
-            //        }
-
-            //        timePulsedR = 0.0f;
-            //    }
-            //}
 
             if (MantenidoRight == true)
             {
@@ -172,88 +259,8 @@ public class InputScript : MonoBehaviour
                     totalTimeL = 0.0f;
                 }
             }
-        if (transform.localScale.y > 1f)
-        {
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        if (transform1.localScale.y > 1f)
-        {
-            transform1.localScale = new Vector3(1f, 1f, 1f);
-        }
-
-        //luces ventanas
-        light1L.intensity -= 1.75f * Time.deltaTime;
-        light2L.intensity -= 1.75f * Time.deltaTime;
-        light3L.intensity -= 1.75f * Time.deltaTime;
-        light4L.intensity -= 1.75f * Time.deltaTime;
-
-        light1R.intensity -= 1.75f * Time.deltaTime;
-        light2R.intensity -= 1.75f * Time.deltaTime;
-        light3R.intensity -= 1.75f * Time.deltaTime;
-        light4R.intensity -= 1.75f * Time.deltaTime;
-
-        if(light1L.intensity <= 0f && light2L.intensity <= 0f && light3L.intensity <= 0f && light4L.intensity <= 0f)
-        {
-            light1L.intensity = 0f;
-            light2L.intensity = 0f;
-            light3L.intensity = 0f;
-            light4L.intensity = 0f;
-        }
-
-        if (light1R.intensity <= 0f && light2R.intensity <= 0f && light3R.intensity <= 0f && light4R.intensity <= 0f)
-        {
-            light1R.intensity = 0f;
-            light2R.intensity = 0f;
-            light3R.intensity = 0f;
-            light4R.intensity = 0f;
-        }
-
-        if (light1L.intensity < 0.4 && light2L.intensity < 0.4f && light3L.intensity < 0.4f && light4L.intensity < 0.4f && scorecs.miss == false)
-        {
-            light1L.intensity += 1.75f * Time.deltaTime;
-            light2L.intensity += 1.75f * Time.deltaTime;
-            light3L.intensity += 1.75f * Time.deltaTime;
-            light4L.intensity += 1.75f * Time.deltaTime;
-        }
-
-        if (light1R.intensity < 0.4 && light2R.intensity < 0.4f && light3R.intensity < 0.4f && light4R.intensity < 0.4f && scorecs.miss == false)
-        {
-            light1R.intensity += 1.75f * Time.deltaTime;
-            light2R.intensity += 1.75f * Time.deltaTime;
-            light3R.intensity += 1.75f * Time.deltaTime;
-            light4R.intensity += 1.75f * Time.deltaTime;
-        }
-
-
-        if (Input.GetKeyDown(KeyCode.A)) //Left
-        {
-            GameObject.Find("GameManager").SendMessage("CheckCollisionLeft");
-            transform.localScale = originalscale;
-
-            if(scorecs.miss == false)
-            {
-                light1L.intensity = 0.9f;
-                light2L.intensity = 0.9f;
-                light3L.intensity = 0.9f;
-                light4L.intensity = 0.9f;
-            }
         }
     }
-        
-        
-        if (Input.GetKeyDown(KeyCode.D)) //Right
-        {
-            GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
-            transform1.localScale = originalscale;
-
-            if (scorecs.miss == false)
-            {
-                light1R.intensity = 0.9f;
-                light2R.intensity = 0.9f;
-                light3R.intensity = 0.9f;
-                light4R.intensity = 0.9f;
-            }
-        }
 
     public void FMantenidoLeft()
     {
@@ -264,7 +271,5 @@ public class InputScript : MonoBehaviour
     {
         MantenidoRight = true;
     }
-
-
 
 }
