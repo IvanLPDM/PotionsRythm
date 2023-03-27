@@ -8,7 +8,7 @@ public class GameOverScreen : MonoBehaviour
 {
 
     public TextMeshProUGUI scoretext;
-    public void setup(int score)
+    public void setup(float score)
     {
         gameObject.SetActive(true);
         scoretext.text = score.ToString() + " points";
