@@ -216,6 +216,8 @@ public class InputScript : MonoBehaviour
                 {
                     //Empezar a contar
                     timePulsedR += 1 * Time.deltaTime;
+                    //if (timePulsedR > LoQueDuraLaNota)
+                    //    break;
                     GameObject.Find("CreadorPociones").SendMessage("LargeAntenaR");
                 }
                 if (Input.GetKeyUp(KeyCode.D)) //Right
