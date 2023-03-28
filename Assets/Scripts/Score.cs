@@ -47,7 +47,6 @@ public class Score : MonoBehaviour
     public healthBar healthBar;
     public multiplierBar multiplierbar;
 
-    // Start is called before the first frame update
     void Start()
     {
         ppVolume.profile.TryGet<Bloom>(out bloom);
