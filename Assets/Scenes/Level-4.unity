@@ -2494,7 +2494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402707a18a380ed4e9f0d94dc798605c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: Cancion japonesa buen Timing
+  FileName: shogunSong
   PotionsGame: {fileID: 109498736}
   potionsType: 0
 --- !u!4 &448763790
@@ -26571,6 +26571,7 @@ MonoBehaviour:
   leveldamage: 3
   levelHealing: 10
   levelMiss: 20
+  save: {fileID: 1944910661}
 --- !u!114 &1722318516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37035,7 +37036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4fd1beeaabbcfd4aafa403c2c060bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: notasLargasLevel1
+  FileName: shogunSong
   PotionsGame: {fileID: 109498736}
 --- !u!4 &1944910663
 Transform:

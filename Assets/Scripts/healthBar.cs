@@ -13,6 +13,8 @@ public class healthBar : MonoBehaviour
     public float levelHealing;
     public float levelMiss;
 
+    public GameObject save;
+
     float lastNoteState;
 
     private void Start()
@@ -23,7 +25,11 @@ public class healthBar : MonoBehaviour
     private void Update()
     {
 
-        takeDamage(leveldamage);
+        if (!save.activeInHierarchy)
+        {
+            takeDamage(leveldamage);
+        }
+        
 
         if (currentHealth >= maxHealth)
         {
