@@ -15,7 +15,7 @@ public class MusicManager : MonoBehaviour
     public static float BeatProximity { get; private set; }
     public int BPM;
     private float beatTime;
-    public Transform test;
+    public Transform[] test;
 
     // Start is called before the first frame update
     IEnumerator Start()
@@ -35,6 +35,10 @@ public class MusicManager : MonoBehaviour
         //beatproximity: closer to 0 = closer to beat;
         //beatproximity: closer to 1 = further from beat;
         BeatProximity = Mathf.Sqrt(Mathf.Abs(Mathf.Sin(Mathf.Deg2Rad * (90f + 180f * (AdjustedSongTime / beatTime)))));
-        test.transform.localScale = Vector3.one * (0.6f + 0.2f * BeatProximity);
+
+        for(int i = 0; i < test.Length; i++)
+        {
+            test[i].transform.localScale = Vector3.one * (0.6f + 0.2f * BeatProximity);
+        }
     }
 }
