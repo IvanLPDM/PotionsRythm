@@ -20,6 +20,8 @@ public class levelScroll : MonoBehaviour
 
     public Color japanese;
     public Color medieval;
+
+    int world = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +40,7 @@ public class levelScroll : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D) && world < 1)
         {
             original.x -= 10f;
 
@@ -51,9 +53,11 @@ public class levelScroll : MonoBehaviour
             var tint = bloom.tint;
             tint.value = medieval;
             bloom.tint = tint;
+
+            world++;
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) && world > 0)
         {
             original.x += 10f;
 
@@ -66,6 +70,8 @@ public class levelScroll : MonoBehaviour
             var tint = bloom.tint;
             tint.value = japanese;
             bloom.tint = tint;
+
+            world--;
         }
     }
 }
