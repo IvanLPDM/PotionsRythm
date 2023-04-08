@@ -10,7 +10,7 @@ public class levelScroll : MonoBehaviour
     public Transform transformjoint1;
     public Transform transformjoint2;
     private Vector3 original = new Vector3(2f, 1.6f, 0f);
-    private Vector3 original2 = new Vector3(15f, 1.6f, 0f);
+    private Vector3 original2 = new Vector3(20f, 1.6f, 0f);
 
     //feedback color
     public Volume ppVolume;
@@ -42,11 +42,11 @@ public class levelScroll : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.D) && world < 1)
         {
-            original.x -= 10f;
+            original.x -= 15f;
 
             transformjoint1.position = original;
 
-            original2.x -= 10f;
+            original2.x -= 15f;
 
             transformjoint2.position = original2;
 
@@ -59,11 +59,11 @@ public class levelScroll : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A) && world > 0)
         {
-            original.x += 10f;
+            original.x += 15f;
 
             transformjoint1.position = original;
 
-            original2.x += 10f;
+            original2.x += 15f;
 
             transformjoint2.position = original2;
 

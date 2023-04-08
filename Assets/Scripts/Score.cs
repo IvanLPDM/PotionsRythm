@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Score : MonoBehaviour
     public TextMeshProUGUI UiHighScore;
 
     public AudioSource audiosource;
+    public AudioSource audiosource1;
 
     private Vector3 scaleChange;
     private Vector3 originalScale;
@@ -54,7 +56,34 @@ public class Score : MonoBehaviour
         multiplicador = 1;
         score = 0.0f;
 
-        UiHighScore.text = PlayerPrefs.GetFloat("HighScore", 0).ToString();
+        switch (SceneManager.GetActiveScene().buildIndex)
+        {
+            case 2:
+                PlayerPrefs.GetFloat("HighScoreLevel1", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel1", 0).ToString();
+                break;
+            case 3:
+                PlayerPrefs.GetFloat("HighScoreLevel2", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel2", 0).ToString();
+                break;
+            case 4:
+                PlayerPrefs.GetFloat("HighScoreLevel3", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel3", 0).ToString();
+                break;
+            case 5:
+                PlayerPrefs.GetFloat("HighScoreLevel4", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel4", 0).ToString();
+                break;
+            case 6:
+                PlayerPrefs.GetFloat("HighScoreLevel5", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel5", 0).ToString();
+                break;
+            case 7:
+                PlayerPrefs.GetFloat("HighScoreLevel6", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel6", 0).ToString();
+                break;
+        }
+        
 
         UiScore.enabled = false;
         UiMultiplier.enabled = false;
@@ -144,10 +173,50 @@ public class Score : MonoBehaviour
 
         //highscore
 
-        if(score > PlayerPrefs.GetFloat("HighScore", 0))
+        switch (SceneManager.GetActiveScene().buildIndex)
         {
-            PlayerPrefs.SetFloat("HighScore", score);
-            UiHighScore.text = score.ToString();
+            case 2:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel1", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel1", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 3:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel2", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel2", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 4:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel3", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel3", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 5:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel4", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel4", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 6:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel5", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel5", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 7:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel6", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel6", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
         }
         
     }
@@ -187,6 +256,8 @@ public class Score : MonoBehaviour
 
         RectTransform.localScale = originalScale;
 
+        audiosource1.Play();
+
         miss = false;
 
         healthBar.currentHealth += healthBar.levelHealing;
@@ -208,6 +279,8 @@ public class Score : MonoBehaviour
         scoretext = "Perfect";
 
         RectTransform.localScale = originalScale;
+
+        audiosource1.Play();
 
         miss = false;
 
