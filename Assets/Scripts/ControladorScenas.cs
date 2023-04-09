@@ -16,7 +16,7 @@ public class ControladorScenas : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene("SelectorNiveles");
+            goback();
         }
     }
 
@@ -28,6 +28,11 @@ public class ControladorScenas : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void goback()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     

@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    //GameOver
     public GameOverScreen gameOverScreen;
     public PauseScreen pauseScreen;
     public levelCompleted levelCompleted;
@@ -15,6 +15,13 @@ public class GameManager : MonoBehaviour
     public AudioSource audioSource;
 
     float delay = 0;
+
+    public int nextscene;
+
+    private void Start()
+    {
+        nextscene = SceneManager.GetActiveScene().buildIndex + 1;
+    }
 
     void Update()
     {
@@ -41,6 +48,11 @@ public class GameManager : MonoBehaviour
         delay += Time.deltaTime;
         if(!audioSource.isPlaying && delay >= 5 && pauseScreen.ispaused == false)
         {
+            if (nextscene > PlayerPrefs.GetInt("nivel"))
+            {
+                PlayerPrefs.SetInt("nivel", nextscene);
+            }
+
             Win();
         }
         
