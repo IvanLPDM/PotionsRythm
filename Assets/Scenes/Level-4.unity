@@ -1381,7 +1381,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a9a5a332d5e29164293464a9c6def0cb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fe2fd4152273d034295074b15aeabf1e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2141,7 +2141,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e0a7917f2be0c414c884c10d06f1517d, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3092,7 +3092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402707a18a380ed4e9f0d94dc798605c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: Cancion japonesa buen Timing
+  FileName: notasLargasLevel1
   PotionsGame: {fileID: 109498736}
   potionsType: 0
 --- !u!4 &448763790
