@@ -86,7 +86,7 @@ public class CrearNuevaCanion : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.A)) //Left
             {
                 //Dejar de contar
-                if (StartTimeLargeL >= 0.15f)
+                if (StartTimeLargeL >= 0.3f)
                 {
                     largeL = StartTimeLargeL;
 
@@ -123,7 +123,7 @@ public class CrearNuevaCanion : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.D)) //Left
             {
                 //Dejar de contar
-                if (StartTimeLargeR >= 0.15f)
+                if (StartTimeLargeR >= 0.3f)
                 {
                     largeR = StartTimeLargeR;
 

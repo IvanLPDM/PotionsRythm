@@ -747,8 +747,8 @@
   <SavedPotion>
     <direccion>0</direccion>
     <time>69.2858353</time>
-    <mode>LARGE</mode>
-    <duration>0.16586408</duration>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
@@ -2241,8 +2241,8 @@
   <SavedPotion>
     <direccion>0</direccion>
     <time>134.616943</time>
-    <mode>LARGE</mode>
-    <duration>0.167907685</duration>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>1</direccion>
@@ -2823,8 +2823,8 @@
   <SavedPotion>
     <direccion>0</direccion>
     <time>159.121445</time>
-    <mode>LARGE</mode>
-    <duration>0.1614168</duration>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
   </SavedPotion>
   <SavedPotion>
     <direccion>0</direccion>

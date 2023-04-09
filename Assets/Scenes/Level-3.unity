@@ -1149,7 +1149,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a9a5a332d5e29164293464a9c6def0cb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e7a88eef39d788b4f818f01f42ae7a44, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.664
   m_Pitch: 1
@@ -2727,7 +2727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402707a18a380ed4e9f0d94dc798605c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: shogunSong
+  FileName: Japonesa 3
   PotionsGame: {fileID: 109498736}
   potionsType: 0
 --- !u!4 &448763790
@@ -37979,7 +37979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4fd1beeaabbcfd4aafa403c2c060bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: shogunSong
+  FileName: Japonesa 3
   PotionsGame: {fileID: 109498736}
 --- !u!4 &1944910663
 Transform:
@@ -38199,7 +38199,6 @@ MonoBehaviour:
   score: {fileID: 357962588}
   shake: {fileID: 519420033}
   audioSource: {fileID: 220375393}
-  delay: 0
 --- !u!1 &2000081472
 GameObject:
   m_ObjectHideFlags: 0
