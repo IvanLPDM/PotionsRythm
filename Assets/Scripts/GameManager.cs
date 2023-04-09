@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     float delay = 0;
 
     public int nextscene;
+    bool gameover = false;
 
     private void Start()
     {
@@ -46,7 +47,7 @@ public class GameManager : MonoBehaviour
 
         
         delay += Time.deltaTime;
-        if(!audioSource.isPlaying && delay >= 5 && pauseScreen.ispaused == false)
+        if(!audioSource.isPlaying && delay >= 5 && pauseScreen.ispaused == false && gameover == false)
         {
             if (nextscene > PlayerPrefs.GetInt("nivel"))
             {
@@ -67,6 +68,7 @@ public class GameManager : MonoBehaviour
         shake.StartShake(0f);
         audioSource.Pause();
         Time.timeScale = 0f;
+        gameover = true;
 
     }
 

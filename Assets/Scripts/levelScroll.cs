@@ -21,6 +21,9 @@ public class levelScroll : MonoBehaviour
     public Color japanese;
     public Color medieval;
 
+    public GameObject dbutton;
+    public GameObject abutton;
+
     int world = 0;
     // Start is called before the first frame update
     void Start()
@@ -34,6 +37,8 @@ public class levelScroll : MonoBehaviour
 
         transformjoint1.position = original;
         transformjoint2.position = original2;
+
+        dbutton.SetActive(true);
     }
 
     // Update is called once per frame
@@ -55,6 +60,9 @@ public class levelScroll : MonoBehaviour
             bloom.tint = tint;
 
             world++;
+
+            dbutton.SetActive(false);
+            abutton.SetActive(true);
         }
 
         if (Input.GetKeyDown(KeyCode.A) && world > 0)
@@ -72,6 +80,9 @@ public class levelScroll : MonoBehaviour
             bloom.tint = tint;
 
             world--;
+
+            abutton.SetActive(false);
+            dbutton.SetActive(true);
         }
     }
 }

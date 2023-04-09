@@ -17,7 +17,7 @@ public class PauseScreen : MonoBehaviour
 
     public void restartButton()
     {
-        SceneManager.LoadScene("Level-4");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
 

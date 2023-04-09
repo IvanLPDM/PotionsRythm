@@ -8168,10 +8168,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Poti's TrAck
+  m_text: POTI'S TRACK
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f939462c4d911e74aacaf4c8e4ebd120, type: 2}
-  m_sharedMaterial: {fileID: 4550305143782601533, guid: f939462c4d911e74aacaf4c8e4ebd120, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 97d37db5b1986ab40993010ec536f56d, type: 2}
+  m_sharedMaterial: {fileID: 7228210023868308110, guid: 97d37db5b1986ab40993010ec536f56d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8195,8 +8195,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.4
-  m_fontSizeBase: 41.4
+  m_fontSize: 62.82
+  m_fontSizeBase: 62.82
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
