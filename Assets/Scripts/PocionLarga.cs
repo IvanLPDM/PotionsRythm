@@ -42,6 +42,9 @@ public class PocionLarga : MonoBehaviour
         transform.position = new Vector3(transform.position.x, -2.4f, transform.position.z);
 
         rect.transform.position = new Vector3(transform.position.x, rect.transform.position.y - time, 0);
+
+        //rect.transform.localScale = new Vector3(rect.transform.localScale.x, rect.transform.localScale.y - time, rect.transform.localScale.z);
+
         GlowRect.transform.position = new Vector3(transform.position.x, rect.transform.position.y - time, 0);
     }
 
