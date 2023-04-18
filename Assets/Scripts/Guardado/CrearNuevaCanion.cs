@@ -142,6 +142,24 @@ public class CrearNuevaCanion : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
+            SavedPotion PotionsSaved = new SavedPotion();
+            SavedPotion NextPotionsSaved = new SavedPotion();
+
+            for (int i = 0; i < PotionsToSave.Count - 1; i++)
+            {
+                PotionsSaved = PotionsToSave[i];
+                NextPotionsSaved = PotionsToSave[i + 1];
+
+                if(PotionsSaved.mode == PotionsType.NORMAL && NextPotionsSaved.mode == PotionsType.NORMAL &&
+                    PotionsSaved.direccion != NextPotionsSaved.direccion && NextPotionsSaved.time - PotionsSaved.time <= 0.05)
+                {
+                    PotionsToSave[i].mode = PotionsType.DOBBLE;
+                    PotionsToSave[i + 1].mode = PotionsType.DOBBLE;
+
+                    PotionsToSave[i + 1].time = PotionsToSave[i].time - 0.001f;
+                }
+            }
+
             Save();
             Debug.Log("Guardado");
         }

@@ -27,7 +27,7 @@ public class LoadSong : MonoBehaviour
             for (int i = 0; i < data.Count; i++)
             {
                 //Añadir lo guardado en la lista de pociones
-                if(data[i].mode == PotionsType.NORMAL)
+                if(data[i].mode == PotionsType.NORMAL || data[i].mode == PotionsType.DOBBLE)
                 {
                     if (data[i].direccion == 1) //Left
                     {
