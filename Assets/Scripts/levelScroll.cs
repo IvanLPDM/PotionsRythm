@@ -24,6 +24,9 @@ public class levelScroll : MonoBehaviour
     public GameObject dbutton;
     public GameObject abutton;
 
+    public AudioSource audioSource1;
+    public AudioSource audioSource2;
+
     int world = 0;
     // Start is called before the first frame update
     void Start()
@@ -39,6 +42,10 @@ public class levelScroll : MonoBehaviour
         transformjoint2.position = original2;
 
         dbutton.SetActive(true);
+
+        audioSource1.Play();
+        audioSource2.Play();
+        audioSource2.Pause();
     }
 
     // Update is called once per frame
@@ -63,6 +70,9 @@ public class levelScroll : MonoBehaviour
 
             dbutton.SetActive(false);
             abutton.SetActive(true);
+
+            audioSource1.Pause();
+            audioSource2.UnPause();
         }
 
         if (Input.GetKeyDown(KeyCode.A) && world > 0)
@@ -83,6 +93,9 @@ public class levelScroll : MonoBehaviour
 
             abutton.SetActive(false);
             dbutton.SetActive(true);
+
+            audioSource1.UnPause();
+            audioSource2.Pause();
         }
     }
 }

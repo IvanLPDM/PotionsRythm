@@ -76,18 +76,18 @@ public class InputScript : MonoBehaviour
 
         }
 
-        if (transform.localScale.y > 1f)
+        if (transform.localScale.y > 1.2f)
 
         {
 
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
 
         }
-        if (transform1.localScale.y > 1f)
+        if (transform1.localScale.y > 1.2f)
 
         {
 
-            transform1.localScale = new Vector3(1f, 1f, 1f);
+            transform1.localScale = new Vector3(1.2f, 1.2f, 1.2f);
 
         }
 
