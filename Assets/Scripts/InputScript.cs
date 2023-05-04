@@ -43,7 +43,7 @@ public class InputScript : MonoBehaviour
         MantenidoRight = false;
         MantenidoLeft = false;
 
-        scalechange = new Vector3(0.01f, 0.01f, 0.01f);
+        scalechange = new Vector3(0.75f, 0.75f, 0.75f);
 
         originalscale = new Vector3(0.75f, 0.75f, 0.75f);
         transform.localScale = originalscale;
@@ -163,8 +163,9 @@ public class InputScript : MonoBehaviour
         if (!Save.activeInHierarchy)
         {
 
-            transform.localScale += scalechange;
-            transform1.localScale += scalechange;
+            transform.localScale += scalechange * Time.deltaTime;
+            transform1.localScale += scalechange * Time.deltaTime;
+
             //Pulsaci�n normal Left
             if (Input.GetKeyDown(KeyCode.A)) //Left
             {
