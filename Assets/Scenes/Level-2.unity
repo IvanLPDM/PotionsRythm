@@ -1169,6 +1169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Save: {fileID: 1944910661}
+  DobbleBarra: {fileID: 0}
   PotionPrefab: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
   PotionLarge: {fileID: 1809888687}
   timeTranscurred: 0
@@ -1228,6 +1229,7 @@ MonoBehaviour:
   timeStart: 4
   songOffset: 0
   BPM: 129
+  sizeObject: 0.6
   test:
   - {fileID: 2059431760}
 --- !u!82 &220375393
@@ -16939,7 +16941,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '2.
+  m_text: '5.
 
     asgore the shogun of the mountain.
 
