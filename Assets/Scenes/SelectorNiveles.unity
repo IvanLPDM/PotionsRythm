@@ -15994,15 +15994,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c61e49911249b144fabfe702e05be2e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highscore1: {fileID: 217407575}
-  highscore2: {fileID: 1452606406}
-  highscore3: {fileID: 218575455}
-  highscore4: {fileID: 1989761943}
-  highscore5: {fileID: 1115440630}
-  highscore6: {fileID: 1186159032}
-  highscore7: {fileID: 707033846}
-  highscore8: {fileID: 1670216050}
-  highscore9: {fileID: 1725501270}
+  highscore1: {fileID: 707033846}
+  highscore2: {fileID: 1670216050}
+  highscore3: {fileID: 1725501270}
+  highscore4: {fileID: 217407575}
+  highscore5: {fileID: 1452606406}
+  highscore6: {fileID: 218575455}
+  highscore7: {fileID: 1989761943}
+  highscore8: {fileID: 1115440630}
+  highscore9: {fileID: 1186159032}
   images:
   - {fileID: 1498654486}
   - {fileID: 220221357}
