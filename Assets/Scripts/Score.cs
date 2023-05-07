@@ -82,6 +82,18 @@ public class Score : MonoBehaviour
                 PlayerPrefs.GetFloat("HighScoreLevel6", 0).ToString();
                 UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel6", 0).ToString();
                 break;
+            case 8:
+                PlayerPrefs.GetFloat("HighScoreLevel7", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel7", 0).ToString();
+                break;
+            case 9:
+                PlayerPrefs.GetFloat("HighScoreLevel8", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel8", 0).ToString();
+                break;
+            case 10:
+                PlayerPrefs.GetFloat("HighScoreLevel9", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel9", 0).ToString();
+                break;
         }
         
 
@@ -217,6 +229,28 @@ public class Score : MonoBehaviour
                     UiHighScore.text = score.ToString();
                 }
                 break;
+            case 8:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel7", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel7", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 9:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel8", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel8", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 10:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel9", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel9", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+
         }
         
     }

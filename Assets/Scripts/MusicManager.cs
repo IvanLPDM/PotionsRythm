@@ -15,6 +15,7 @@ public class MusicManager : MonoBehaviour
     public static float BeatProximity { get; private set; }
     public int BPM;
     private float beatTime;
+    public float sizeObject;
     public Transform[] test;
 
     // Start is called before the first frame update
@@ -38,7 +39,7 @@ public class MusicManager : MonoBehaviour
 
         for(int i = 0; i < test.Length; i++)
         {
-            test[i].transform.localScale = Vector3.one * (0.6f + 0.2f * BeatProximity);
+            test[i].transform.localScale = Vector3.one * (sizeObject + 0.2f * BeatProximity);
         }
     }
 }

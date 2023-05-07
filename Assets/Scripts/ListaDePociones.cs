@@ -7,6 +7,8 @@ public class ListaDePociones : MonoBehaviour
 {
     public GameObject Save;
 
+    public GameObject DobbleBarra;
+
     public GameObject PotionPrefab;
     public GameObject PotionLarge;
 
@@ -72,6 +74,18 @@ public class ListaDePociones : MonoBehaviour
                     PotionsInGameL.Add(PotionLarge);
                 else if (PotionLarge.transform.position.x == 0.77f)
                     PotionsInGameR.Add(PotionLarge);
+            }
+            else if(Mode[0] == PotionsType.DOBBLE)
+            {
+                Potions[0].SetActive(true);
+                PotionPrefab = Potions[0];
+
+                if (PotionPrefab.transform.position.x == -0.77f)
+                    PotionsInGameL.Add(PotionPrefab);
+                else if (PotionPrefab.transform.position.x == 0.77f)
+                    PotionsInGameR.Add(PotionPrefab);
+
+                Instantiate(DobbleBarra);
             }
 
             Mode.RemoveAt(0);
