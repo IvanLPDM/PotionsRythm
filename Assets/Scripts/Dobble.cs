@@ -20,7 +20,7 @@ public class Dobble : MonoBehaviour
         pos.y -= velocity * Time.deltaTime;
         transform.position = pos;
 
-        if (transform.position.y < -3.5)
+        if (transform.position.y < -2.412967)
         {
             Destroy(gameObject);
         }

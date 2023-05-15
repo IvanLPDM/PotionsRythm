@@ -46,33 +46,33 @@ public class highscoremanager : MonoBehaviour
 
 
         //level 1 stars
-        if (PlayerPrefs.GetFloat("HighScoreLevel7") > 4000) //3
+        if (PlayerPrefs.GetFloat("HighScoreLevel7") > 8000) //3
         {
             images[0].sprite = sprites[3];
         }
 
-        else if (PlayerPrefs.GetFloat("HighScoreLevel7") > 1000 && PlayerPrefs.GetFloat("HighScoreLevel7") < 4000) //2
+        else if (PlayerPrefs.GetFloat("HighScoreLevel7") > 5000 && PlayerPrefs.GetFloat("HighScoreLevel7") < 8000) //2
         {
             images[0].sprite = sprites[2];
         }
 
-        else if (PlayerPrefs.GetFloat("HighScoreLevel7") > 10) //1
+        else if (PlayerPrefs.GetFloat("HighScoreLevel7") > 3000) //1
         {
             images[0].sprite = sprites[1];
         }
 
         //level 2 stars
-        if (PlayerPrefs.GetFloat("HighScoreLevel8") > 40000) //3
+        if (PlayerPrefs.GetFloat("HighScoreLevel8") > 18000) //3
         {
             images[1].sprite = sprites[3];
         }
 
-        else if (PlayerPrefs.GetFloat("HighScoreLevel8") > 25000 && PlayerPrefs.GetFloat("HighScoreLevel8") < 40000) //2
+        else if (PlayerPrefs.GetFloat("HighScoreLevel8") > 10000 && PlayerPrefs.GetFloat("HighScoreLevel8") < 18000) //2
         {
             images[1].sprite = sprites[2];
         }
 
-        else if (PlayerPrefs.GetFloat("HighScoreLevel8") > 10000) //1
+        else if (PlayerPrefs.GetFloat("HighScoreLevel8") > 6000) //1
         {
             images[1].sprite = sprites[1];
         }
@@ -94,28 +94,28 @@ public class highscoremanager : MonoBehaviour
         }
 
         //level 4 stars
-        if (PlayerPrefs.GetFloat("HighScoreLevel1") > 10000) //3
+        if (PlayerPrefs.GetFloat("HighScoreLevel1") > 4000) //3
         {
             images[3].sprite = sprites[3];
         }
 
-        else if (PlayerPrefs.GetFloat("HighScoreLevel1") > 7000 && PlayerPrefs.GetFloat("HighScoreLevel1") < 10000) //2
+        else if (PlayerPrefs.GetFloat("HighScoreLevel1") > 2000 && PlayerPrefs.GetFloat("HighScoreLevel1") < 4000) //2
         {
             images[3].sprite = sprites[2];
         }
 
-        else if (PlayerPrefs.GetFloat("HighScoreLevel1") > 4000) //1
+        else if (PlayerPrefs.GetFloat("HighScoreLevel1") > 1000) //1
         {
             images[3].sprite = sprites[1];
         }
 
         //level 5 stars
-        if (PlayerPrefs.GetFloat("HighScoreLevel2") > 15000) //3
+        if (PlayerPrefs.GetFloat("HighScoreLevel2") > 40000) //3
         {
             images[4].sprite = sprites[3];
         }
 
-        else if (PlayerPrefs.GetFloat("HighScoreLevel2") > 10000 && PlayerPrefs.GetFloat("HighScoreLevel2") < 15000) //2
+        else if (PlayerPrefs.GetFloat("HighScoreLevel2") > 25000 && PlayerPrefs.GetFloat("HighScoreLevel2") < 40000) //2
         {
             images[4].sprite = sprites[2];
         }
@@ -126,33 +126,33 @@ public class highscoremanager : MonoBehaviour
         }
 
         //level 6 stars
-        if (PlayerPrefs.GetFloat("HighScoreLevel3") > 15000) //3
+        if (PlayerPrefs.GetFloat("HighScoreLevel3") > 6000) //3
         {
             images[5].sprite = sprites[3];
         }
 
-        else if (PlayerPrefs.GetFloat("HighScoreLevel3") > 10000 && PlayerPrefs.GetFloat("HighScoreLevel3") < 15000) //2
+        else if (PlayerPrefs.GetFloat("HighScoreLevel3") > 2000 && PlayerPrefs.GetFloat("HighScoreLevel3") < 6000) //2
         {
             images[5].sprite = sprites[2];
         }
 
-        else if (PlayerPrefs.GetFloat("HighScoreLevel3") > 5000) //1
+        else if (PlayerPrefs.GetFloat("HighScoreLevel3") > 1000) //1
         {
             images[5].sprite = sprites[1];
         }
 
         //level 7 stars
-        if (PlayerPrefs.GetFloat("HighScoreLevel4") > 10) //3
+        if (PlayerPrefs.GetFloat("HighScoreLevel4") > 10000) //3
         {
             images[6].sprite = sprites[3];
         }
 
-        else if (PlayerPrefs.GetFloat("HighScoreLevel4") > 10 && PlayerPrefs.GetFloat("HighScoreLevel4") < 10) //2
+        else if (PlayerPrefs.GetFloat("HighScoreLevel4") > 6000 && PlayerPrefs.GetFloat("HighScoreLevel4") < 10000) //2
         {
             images[6].sprite = sprites[2];
         }
 
-        else if (PlayerPrefs.GetFloat("HighScoreLevel4") > 10) //1
+        else if (PlayerPrefs.GetFloat("HighScoreLevel4") > 2000) //1
         {
             images[6].sprite = sprites[1];
         }

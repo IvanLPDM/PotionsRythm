@@ -75,8 +75,6 @@ public class levelScroll : MonoBehaviour
 
             world++;
 
-            dbutton.SetActive(false);
-            abutton.SetActive(true);
         }
 
         if (Input.GetKeyDown(KeyCode.A) && world > 0)
@@ -95,8 +93,6 @@ public class levelScroll : MonoBehaviour
 
             world--;
 
-            abutton.SetActive(false);
-            dbutton.SetActive(true);
         }
 
         switch (world)
@@ -109,6 +105,9 @@ public class levelScroll : MonoBehaviour
                 var tint = bloom.tint;
                 tint.value = Phonk;
                 bloom.tint = tint;
+
+                abutton.SetActive(false);
+                dbutton.SetActive(true);
                 break;
 
             case 1:
@@ -119,6 +118,9 @@ public class levelScroll : MonoBehaviour
                 var tint1 = bloom.tint;
                 tint1.value = japanese;
                 bloom.tint = tint1;
+
+                abutton.SetActive(true);
+                dbutton.SetActive(true);
                 break;
 
             case 2:
@@ -129,6 +131,9 @@ public class levelScroll : MonoBehaviour
                 var tint2 = bloom.tint;
                 tint2.value = medieval;
                 bloom.tint = tint2;
+
+                abutton.SetActive(true);
+                dbutton.SetActive(false);
                 break;
 
                 default:

@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Save: {fileID: 1944910661}
-  DobbleBarra: {fileID: 0}
+  DobbleBarra: {fileID: 1106973539782207353, guid: 9e9a47c3e2aa5c547a142f365a7693eb, type: 3}
   PotionPrefab: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
   PotionLarge: {fileID: 1809888687}
   timeTranscurred: 0
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   song: {fileID: 220375393}
   timeStart: 4
   songOffset: 0
-  BPM: 129
+  BPM: 120
   sizeObject: 0.4
   test:
   - {fileID: 1669752017}
@@ -1240,9 +1240,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: af0dcb91f10a6044aafcd34185722400, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 0ea18a15934cff44b9664a3ffe456a59, type: 3}
+  m_audioClip: {fileID: 8300000, guid: dc47181253e0eae49bdeb05c419d909b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8243,7 +8243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402707a18a380ed4e9f0d94dc798605c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: japan cancion 1 propia
+  FileName: Phonk1
   PotionsGame: {fileID: 109498736}
   potionsType: 0
 --- !u!4 &448763790
@@ -9383,7 +9383,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1.
+  m_text: '3.
 
     WELCOME
 
