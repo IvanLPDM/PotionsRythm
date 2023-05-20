@@ -6,6 +6,7 @@ using UnityEngine.Audio;
 public class optionsScreen : MonoBehaviour
 {
     public AudioMixer audioMixer;
+
     public void setup()
     {
         gameObject.SetActive(true);

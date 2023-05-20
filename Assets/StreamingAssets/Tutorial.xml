@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ArrayOfSavedPotion xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SavedPotion>
+    <direccion>1</direccion>
+    <time>6.576245</time>
+    <mode>NORMAL</mode>
+    <duration>0</duration>
+  </SavedPotion>
+</ArrayOfSavedPotion>

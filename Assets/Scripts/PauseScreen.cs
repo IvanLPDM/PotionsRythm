@@ -10,6 +10,7 @@ public class PauseScreen : MonoBehaviour
     public AudioSource audioSource;
 
     public bool ispaused = false;
+
     public void setup()
     {
         gameObject.SetActive(true);
