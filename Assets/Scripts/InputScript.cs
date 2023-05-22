@@ -9,6 +9,9 @@ public class InputScript : MonoBehaviour
     public bool MantenidoLeft;
     public bool MantenidoRight;
 
+    private float delayInputL;
+    private float delayInputR;
+
     public float timePulsedL;
     public float totalTimeL;
 
@@ -19,6 +22,8 @@ public class InputScript : MonoBehaviour
 
     private Vector3 scalechange;
     Vector3 originalscale;
+
+    public TutorialManager tutorialManager;
 
     public Transform transform;
     public Transform transform1;
@@ -52,329 +57,417 @@ public class InputScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.touchCount > 0)
+
+        if(MantenidoLeft == false)
         {
-            Touch touch = Input.GetTouch(0); // creamos un touch y lo igualamos al primer toque de pantalla
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-            touchPosition.z = 0;
-
-
-            if (touchPosition.x <= 0) //Left
+            if (Input.GetMouseButtonDown(0))
             {
-                GameObject.Find("GameManager").SendMessage("CheckCollisionLeft");
-                //GameObject.Find("ScoreManager").SendMessage("TextLeft");
-                //bola.transform.position = new Vector2(transform.position.x, 3);
+                Vector3 posicionToque = Input.mousePosition;
+                Vector3 posicionMundo = Camera.main.ScreenToWorldPoint(posicionToque);
 
-                transform.localScale = originalscale;
-
-                if (scorecs.miss == false)
-
+                if (posicionMundo.x <= 0) //Left
                 {
+                    if(tutorialManager.clickadoOn == true)
+                    {
+                        tutorialManager.clickado = true;
+                    }
+                    GameObject.Find("GameManager").SendMessage("CheckCollisionLeft");
+                    //GameObject.Find("ScoreManager").SendMessage("TextLeft");
+                    //bola.transform.position = new Vector2(transform.position.x, 3);
 
-                    light1L.intensity = 0.9f;
+                    transform.localScale = originalscale;
 
-                    light2L.intensity = 0.9f;
+                    if (scorecs.miss == false)
 
-                    light3L.intensity = 0.9f;
+                    {
 
-                    light4L.intensity = 0.9f;
+                        light1L.intensity = 0.9f;
 
+                        light2L.intensity = 0.9f;
+
+                        light3L.intensity = 0.9f;
+
+                        light4L.intensity = 0.9f;
+
+                    }
                 }
             }
-            else //Right
-            {
-                GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
-                //GameObject.Find("ScoreManager").SendMessage("TextRight");
-                //bola.transform.position.y = 3;
-
-                transform1.localScale = originalscale;
-
-                if (scorecs.miss == false)
-
-                {
-
-                    light1R.intensity = 0.9f;
-
-                    light2R.intensity = 0.9f;
-
-                    light3R.intensity = 0.9f;
-
-                    light4R.intensity = 0.9f;
-
-                }
-            }
-
-            if (MantenidoRight == true)
-            {
-
-                switch (touch.phase)
-                {
-                    case TouchPhase.Began:
-                        if (touchPosition.x >= 0) //Right
-                        {
-                            //Empezar a contar
-                            timePulsedR += 1 * Time.deltaTime;
-                            GameObject.Find("CreadorPociones").SendMessage("LargeAntenaR");
-                        }
-                        break;
-
-                    case TouchPhase.Ended:
-                        if (touchPosition.x >= 0) //Right
-                        {
-                            //Dejar de contar
-
-                            if (timePulsedR >= 0.15f)
-                            {
-                                MantenidoRight = false;
-                                totalTimeR = timePulsedR;
-                                //Llamar funcion de mantenida
-                                GameObject.Find("GameManager").SendMessage("CheckCollisionMantRight", totalTimeR);
-                            }
-
-                            timePulsedR = 0.0f;
-                            totalTimeR = 0.0f;
-                        }
-                        break;
-
-                }
-                
-            }
-
-            if (MantenidoLeft == true)
-            {
-
-                switch (touch.phase)
-                {
-                    case TouchPhase.Began:
-                        if (touchPosition.x <= 0) //Left
-                        {
-                            //Empezar a contar
-                            timePulsedL += 1 * Time.deltaTime;
-                            GameObject.Find("CreadorPociones").SendMessage("LargeAntenaL");
-                        }
-                        break;
-
-                    case TouchPhase.Ended:
-                        if (touchPosition.x <= 0) //Left
-                        {
-                            //Dejar de contar
-
-                            if (timePulsedL >= 0.15f)
-                            {
-                                MantenidoLeft = false;
-                                totalTimeL = timePulsedL;
-                                //Llamar funcion de mantenida
-                                GameObject.Find("GameManager").SendMessage("CheckCollisionMantLeft", totalTimeL);
-                            }
-
-                            timePulsedL = 0.0f;
-                            totalTimeL = 0.0f;
-                        }
-                        break;
-
-                }
-
-            }
-
-            //Teclado
-
         }
+        
+
+        if(MantenidoRight == false)
+        {
+            Debug.Log("xd");
+            if (Input.GetMouseButtonDown(0))
+            {
+                Vector3 posicionToque = Input.mousePosition;
+                Vector3 posicionMundo = Camera.main.ScreenToWorldPoint(posicionToque);
+
+                if (posicionMundo.x > 0) //Right
+                {
+                    if (tutorialManager.clickadoOn == true)
+                    {
+                        tutorialManager.clickado = true;
+                    }
+                    GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
+                    //GameObject.Find("ScoreManager").SendMessage("TextRight");
+                    //bola.transform.position.y = 3;
+
+                    transform1.localScale = originalscale;
+
+                    if (scorecs.miss == false)
+
+                    {
+
+                        light1R.intensity = 0.9f;
+
+                        light2R.intensity = 0.9f;
+
+                        light3R.intensity = 0.9f;
+
+                        light4R.intensity = 0.9f;
+
+                    }
+                }
+            }
+        }
+        
+            //if (posicionMundo2.x <= 0) //Left
+            //{
+
+            //    GameObject.Find("GameManager").SendMessage("CheckCollisionLeft");
+            //    //GameObject.Find("ScoreManager").SendMessage("TextLeft");
+            //    //bola.transform.position = new Vector2(transform.position.x, 3);
+
+            //    transform.localScale = originalscale;
+
+            //    if (scorecs.miss == false)
+
+            //    {
+
+            //        light1L.intensity = 0.9f;
+
+            //        light2L.intensity = 0.9f;
+
+            //        light3L.intensity = 0.9f;
+
+            //        light4L.intensity = 0.9f;
+
+            //    }
+            //}
+            //else if (posicionMundo2.x > 0) //Right
+            //{
+
+
+            //    GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
+            //    //GameObject.Find("ScoreManager").SendMessage("TextRight");
+            //    //bola.transform.position.y = 3;
+
+            //    transform1.localScale = originalscale;
+
+            //    if (scorecs.miss == false)
+
+            //    {
+
+            //        light1R.intensity = 0.9f;
+
+            //        light2R.intensity = 0.9f;
+
+            //        light3R.intensity = 0.9f;
+
+            //        light4R.intensity = 0.9f;
+
+            //    }
+            //}
+
+        
+
+
+        if (Input.touchCount > 0)
+            {
+                
+                Touch touch = Input.GetTouch(0); // creamos un touch y lo igualamos al primer toque de pantalla
+                Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+                touchPosition.z = 0;
+
+                if (MantenidoRight == true)
+                {
+
+                    switch (touch.phase)
+                    {
+                        case TouchPhase.Began:
+                            if (touchPosition.x >= 0) //Right
+                            {
+                                //Empezar a contar
+                                timePulsedR += 1 * Time.deltaTime;
+                                GameObject.Find("CreadorPociones").SendMessage("LargeAntenaR");
+                            }
+                            break;
+
+                        case TouchPhase.Ended:
+                            if (touchPosition.x >= 0) //Right
+                            {
+                                //Dejar de contar
+
+                                if (timePulsedR >= 0.15f)
+                                {
+                                    MantenidoRight = false;
+                                    totalTimeR = timePulsedR;
+                                    //Llamar funcion de mantenida
+                                    GameObject.Find("GameManager").SendMessage("CheckCollisionMantRight", totalTimeR);
+                                }
+
+                                timePulsedR = 0.0f;
+                                totalTimeR = 0.0f;
+                            }
+                            break;
+
+                    }
+
+                }
+
+                if (MantenidoRight == true)
+                {
+                    Debug.Log("Si");
+                    switch (touch.phase)
+                    {
+                        case TouchPhase.Began:
+                            if (touchPosition.x <= 0) //Left
+                            {
+                                //Empezar a contar
+                                timePulsedL += 1 * Time.deltaTime;
+                                GameObject.Find("CreadorPociones").SendMessage("LargeAntenaL");
+                            }
+                            break;
+
+                        case TouchPhase.Ended:
+                            if (touchPosition.x <= 0) //Left
+                            {
+                                //Dejar de contar
+
+                                if (timePulsedL >= 0.15f)
+                                {
+                                    MantenidoLeft = false;
+                                    totalTimeL = timePulsedL;
+                                    //Llamar funcion de mantenida
+                                    GameObject.Find("GameManager").SendMessage("CheckCollisionMantLeft", totalTimeL);
+                                }
+
+                                timePulsedL = 0.0f;
+                                totalTimeL = 0.0f;
+                            }
+                            break;
+
+                    }
+                }
+
+            }
+            //Teclado
 
         if (transform.localScale.y > 1.2f)
 
-        {
-
-            transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
-
-        }
-        if (transform1.localScale.y > 1.2f)
-
-        {
-
-            transform1.localScale = new Vector3(1.2f, 1.2f, 1.2f);
-
-        }
-
-        //luces ventanas
-        light1L.intensity -= 1.75f * Time.deltaTime;
-        light2L.intensity -= 1.75f * Time.deltaTime;
-        light3L.intensity -= 1.75f * Time.deltaTime;
-        light4L.intensity -= 1.75f * Time.deltaTime;
-
-
-
-        light1R.intensity -= 1.75f * Time.deltaTime;
-        light2R.intensity -= 1.75f * Time.deltaTime;
-        light3R.intensity -= 1.75f * Time.deltaTime;
-        light4R.intensity -= 1.75f * Time.deltaTime;
-
-        if (light1L.intensity <= 0f && light2L.intensity <= 0f && light3L.intensity <= 0f && light4L.intensity <= 0f)
-
-        {
-
-            light1L.intensity = 0f;
-
-            light2L.intensity = 0f;
-
-            light3L.intensity = 0f;
-
-            light4L.intensity = 0f;
-
-        }
-
-        if (light1R.intensity <= 0f && light2R.intensity <= 0f && light3R.intensity <= 0f && light4R.intensity <= 0f)
-
-        {
-
-            light1R.intensity = 0f;
-
-            light2R.intensity = 0f;
-
-            light3R.intensity = 0f;
-
-            light4R.intensity = 0f;
-
-        }
-
-        if (light1L.intensity < 0.4 && light2L.intensity < 0.4f && light3L.intensity < 0.4f && light4L.intensity < 0.4f && scorecs.miss == false)
-
-        {
-
-            light1L.intensity += 1.75f * Time.deltaTime;
-
-            light2L.intensity += 1.75f * Time.deltaTime;
-
-            light3L.intensity += 1.75f * Time.deltaTime;
-
-            light4L.intensity += 1.75f * Time.deltaTime;
-
-        }
-
-        if (light1R.intensity < 0.4 && light2R.intensity < 0.4f && light3R.intensity < 0.4f && light4R.intensity < 0.4f && scorecs.miss == false)
-
-        {
-
-            light1R.intensity += 1.75f * Time.deltaTime;
-
-            light2R.intensity += 1.75f * Time.deltaTime;
-
-            light3R.intensity += 1.75f * Time.deltaTime;
-
-            light4R.intensity += 1.75f * Time.deltaTime;
-
-        }
-
-        if (!Save.activeInHierarchy)
-        {
-
-            transform.localScale += scalechange * Time.deltaTime;
-            transform1.localScale += scalechange * Time.deltaTime;
-
-            //Pulsaci�n normal Left
-            if (Input.GetKeyDown(KeyCode.A)) //Left
             {
+
+                transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+
+            }
+            if (transform1.localScale.y > 1.2f)
+
+            {
+
+                transform1.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+
+            }
+
+            //luces ventanas
+            light1L.intensity -= 1.75f * Time.deltaTime;
+            light2L.intensity -= 1.75f * Time.deltaTime;
+            light3L.intensity -= 1.75f * Time.deltaTime;
+            light4L.intensity -= 1.75f * Time.deltaTime;
+
+
+
+            light1R.intensity -= 1.75f * Time.deltaTime;
+            light2R.intensity -= 1.75f * Time.deltaTime;
+            light3R.intensity -= 1.75f * Time.deltaTime;
+            light4R.intensity -= 1.75f * Time.deltaTime;
+
+            if (light1L.intensity <= 0f && light2L.intensity <= 0f && light3L.intensity <= 0f && light4L.intensity <= 0f)
+
+            {
+
+                light1L.intensity = 0f;
+
+                light2L.intensity = 0f;
+
+                light3L.intensity = 0f;
+
+                light4L.intensity = 0f;
+
+            }
+
+            if (light1R.intensity <= 0f && light2R.intensity <= 0f && light3R.intensity <= 0f && light4R.intensity <= 0f)
+
+            {
+
+                light1R.intensity = 0f;
+
+                light2R.intensity = 0f;
+
+                light3R.intensity = 0f;
+
+                light4R.intensity = 0f;
+
+            }
+
+            if (light1L.intensity < 0.4 && light2L.intensity < 0.4f && light3L.intensity < 0.4f && light4L.intensity < 0.4f && scorecs.miss == false)
+
+            {
+
+                light1L.intensity += 1.75f * Time.deltaTime;
+
+                light2L.intensity += 1.75f * Time.deltaTime;
+
+                light3L.intensity += 1.75f * Time.deltaTime;
+
+                light4L.intensity += 1.75f * Time.deltaTime;
+
+            }
+
+            if (light1R.intensity < 0.4 && light2R.intensity < 0.4f && light3R.intensity < 0.4f && light4R.intensity < 0.4f && scorecs.miss == false)
+
+            {
+
+                light1R.intensity += 1.75f * Time.deltaTime;
+
+                light2R.intensity += 1.75f * Time.deltaTime;
+
+                light3R.intensity += 1.75f * Time.deltaTime;
+
+                light4R.intensity += 1.75f * Time.deltaTime;
+
+            }
+
+            if (!Save.activeInHierarchy)
+            {
+
+                transform.localScale += scalechange * Time.deltaTime;
+                transform1.localScale += scalechange * Time.deltaTime;
+
+                //Pulsaci�n normal Left
+                if (Input.GetKeyDown(KeyCode.A)) //Left
+                {
+                    if (tutorialManager.clickadoOn == true)
+                    {
+                        tutorialManager.clickado = true;
+                    }
                 GameObject.Find("GameManager").SendMessage("CheckCollisionLeft");
 
-                transform.localScale = originalscale;
+                    transform.localScale = originalscale;
 
-                if (scorecs.miss == false)
+                    if (scorecs.miss == false)
 
-                {
+                    {
 
-                    light1L.intensity = 0.9f;
+                        light1L.intensity = 0.9f;
 
-                    light2L.intensity = 0.9f;
+                        light2L.intensity = 0.9f;
 
-                    light3L.intensity = 0.9f;
+                        light3L.intensity = 0.9f;
 
-                    light4L.intensity = 0.9f;
+                        light4L.intensity = 0.9f;
 
+                    }
                 }
-            }
 
 
-            if (Input.GetKeyDown(KeyCode.D)) //Right
-            {
+                if (Input.GetKeyDown(KeyCode.D)) //Right
+                {
+                    if (tutorialManager.clickadoOn == true)
+                    {
+                        tutorialManager.clickado = true;
+                    }
                 GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
 
-                transform1.localScale = originalscale;
+                    transform1.localScale = originalscale;
 
-                if (scorecs.miss == false)
+                    if (scorecs.miss == false)
 
-                {
+                    {
 
-                    light1R.intensity = 0.9f;
+                        light1R.intensity = 0.9f;
 
-                    light2R.intensity = 0.9f;
+                        light2R.intensity = 0.9f;
 
-                    light3R.intensity = 0.9f;
+                        light3R.intensity = 0.9f;
 
-                    light4R.intensity = 0.9f;
+                        light4R.intensity = 0.9f;
 
+                    }
                 }
-            }
 
-            if (MantenidoRight == true)
-            {
-                //Mantenida Right
-                if (Input.GetKey(KeyCode.D)) //Right
+                if (MantenidoRight == true)
                 {
+                    //Mantenida Right
+                    if (Input.GetKey(KeyCode.D)) //Right
+                    {
                     //Empezar a contar
                     timePulsedR += 1 * Time.deltaTime;
-                    GameObject.Find("CreadorPociones").SendMessage("LargeAntenaR");
-                }
-                if (Input.GetKeyUp(KeyCode.D)) //Right
-                {
-                    //Dejar de contar
-
-                    if (timePulsedR >= 0.15f)
-                    {
-                        MantenidoRight = false;
-                        totalTimeR = timePulsedR;
-                        //Llamar funcion de mantenida
-                        GameObject.Find("GameManager").SendMessage("CheckCollisionMantRight", totalTimeR);
+                        GameObject.Find("CreadorPociones").SendMessage("LargeAntenaR");
                     }
-
-                    timePulsedR = 0.0f;
-                    totalTimeR = 0.0f;
-                }
-            }
-
-            if (MantenidoLeft == true)
-            {
-                //Mantenida Left
-                if (Input.GetKey(KeyCode.A)) //Left
-                {
-                    //Empezar a contar
-                    timePulsedL += 1 * Time.deltaTime;
-                    GameObject.Find("CreadorPociones").SendMessage("LargeAntenaL");
-                }
-                if (Input.GetKeyUp(KeyCode.A)) //Left
-                {
-                    //Dejar de contar
-                    if (timePulsedL >= 0.15f)
+                    if (Input.GetKeyUp(KeyCode.D)) //Right
                     {
-                        MantenidoLeft = false;
-                        totalTimeL = timePulsedL;
-                        //Llamar funcion de mantenida
-                        GameObject.Find("GameManager").SendMessage("CheckCollisionMantLeft", totalTimeL);
-                    }
+                        //Dejar de contar
 
-                    timePulsedL = 0.0f;
-                    totalTimeL = 0.0f;
+                        if (timePulsedR >= 0.15f)
+                        {
+                            MantenidoRight = false;
+                            totalTimeR = timePulsedR;
+                            //Llamar funcion de mantenida
+                            GameObject.Find("GameManager").SendMessage("CheckCollisionMantRight", totalTimeR);
+                        }
+
+                        timePulsedR = 0.0f;
+                        totalTimeR = 0.0f;
+                    }
+                }
+
+                if (MantenidoLeft == true)
+                {
+                    //Mantenida Left
+                    if (Input.GetKey(KeyCode.A)) //Left
+                    {
+                        //Empezar a contar
+                        timePulsedL += 1 * Time.deltaTime;
+                        GameObject.Find("CreadorPociones").SendMessage("LargeAntenaL");
+                    }
+                    if (Input.GetKeyUp(KeyCode.A)) //Left
+                    {
+                        //Dejar de contar
+                        if (timePulsedL >= 0.15f)
+                        {
+                            MantenidoLeft = false;
+                            totalTimeL = timePulsedL;
+                            //Llamar funcion de mantenida
+                            GameObject.Find("GameManager").SendMessage("CheckCollisionMantLeft", totalTimeL);
+                        }
+
+                        timePulsedL = 0.0f;
+                        totalTimeL = 0.0f;
+                    }
                 }
             }
         }
-    }
 
-    public void FMantenidoLeft()
-    {
-        MantenidoLeft = true;
-    }
 
-    public void FMantenidoRight()
-    {
-        MantenidoRight = true;
-    }
+        public void FMantenidoLeft()
+        {
+            MantenidoLeft = true;
+        }
 
+        public void FMantenidoRight()
+        {
+            MantenidoRight = true;
+        }
+    
 }

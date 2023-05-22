@@ -6,7 +6,10 @@ public class Pocion : MonoBehaviour
 {
     // Update is called once per frame
     public float velocity;
+    public float startVelocity;
     public Vector3 pos;
+
+    public TutorialManager tutorialManager;
 
     [Header("Color")]
     public SpriteRenderer renderero;
@@ -31,10 +34,13 @@ public class Pocion : MonoBehaviour
     {
         renderero.color = originalColor;
         OriginColorTime = 0;
+
+        velocity = startVelocity;
     }
 
     void Update()
     {
+
         if(OriginColorTime > 0)
             OriginColorTime -= 0.1f;
 
@@ -112,5 +118,17 @@ public class Pocion : MonoBehaviour
 
         //OriginColorTime = delayColor;
         //renderero.color = PerfectColor;
+    }
+
+    public void PausarTutorial()
+    {
+         velocity = 0f;
+         Debug.Log("pausado");
+    }
+
+    public void ReanudarTutorial()
+    {
+        velocity = 4f;
+        Debug.Log("pausado");
     }
 }

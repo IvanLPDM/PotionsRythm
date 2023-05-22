@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class healthBar : MonoBehaviour
 {
-
+    public TutorialManager tutorialManager;
     public Slider slider;
     public float maxHealth = 100;
     public float currentHealth;
@@ -25,7 +25,7 @@ public class healthBar : MonoBehaviour
     private void Update()
     {
 
-        if (!save.activeInHierarchy)
+        if (!save.activeInHierarchy && tutorialManager.paused == false)
         {
             takeDamage(leveldamage);
         }

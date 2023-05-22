@@ -9,6 +9,8 @@ public class ListaDePociones : MonoBehaviour
 
     public GameObject DobbleBarra;
 
+    public TutorialManager tutorialManager;
+
     public GameObject PotionPrefab;
     public GameObject PotionLarge;
 
@@ -35,8 +37,8 @@ public class ListaDePociones : MonoBehaviour
 
     void Update()
     {
-
-        time += 1 * Time.deltaTime;
+        if(tutorialManager.paused == false)
+            time += 1 * Time.deltaTime;
         
         //Aqui entraria la cancion y le diria cuando puede generar pociones
         if(timing.Count != 0)
@@ -142,5 +144,29 @@ public class ListaDePociones : MonoBehaviour
         }
     }
     
-    
+    public void pausePotions()
+    {
+        for(int i = 0; i < PotionsInGameL.Count; i++)
+        {
+            PotionsInGameL[i].SendMessage("PausarTutorial");
+        }
+
+        for (int i = 0; i < PotionsInGameR.Count; i++)
+        {
+            PotionsInGameR[i].SendMessage("PausarTutorial");
+        }
+    }
+
+    public void ReanudePotions()
+    {
+        for (int i = 0; i < PotionsInGameL.Count; i++)
+        {
+            PotionsInGameL[i].SendMessage("ReanudarTutorial");
+        }
+
+        for (int i = 0; i < PotionsInGameR.Count; i++)
+        {
+            PotionsInGameR[i].SendMessage("ReanudarTutorial");
+        }
+    }
 }

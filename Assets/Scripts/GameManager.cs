@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
         if (pauseScreen.ispaused == false)
         {
-            Time.timeScale = 1f;
+            Time.timeScale = 3f;
         }
         else
             Time.timeScale = 0f;

@@ -6,4 +6,10 @@
     <mode>NORMAL</mode>
     <duration>0</duration>
   </SavedPotion>
+	<SavedPotion>
+		<direccion>0</direccion>
+		<time>8.576245</time>
+		<mode>NORMAL</mode>
+		<duration>0</duration>
+	</SavedPotion>
 </ArrayOfSavedPotion>

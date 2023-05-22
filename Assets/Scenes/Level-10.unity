@@ -1079,6 +1079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Save: {fileID: 1944910661}
   DobbleBarra: {fileID: 1106973539782207353, guid: 9e9a47c3e2aa5c547a142f365a7693eb, type: 3}
+  tutorialManager: {fileID: 1678419326}
   PotionPrefab: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
   PotionLarge: {fileID: 1809888687}
   timeTranscurred: 0
@@ -11397,10 +11398,6 @@ PrefabInstance:
     - target: {fileID: 293833989472387635, guid: 0e5cc2daf0de397498e6f247c77ebade, type: 3}
       propertyPath: m_Name
       value: PocionLarga
-      objectReference: {fileID: 0}
-    - target: {fileID: 293833989472387635, guid: 0e5cc2daf0de397498e6f247c77ebade, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 293833989472387645, guid: 0e5cc2daf0de397498e6f247c77ebade, type: 3}
       propertyPath: m_RootOrder
@@ -39503,6 +39500,8 @@ MonoBehaviour:
   time: 0
   paused: 0
   wizard: {fileID: 454683970}
+  Next: 0
+  TextList: []
 --- !u!4 &1678419327
 Transform:
   m_ObjectHideFlags: 0
@@ -56516,18 +56515,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 726929487112702627, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
-      propertyPath: m_Name
-      value: poti glow
-      objectReference: {fileID: 0}
     - target: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_Name
       value: Pocion
       objectReference: {fileID: 0}
-    - target: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 2885711169170746446, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
+      propertyPath: tutorialManager
+      value: 
+      objectReference: {fileID: 1678419326}
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -56571,10 +56566,6 @@ PrefabInstance:
     - target: {fileID: 2885711169170746447, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8971311266015069233, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
-      propertyPath: m_Intensity
-      value: 0.24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
