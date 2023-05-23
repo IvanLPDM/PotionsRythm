@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public bool tutorial;
     public GameOverScreen gameOverScreen;
     public PauseScreen pauseScreen;
     public levelCompleted levelCompleted;
@@ -14,6 +15,9 @@ public class GameManager : MonoBehaviour
     public Score score;
     public Shake shake;
     public AudioSource audioSource;
+    public AudioSource audioParte2Tutorial;
+
+    bool unaVez = false;
 
     float delay = 0;
 
@@ -22,6 +26,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+
         nextscene = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
@@ -30,7 +35,7 @@ public class GameManager : MonoBehaviour
 
         if (pauseScreen.ispaused == false)
         {
-            Time.timeScale = 3f;
+            Time.timeScale = 1f;
         }
         else
             Time.timeScale = 0f;
@@ -38,14 +43,42 @@ public class GameManager : MonoBehaviour
         
         delay += Time.deltaTime;
 
-        if(!audioSource.isPlaying && delay >= 5 && pauseScreen.ispaused == false && gameover == false)
+        float delayCancion = 0;
+
+        
+        if(tutorialManager.startFinishSong == true && unaVez == false)
+        {
+            audioParte2Tutorial.Play();
+            unaVez = true;
+        }
+
+        if (!audioSource.isPlaying && delay >= 5 && pauseScreen.ispaused == false && gameover == false)
         {
             if (nextscene > PlayerPrefs.GetInt("nivel"))
             {
                 PlayerPrefs.SetInt("nivel", nextscene);
             }
 
-            Win();
+            if(tutorial == true)
+            {
+                if (tutorialManager.FasesSong == 1)
+                {
+                    audioSource.Play();
+                }
+
+
+                if (!audioParte2Tutorial.isPlaying && delay >= 5 && pauseScreen.ispaused == false && gameover == false)
+                {
+                     if (tutorialManager.FasesSong == 3)
+                    {
+                        Win();
+                    }
+                }
+                
+            }
+            else
+                Win();
+
         }
         
         if(health.currentHealth <= 0)

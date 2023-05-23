@@ -1573,7 +1573,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Save: {fileID: 1944910661}
-  DobbleBarra: {fileID: 0}
+  DobbleBarra: {fileID: 1106973539782207353, guid: 9e9a47c3e2aa5c547a142f365a7693eb, type: 3}
+  tutorialManager: {fileID: 1221083262}
   PotionPrefab: {fileID: 2885711169170746433, guid: 1f7fdc9be0d7c374f8733d88d4788afb, type: 3}
   PotionLarge: {fileID: 1809888687}
   timeTranscurred: 0
@@ -13225,7 +13226,16 @@ MonoBehaviour:
   fasesAnimacion: 0
   time: 0
   paused: 0
-  wizard: {fileID: 281795055}
+  flechas: []
+  Bucle: {fileID: 0}
+  Final: {fileID: 0}
+  FasesSong: 0
+  clickado: 0
+  clickadoOn: 0
+  startFinishSong: 0
+  Next: 0
+  TextList: []
+  Magos: []
 --- !u!4 &1221083263
 Transform:
   m_ObjectHideFlags: 0
@@ -39494,6 +39504,7 @@ MonoBehaviour:
   Save: {fileID: 1944910661}
   timePulsedR: 0
   totalTimeR: 0
+  tutorialManager: {fileID: 1221083262}
   transform: {fileID: 42202352}
   transform1: {fileID: 124506033}
   light1L: {fileID: 488749367}
@@ -39705,6 +39716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9e021afbe4e75745a570417ae789d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorialManager: {fileID: 1221083262}
   slider: {fileID: 1722318516}
   maxHealth: 100
   currentHealth: 0
@@ -55339,6 +55351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b46adf62cd7e0f45aa91a125c68c44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorial: 0
   gameOverScreen: {fileID: 1538217374}
   pauseScreen: {fileID: 1032197651}
   levelCompleted: {fileID: 640267297}
@@ -55347,6 +55360,7 @@ MonoBehaviour:
   score: {fileID: 357962588}
   shake: {fileID: 519420033}
   audioSource: {fileID: 220375393}
+  audioParte2Tutorial: {fileID: 0}
   nextscene: 0
 --- !u!1 &2000081472
 GameObject:

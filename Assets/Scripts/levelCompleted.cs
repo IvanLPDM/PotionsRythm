@@ -9,6 +9,7 @@ public class levelCompleted : MonoBehaviour
 {
 
     public TextMeshProUGUI scoretext;
+
     public void setup(float score)
     {
         gameObject.SetActive(true);

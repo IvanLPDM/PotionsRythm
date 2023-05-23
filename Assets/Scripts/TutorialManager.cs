@@ -9,8 +9,15 @@ public class TutorialManager : MonoBehaviour
     public bool paused = false;
     public GameObject[] flechas;
 
+    public AudioSource Bucle;
+    public AudioSource Final;
+
+    public int FasesSong;
+
     public bool clickado;
     public bool clickadoOn;
+
+    public bool startFinishSong;
 
     public float Next;
 
@@ -20,10 +27,14 @@ public class TutorialManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FasesSong = 0;
+
         Next = 0f;
 
         clickado = false;
         clickadoOn = false;
+
+        startFinishSong = false;
 
         Magos[0].SetActive(false);  
         
@@ -49,22 +60,40 @@ public class TutorialManager : MonoBehaviour
             time += 1 * Time.deltaTime;
 
 
-
-        if (time >= 70)
+        if(time >= 71)
+        {
+            startFinishSong = true;
+        }
+        else if (time >= 70.1)
+        {
+            paused = false;
+            FasesSong = 3;
+        }
+        else if (time >= 70)
+        {
+            Magos[2].SetActive(false);
+            TextList[10].SetActive(false);
+            FasesSong = 2;
+            Bucle.loop = false;
+            Bucle.Stop();
+        }
+        else if (time >= 65)
         {
             TextList[9].SetActive(false);
-            Magos[2].SetActive(false);
-
-            paused = false;
+            TextList[10].SetActive(true);
         }
-        else if (time >= 64)
+        else if (time >= 60)
         {
             TextList[9].SetActive(true);
             Magos[2].SetActive(true);
 
+            
+        }
+        else if (time >= 56.01)
+        {
             paused = true;
         }
-        else if (time >= 57)
+        else if (time >= 56)
         {
             paused = false;
             GameObject.Find("CreadorPociones").SendMessage("ReanudePotions");
@@ -172,6 +201,10 @@ public class TutorialManager : MonoBehaviour
         {
             TextList[1].SetActive(true);
             TextList[0].SetActive(false);
+        }
+        else if (time >= 8)
+        {
+            FasesSong = 1;
         }
         else if (time >= 5.7 && paused == false)
         {
