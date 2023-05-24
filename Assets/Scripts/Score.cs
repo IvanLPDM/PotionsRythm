@@ -265,6 +265,7 @@ public class Score : MonoBehaviour
 
         RectTransform.localScale = originalScale;
 
+        audiosource.pitch = Random.Range(0.5f, 1.5f);
         audiosource.Play();
 
         miss = true;
@@ -290,6 +291,7 @@ public class Score : MonoBehaviour
 
         RectTransform.localScale = originalScale;
 
+        audiosource1.pitch = Random.Range(0.5f, 1.5f);
         audiosource1.Play();
 
         miss = false;
@@ -314,6 +316,7 @@ public class Score : MonoBehaviour
 
         RectTransform.localScale = originalScale;
 
+        audiosource1.pitch = Random.Range(0.5f, 1.5f);
         audiosource1.Play();
 
         miss = false;

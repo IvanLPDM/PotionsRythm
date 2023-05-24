@@ -40,6 +40,9 @@ public class InputScript : MonoBehaviour
 
     public Score scorecs;
 
+    public ParticleSystem particulaHoldL;
+    public ParticleSystem particulaHoldR;
+
     void Start()
     {
         timePulsedL = 0.0f;
@@ -105,10 +108,10 @@ public class InputScript : MonoBehaviour
 
                 if (posicionMundo.x > 0) //Right
                 {
-                    if (tutorialManager.clickadoOn == true)
-                    {
-                        tutorialManager.clickado = true;
-                    }
+                    //if (tutorialManager.clickadoOn == true)
+                    //{
+                    //    tutorialManager.clickado = true;
+                    //}
                     GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
                     //GameObject.Find("ScoreManager").SendMessage("TextRight");
                     //bola.transform.position.y = 3;
@@ -383,10 +386,10 @@ public class InputScript : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.D)) //Right
                 {
-                    if (tutorialManager.clickadoOn == true)
-                    {
-                        tutorialManager.clickado = true;
-                    }
+                    //if (tutorialManager.clickadoOn == true)
+                    //{
+                    //    tutorialManager.clickado = true;
+                    //}
                 GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
 
                     transform1.localScale = originalscale;
@@ -414,11 +417,14 @@ public class InputScript : MonoBehaviour
                     //Empezar a contar
                     timePulsedR += 1 * Time.deltaTime;
                         GameObject.Find("CreadorPociones").SendMessage("LargeAntenaR");
+
+                    particulaHoldR.loop = true;
+                    particulaHoldR.Play();
                     }
                     if (Input.GetKeyUp(KeyCode.D)) //Right
                     {
-                        //Dejar de contar
-
+                    //Dejar de contar
+                    particulaHoldR.loop = false;
                         if (timePulsedR >= 0.15f)
                         {
                             MantenidoRight = false;
@@ -440,9 +446,13 @@ public class InputScript : MonoBehaviour
                         //Empezar a contar
                         timePulsedL += 1 * Time.deltaTime;
                         GameObject.Find("CreadorPociones").SendMessage("LargeAntenaL");
+
+                    particulaHoldL.loop = true;
+                    particulaHoldL.Play();
                     }
                     if (Input.GetKeyUp(KeyCode.A)) //Left
                     {
+                    particulaHoldL.loop = false;
                         //Dejar de contar
                         if (timePulsedL >= 0.15f)
                         {
