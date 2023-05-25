@@ -386,10 +386,10 @@ public class InputScript : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.D)) //Right
                 {
-                    //if (tutorialManager.clickadoOn == true)
-                    //{
-                    //    tutorialManager.clickado = true;
-                    //}
+                    if (tutorialManager.clickadoOn == true)
+                    {
+                        tutorialManager.clickado = true;
+                    }
                 GameObject.Find("GameManager").SendMessage("CheckCollisionRight");
 
                     transform1.localScale = originalscale;

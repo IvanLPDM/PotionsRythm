@@ -25,7 +25,7 @@ public class healthBar : MonoBehaviour
     private void Update()
     {
 
-        if (!save.activeInHierarchy)
+        if (!save.activeInHierarchy && tutorialManager.paused == false)
         {
             takeDamage(leveldamage);
         }

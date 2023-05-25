@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   song: {fileID: 220375393}
-  timeStart: 8.576245
+  timeStart: 4
   songOffset: 0
   BPM: 120
   sizeObject: 0.4
@@ -7928,7 +7928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402707a18a380ed4e9f0d94dc798605c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: Retro1
+  FileName: Warbinder
   PotionsGame: {fileID: 109498736}
   potionsType: 0
 --- !u!4 &448763790
@@ -48229,8 +48229,8 @@ MonoBehaviour:
   time: 0
   paused: 0
   flechas: []
-  Bucle: {fileID: 0}
-  Final: {fileID: 0}
+  Bucle: {fileID: 220375393}
+  Final: {fileID: 220375393}
   FasesSong: 0
   clickado: 0
   clickadoOn: 0
@@ -63900,7 +63900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4fd1beeaabbcfd4aafa403c2c060bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: Retro1
+  FileName: Warbinder
   PotionsGame: {fileID: 109498736}
 --- !u!4 &1944910663
 Transform:

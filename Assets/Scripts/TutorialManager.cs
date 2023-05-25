@@ -63,11 +63,11 @@ public class TutorialManager : MonoBehaviour
         if(time >= 71)
         {
             startFinishSong = true;
+            FasesSong = 3;
         }
         else if (time >= 70.1)
         {
             paused = false;
-            FasesSong = 3;
         }
         else if (time >= 70)
         {
