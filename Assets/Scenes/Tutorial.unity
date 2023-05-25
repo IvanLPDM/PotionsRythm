@@ -15181,8 +15181,8 @@ MonoBehaviour:
   - {fileID: 1928032218}
   - {fileID: 1055559778}
   - {fileID: 91836858}
-  Bucle: {fileID: 0}
-  Final: {fileID: 0}
+  Bucle: {fileID: 144083136}
+  Final: {fileID: 1721427524}
   FasesSong: 0
   clickado: 0
   clickadoOn: 0
