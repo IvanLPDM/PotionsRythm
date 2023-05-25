@@ -94,6 +94,18 @@ public class Score : MonoBehaviour
                 PlayerPrefs.GetFloat("HighScoreLevel9", 0).ToString();
                 UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel9", 0).ToString();
                 break;
+            case 11:
+                PlayerPrefs.GetFloat("HighScoreLevel10", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel10", 0).ToString();
+                break;
+            case 12:
+                PlayerPrefs.GetFloat("HighScoreLevel11", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel11", 0).ToString();
+                break;
+            case 13:
+                PlayerPrefs.GetFloat("HighScoreLevel12", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel12", 0).ToString();
+                break;
         }
         
 
@@ -247,6 +259,27 @@ public class Score : MonoBehaviour
                 if (score > PlayerPrefs.GetFloat("HighScoreLevel9", 0))
                 {
                     PlayerPrefs.SetFloat("HighScoreLevel9", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 11:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel10", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel10", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 12:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel11", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel11", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 13:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel12", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel12", score);
                     UiHighScore.text = score.ToString();
                 }
                 break;
