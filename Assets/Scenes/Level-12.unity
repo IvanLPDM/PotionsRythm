@@ -1358,7 +1358,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: af0dcb91f10a6044aafcd34185722400, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 721c5ec2fa229c143bba6a26989d01ac, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a445ab7d3b4f20f4a9e9149545d6948e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7928,7 +7928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402707a18a380ed4e9f0d94dc798605c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: Retro1
+  FileName: BossTimeRoyalty
   PotionsGame: {fileID: 109498736}
   potionsType: 0
 --- !u!4 &448763790
@@ -48229,8 +48229,12 @@ MonoBehaviour:
   time: 0
   paused: 0
   flechas: []
+  Bucle: {fileID: 0}
+  Final: {fileID: 0}
+  FasesSong: 0
   clickado: 0
   clickadoOn: 0
+  startFinishSong: 0
   Next: 0
   TextList: []
   Magos: []
@@ -63896,7 +63900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4fd1beeaabbcfd4aafa403c2c060bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: Retro1
+  FileName: BossTimeRoyalty
   PotionsGame: {fileID: 109498736}
 --- !u!4 &1944910663
 Transform:
@@ -64109,6 +64113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b46adf62cd7e0f45aa91a125c68c44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorial: 0
   gameOverScreen: {fileID: 1538217374}
   pauseScreen: {fileID: 1032197651}
   levelCompleted: {fileID: 640267297}
@@ -64117,6 +64122,7 @@ MonoBehaviour:
   score: {fileID: 357962588}
   shake: {fileID: 519420033}
   audioSource: {fileID: 220375393}
+  audioParte2Tutorial: {fileID: 0}
   nextscene: 0
 --- !u!1 &2000081472
 GameObject:
