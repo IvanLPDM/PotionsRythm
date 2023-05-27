@@ -19,6 +19,10 @@ public class highscoremanager : MonoBehaviour
     public TextMeshProUGUI highscore10;
     public TextMeshProUGUI highscore11;
     public TextMeshProUGUI highscore12;
+    public TextMeshProUGUI highscore13;
+    public TextMeshProUGUI highscore14;
+    public TextMeshProUGUI highscore15;
+    public TextMeshProUGUI highscore16;
 
     public Image[] images;
 
@@ -49,6 +53,10 @@ public class highscoremanager : MonoBehaviour
         highscore10.text = PlayerPrefs.GetFloat("HighScoreLevel10").ToString();
         highscore11.text = PlayerPrefs.GetFloat("HighScoreLevel11").ToString();
         highscore12.text = PlayerPrefs.GetFloat("HighScoreLevel12").ToString();
+        highscore13.text = PlayerPrefs.GetFloat("HighScoreLevel13").ToString();
+        highscore14.text = PlayerPrefs.GetFloat("HighScoreLevel14").ToString();
+        highscore15.text = PlayerPrefs.GetFloat("HighScoreLevel15").ToString();
+        highscore16.text = PlayerPrefs.GetFloat("HighScoreLevel16").ToString();
 
 
         //level 1 stars
@@ -239,6 +247,70 @@ public class highscoremanager : MonoBehaviour
         }
 
         else if (PlayerPrefs.GetFloat("HighScoreLevel12") > 5000) //1
+        {
+            images[11].sprite = sprites[1];
+        }
+
+        //level 13 stars
+        if (PlayerPrefs.GetFloat("HighScoreLevel13") > 15000) //3
+        {
+            images[11].sprite = sprites[3];
+        }
+
+        else if (PlayerPrefs.GetFloat("HighScoreLevel13") > 10000 && PlayerPrefs.GetFloat("HighScoreLevel13") < 15000) //2
+        {
+            images[11].sprite = sprites[2];
+        }
+
+        else if (PlayerPrefs.GetFloat("HighScoreLevel13") > 5000) //1
+        {
+            images[11].sprite = sprites[1];
+        }
+
+        //level 14 stars
+        if (PlayerPrefs.GetFloat("HighScoreLevel14") > 15000) //3
+        {
+            images[11].sprite = sprites[3];
+        }
+
+        else if (PlayerPrefs.GetFloat("HighScoreLevel14") > 10000 && PlayerPrefs.GetFloat("HighScoreLevel14") < 15000) //2
+        {
+            images[11].sprite = sprites[2];
+        }
+
+        else if (PlayerPrefs.GetFloat("HighScoreLevel14") > 5000) //1
+        {
+            images[11].sprite = sprites[1];
+        }
+
+        //level 15 stars
+        if (PlayerPrefs.GetFloat("HighScoreLevel15") > 15000) //3
+        {
+            images[11].sprite = sprites[3];
+        }
+
+        else if (PlayerPrefs.GetFloat("HighScoreLevel15") > 10000 && PlayerPrefs.GetFloat("HighScoreLevel15") < 15000) //2
+        {
+            images[11].sprite = sprites[2];
+        }
+
+        else if (PlayerPrefs.GetFloat("HighScoreLevel15") > 5000) //1
+        {
+            images[11].sprite = sprites[1];
+        }
+
+        //level 16 stars
+        if (PlayerPrefs.GetFloat("HighScoreLevel16") > 15000) //3
+        {
+            images[11].sprite = sprites[3];
+        }
+
+        else if (PlayerPrefs.GetFloat("HighScoreLevel16") > 10000 && PlayerPrefs.GetFloat("HighScoreLevel16") < 15000) //2
+        {
+            images[11].sprite = sprites[2];
+        }
+
+        else if (PlayerPrefs.GetFloat("HighScoreLevel16") > 5000) //1
         {
             images[11].sprite = sprites[1];
         }

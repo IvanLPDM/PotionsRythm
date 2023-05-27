@@ -25,6 +25,7 @@ public class levelScroll : MonoBehaviour
     public Color japanese;
     public Color medieval;
     public Color Phonk;
+    public Color Pixel;
 
     public GameObject dbutton;
     public GameObject abutton;
@@ -153,7 +154,7 @@ public class levelScroll : MonoBehaviour
                 audioSource3.Pause();
 
                 var tint3 = bloom.tint;
-                tint3.value = medieval;
+                tint3.value = Pixel;
                 bloom.tint = tint3;
 
                 abutton.SetActive(true);

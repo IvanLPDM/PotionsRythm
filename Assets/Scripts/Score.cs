@@ -106,6 +106,22 @@ public class Score : MonoBehaviour
                 PlayerPrefs.GetFloat("HighScoreLevel12", 0).ToString();
                 UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel12", 0).ToString();
                 break;
+            case 14:
+                PlayerPrefs.GetFloat("HighScoreLevel13", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel13", 0).ToString();
+                break;
+            case 15:
+                PlayerPrefs.GetFloat("HighScoreLevel14", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel14", 0).ToString();
+                break;
+            case 16:
+                PlayerPrefs.GetFloat("HighScoreLevel15", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel15", 0).ToString();
+                break;
+            case 17:
+                PlayerPrefs.GetFloat("HighScoreLevel16", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel16", 0).ToString();
+                break;
         }
         
 
@@ -280,6 +296,34 @@ public class Score : MonoBehaviour
                 if (score > PlayerPrefs.GetFloat("HighScoreLevel12", 0))
                 {
                     PlayerPrefs.SetFloat("HighScoreLevel12", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 14:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel13", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel13", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 15:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel14", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel14", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 16:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel15", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel15", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 17:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel16", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel16", score);
                     UiHighScore.text = score.ToString();
                 }
                 break;

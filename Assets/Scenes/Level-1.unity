@@ -9429,7 +9429,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '4.
+  m_text: '5.
 
     beneath the bamboo'
   m_isRightToLeft: 0
@@ -68803,8 +68803,6 @@ MonoBehaviour:
   trigger: {fileID: 496240383}
   particulaAciertoL: {fileID: 1943661804}
   particulaAciertoR: {fileID: 1838183801}
-  particulaHoldL: {fileID: 0}
-  particulaHoldR: {fileID: 0}
 --- !u!4 &1992079082
 Transform:
   m_ObjectHideFlags: 0

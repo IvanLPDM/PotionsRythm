@@ -17040,8 +17040,12 @@ MonoBehaviour:
   time: 0
   paused: 0
   flechas: []
+  Bucle: {fileID: 0}
+  Final: {fileID: 0}
+  FasesSong: 0
   clickado: 0
   clickadoOn: 0
+  startFinishSong: 0
   Next: 0
   TextList: []
   Magos: []
@@ -27648,7 +27652,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '7.
+  m_text: '9.
 
     BARD''S
 

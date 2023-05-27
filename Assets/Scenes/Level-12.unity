@@ -9137,7 +9137,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '12.
+  m_text: '15.
 
     WELCOME
 
@@ -48440,7 +48440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9e021afbe4e75745a570417ae789d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorialManager: {fileID: 0}
+  tutorialManager: {fileID: 1678419326}
   slider: {fileID: 1722318516}
   maxHealth: 100
   currentHealth: 0
