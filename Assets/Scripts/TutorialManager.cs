@@ -38,20 +38,20 @@ public class TutorialManager : MonoBehaviour
 
         Magos[0].SetActive(false);  
         
-        for(int i = 0; i <= TextList.Length; i++)
-        {
-            TextList[i].SetActive(false);
-        }
+        //for(int i = 0; i <= TextList.Length; i++)
+        //{
+        //    TextList[i].SetActive(false);
+        //}
 
-        for(int i = 0; i <= Magos.Length; i++)
-        {
-            Magos[i].SetActive(false);
-        }
+        //for(int i = 0; i <= Magos.Length; i++)
+        //{
+        //    Magos[i].SetActive(false);
+        //}
 
-        for(int i = 0; i <= flechas.Length; i++)
-        {
-            flechas[i].SetActive(false);
-        }
+        //for(int i = 0; i <= flechas.Length; i++)
+        //{
+        //    flechas[i].SetActive(false);
+        //}
     }
 
     // Update is called once per frame
@@ -89,7 +89,7 @@ public class TutorialManager : MonoBehaviour
 
             
         }
-        else if (time >= 56.01)
+        else if (time >= 56.1f)
         {
             paused = true;
         }

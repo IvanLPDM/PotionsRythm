@@ -6111,7 +6111,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: af0dcb91f10a6044aafcd34185722400, type: 2}
-  m_audioClip: {fileID: 8300000, guid: dc47181253e0eae49bdeb05c419d909b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7afe019217ca48f4386ffbabbbc69b3b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13308,7 +13308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402707a18a380ed4e9f0d94dc798605c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: Phonk1
+  FileName: Orion
   PotionsGame: {fileID: 109498736}
   potionsType: 0
 --- !u!4 &448763790
@@ -14534,9 +14534,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '4.
 
-    WELCOME
-
-    STRANGER'
+    Orion'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 65a5ebeec3782474994f2672b964a330, type: 2}
   m_sharedMaterial: {fileID: 9210220400482771560, guid: 65a5ebeec3782474994f2672b964a330, type: 2}

@@ -1443,7 +1443,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: af0dcb91f10a6044aafcd34185722400, type: 2}
-  m_audioClip: {fileID: 8300000, guid: a22a5b407f40e414ba9635f0b55f9a83, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a20b2d202a2667142bfa372c499e6260, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8243,7 +8243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402707a18a380ed4e9f0d94dc798605c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: Medieval 1
+  FileName: Tamborin
   PotionsGame: {fileID: 109498736}
   potionsType: 0
 --- !u!4 &448763790
@@ -53525,7 +53525,7 @@ MonoBehaviour:
   currentHealth: 0
   leveldamage: 3
   levelHealing: 10
-  levelMiss: 20
+  levelMiss: 10
   save: {fileID: 1944910661}
 --- !u!114 &1722318516
 MonoBehaviour:

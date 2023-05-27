@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
                 {
                      if (tutorialManager.FasesSong == 3)
                     {
+                        PlayerPrefs.SetInt("DoTutorialOnce", 3);
                         Win();
                     }
                 }

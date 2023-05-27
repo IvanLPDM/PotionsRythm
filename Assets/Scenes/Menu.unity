@@ -8279,6 +8279,7 @@ MonoBehaviour:
   timeStart: 0
   songOffset: 0
   BPM: 50
+  sizeObject: 0
   test:
   - {fileID: 644703933}
 --- !u!82 &1395950772
