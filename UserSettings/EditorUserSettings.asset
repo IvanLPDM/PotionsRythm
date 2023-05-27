@@ -6,6 +6,7 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
+<<<<<<< HEAD
       value: 53520d0004045d02095a5a7511770a44104e19292e2970687c7b4935e1e33039
       flags: 0
     RecentlyUsedSceneGuid-1:
@@ -13,11 +14,21 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-2:
       value: 5b08555106060c5d5c5a5f2148270b444215487c782d7f6575784f6ab6b0623c
+=======
+      value: 56055052040d0d0b5a0f0a7615260d4440151c2c7e7a20637b791b65b6e6633d
+      flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 54080353000458025b585427407b0644464f417e2e7f23647f7a4b31b5b3306d
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 5305075e54075b0a0b5a5c21137a5b4413154b7c78797364752b1f31bbb16139
+>>>>>>> Canciones
       flags: 0
     RecentlyUsedSceneGuid-3:
       value: 5103500303500b0c5f570f7445215d44454f192c787172617b7f1b63b7b76069
       flags: 0
     RecentlyUsedSceneGuid-4:
+<<<<<<< HEAD
       value: 00005500060c5f09590c0f261471594412161b7f7b7873687a2a4d66b1b03639
       flags: 0
     RecentlyUsedSceneGuid-5:
@@ -37,6 +48,9 @@ EditorUserSettings:
       flags: 0
     UnityRemoteDevice:
       value: 530104565d055a0b405e5c7335777b4037443d780d70766208
+=======
+      value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
+>>>>>>> Canciones
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650

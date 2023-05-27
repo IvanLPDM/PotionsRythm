@@ -46,6 +46,7 @@ public class ListaDePociones : MonoBehaviour
             if (timing[0] - 1.6 - time <= 0.01) //1.858648f
             {
                 ExecutePotion();
+                //Debug.Log(timing[0]);
                 timing.RemoveAt(0);
             }
         }
