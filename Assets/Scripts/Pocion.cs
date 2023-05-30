@@ -6,7 +6,10 @@ public class Pocion : MonoBehaviour
 {
     // Update is called once per frame
     public float velocity;
+    public float startVelocity;
     public Vector3 pos;
+
+    public TutorialManager tutorialManager;
 
     [Header("Color")]
     public SpriteRenderer renderero;
@@ -31,10 +34,13 @@ public class Pocion : MonoBehaviour
     {
         renderero.color = originalColor;
         OriginColorTime = 0;
+
+        velocity = startVelocity;
     }
 
     void Update()
     {
+
         if(OriginColorTime > 0)
             OriginColorTime -= 0.1f;
 
@@ -46,6 +52,16 @@ public class Pocion : MonoBehaviour
         if (transform.position.y < -3.5)
         {
             GameObject.Find("ScoreManager").SendMessage("BadTouch");
+
+            if (transform.position.x == 0.77f)
+            {
+                GameObject.Find("CreadorPociones").SendMessage("DeleteInfo", 1);
+            }
+            else if (transform.position.x == -0.77f)
+            {
+                GameObject.Find("CreadorPociones").SendMessage("DeleteInfo", 2);
+            }
+
             Camera.main.gameObject.GetComponent<Shake>().StartShake();
             Destroy(gameObject);
         }
@@ -102,5 +118,17 @@ public class Pocion : MonoBehaviour
 
         //OriginColorTime = delayColor;
         //renderero.color = PerfectColor;
+    }
+
+    public void PausarTutorial()
+    {
+         velocity = 0f;
+         Debug.Log("pausado");
+    }
+
+    public void ReanudarTutorial()
+    {
+        velocity = 4f;
+        Debug.Log("pausado");
     }
 }

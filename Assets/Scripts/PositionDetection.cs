@@ -26,10 +26,12 @@ public class PositionDetection : MonoBehaviour
         if (ListBalls.PotionsInGameR.Count != 0)
         {
             distanciaR = ListBalls.PotionsInGameR[0].transform.position.y - trigger.transform.position.y;
-            //Debug.Log(distancia);
+            //Debug.Log(distanciaR);
 
             if (distanciaR < 0)
                 distanciaR = distanciaR * -1;
+
+            //Debug.Log(distanciaR);
         }
     }
 
@@ -37,26 +39,53 @@ public class PositionDetection : MonoBehaviour
     {
         if(ListBalls.PotionsInGameL.Count != 0)
         {
-            if (distanciaL <= 0.1)
+            if (ListBalls.LargeInGameL[0] == 0)
             {
-                ListBalls.PotionsInGameL[0].SendMessage("Perfect");
-                particulaAciertoL.Play();
-                Destroy(ListBalls.PotionsInGameL[0]);
-                ListBalls.PotionsInGameL.RemoveAt(0);
-           
+                if (distanciaL <= 0.1)
+                {
+                    ListBalls.PotionsInGameL[0].SendMessage("Perfect");
+                    particulaAciertoL.Play();
+                    Destroy(ListBalls.PotionsInGameL[0]);
+                    ListBalls.PotionsInGameL.RemoveAt(0);
+                    ListBalls.LargeInGameL.RemoveAt(0);
+
+                }
+                else if (distanciaL <= 0.5)
+                {
+                    ListBalls.PotionsInGameL[0].SendMessage("Acierto");
+                    particulaAciertoL.Play();
+                    Destroy(ListBalls.PotionsInGameL[0]);
+                    ListBalls.PotionsInGameL.RemoveAt(0);
+                    ListBalls.LargeInGameL.RemoveAt(0);
+
+                }
+                else
+                {
+                    Camera.main.gameObject.GetComponent<Shake>().StartShake();
+                    ListBalls.PotionsInGameL[0].SendMessage("Fallo");
+                }
             }
-            else if (distanciaL <= 0.5)
+            else//Comprobar si le ha dado en el momento
             {
-                ListBalls.PotionsInGameL[0].SendMessage("Acierto");
-                particulaAciertoL.Play();
-                Destroy(ListBalls.PotionsInGameL[0]);
-                ListBalls.PotionsInGameL.RemoveAt(0);
-                
-            }
-            else
-            {
-                Camera.main.gameObject.GetComponent<Shake>().StartShake();
-                ListBalls.PotionsInGameL[0].SendMessage("Fallo");
+                if (distanciaL <= 0.1)
+                {
+                    ListBalls.PotionsInGameL[0].SendMessage("Perfect");
+                    particulaAciertoL.Play();
+                    //Enviar empezar mantener
+                    GameObject.Find("InputManager").SendMessage("FMantenidoLeft");
+                }
+                else if (distanciaL <= 0.5)
+                {
+                    ListBalls.PotionsInGameL[0].SendMessage("Acierto");
+                    particulaAciertoL.Play();
+                    //Enviar empezar mantener
+                    GameObject.Find("InputManager").SendMessage("FMantenidoLeft");
+                }
+                else
+                {
+                    Camera.main.gameObject.GetComponent<Shake>().StartShake();
+                    ListBalls.PotionsInGameL[0].SendMessage("Fallo");
+                }
             }
         }  
     }
@@ -65,27 +94,130 @@ public class PositionDetection : MonoBehaviour
     {
         if (ListBalls.PotionsInGameR.Count != 0)
         {
-            if (distanciaL <= 0.1)
+            if(ListBalls.LargeInGameR[0] == 0)
             {
-                ListBalls.PotionsInGameR[0].SendMessage("Perfect");
-                particulaAciertoR.Play();
+                if (distanciaR <= 0.1)
+                {
+                    ListBalls.PotionsInGameR[0].SendMessage("Perfect");
+                    particulaAciertoR.Play();
 
-                Destroy(ListBalls.PotionsInGameR[0]);
-                ListBalls.PotionsInGameR.RemoveAt(0);
-            }
-            else if (distanciaR <= 0.5)
-            {
-                ListBalls.PotionsInGameR[0].SendMessage("Acierto");
-                particulaAciertoR.Play();
+                    Destroy(ListBalls.PotionsInGameR[0]);
+                    ListBalls.PotionsInGameR.RemoveAt(0);
+                    ListBalls.LargeInGameR.RemoveAt(0);
+                }
+                else if (distanciaR <= 0.5)
+                {
+                    ListBalls.PotionsInGameR[0].SendMessage("Acierto");
+                    particulaAciertoR.Play();
 
-                Destroy(ListBalls.PotionsInGameR[0]);
-                ListBalls.PotionsInGameR.RemoveAt(0);
+                    Destroy(ListBalls.PotionsInGameR[0]);
+                    ListBalls.PotionsInGameR.RemoveAt(0);
+                    ListBalls.LargeInGameR.RemoveAt(0);
+                }
+                else
+                {
+                    Camera.main.gameObject.GetComponent<Shake>().StartShake();
+                    ListBalls.PotionsInGameR[0].SendMessage("Fallo");
+                }
             }
             else
             {
-                Camera.main.gameObject.GetComponent<Shake>().StartShake();
-                ListBalls.PotionsInGameR[0].SendMessage("Fallo");
+                if (distanciaR <= 0.1)
+                {
+                    ListBalls.PotionsInGameR[0].SendMessage("Perfect");
+                    particulaAciertoR.Play();
+                    //Enviar empezar mantener
+                    GameObject.Find("InputManager").SendMessage("FMantenidoRight");
+                }
+                else if (distanciaR <= 0.5)
+                {
+                    ListBalls.PotionsInGameR[0].SendMessage("Acierto");
+                    particulaAciertoR.Play();
+                    //Enviar empezar mantener
+                    GameObject.Find("InputManager").SendMessage("FMantenidoRight");
+                }
+                else
+                {
+                    Camera.main.gameObject.GetComponent<Shake>().StartShake();
+                    ListBalls.PotionsInGameR[0].SendMessage("Fallo");
+                }
             }
+
+        }
+    }
+
+    public void CheckCollisionMantLeft(float duracionInput)
+    {
+        //Comparar la duracion del Input con la duracion de la nota
+        float puntuacion = ListBalls.LargeInGameL[0] - duracionInput;
+
+        if(puntuacion < 0)
+        {
+            Camera.main.gameObject.GetComponent<Shake>().StartShake();
+            ListBalls.PotionsInGameL[0].SendMessage("Fallo");
+            Debug.Log("Fallo");
+
+            Destroy(ListBalls.PotionsInGameL[0]);
+            ListBalls.PotionsInGameL.RemoveAt(0);
+            ListBalls.LargeInGameL.RemoveAt(0);
+        }
+        else if (puntuacion <= 0.5)
+        {
+            ListBalls.PotionsInGameL[0].SendMessage("Perfect");
+            particulaAciertoL.Play();
+
+            Destroy(ListBalls.PotionsInGameL[0]);
+            ListBalls.PotionsInGameL.RemoveAt(0);
+            ListBalls.LargeInGameL.RemoveAt(0);
+            Debug.Log("Perfecto");
+        }
+        else if (puntuacion <= 0.80f)
+        {
+            ListBalls.PotionsInGameL[0].SendMessage("Acierto");
+            particulaAciertoL.Play();
+
+            Destroy(ListBalls.PotionsInGameL[0]);
+            ListBalls.PotionsInGameL.RemoveAt(0);
+            ListBalls.LargeInGameL.RemoveAt(0);
+            Debug.Log("Bien");
+        }
+    }
+
+
+    public void CheckCollisionMantRight(float duracionInput)
+    {
+        //Comparar la duracion del Input con la duracion de la nota
+        float puntuacion = ListBalls.LargeInGameR[0] - duracionInput;
+
+        if (puntuacion < 0)
+        {
+            Camera.main.gameObject.GetComponent<Shake>().StartShake();
+            ListBalls.PotionsInGameR[0].SendMessage("Fallo");
+            Debug.Log("Fallo");
+
+            Destroy(ListBalls.PotionsInGameR[0]);
+            ListBalls.PotionsInGameR.RemoveAt(0);
+            ListBalls.LargeInGameR.RemoveAt(0);
+        }
+        else if (puntuacion <= 0.5)
+        {
+            ListBalls.PotionsInGameR[0].SendMessage("Perfect");
+            particulaAciertoR.Play();
+
+            Destroy(ListBalls.PotionsInGameR[0]);
+            ListBalls.PotionsInGameR.RemoveAt(0);
+            ListBalls.LargeInGameR.RemoveAt(0);
+            Debug.Log("Perfecto");
+        }
+        else if (puntuacion <= 0.80f)
+        {
+            ListBalls.PotionsInGameR[0].SendMessage("Acierto");
+            particulaAciertoR.Play();
+
+            Destroy(ListBalls.PotionsInGameR[0]);
+            ListBalls.PotionsInGameR.RemoveAt(0);
+            ListBalls.LargeInGameR.RemoveAt(0);
+            Debug.Log("Bien");
         }
     }
 }

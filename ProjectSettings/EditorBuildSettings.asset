@@ -13,8 +13,65 @@ EditorBuildSettings:
     guid: 54d4a8d07af4ee246bdf22f360f64f7e
   - enabled: 1
     path: Assets/Scenes/Level-1.unity
-    guid: 04381221f40cc9d4eb3641548bbb915a
+    guid: 8687a87711334744d837fe538d03f1f8
   - enabled: 1
     path: Assets/Scenes/Level-2.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: fb36cc8dba43ef14393f56810d82e748
+  - enabled: 1
+    path: Assets/Scenes/Level-3.unity
+    guid: 5a7f2e4290d0275418b2ba6e1293b472
+  - enabled: 1
+    path: Assets/Scenes/Level-4.unity
+    guid: ab482f391099208499d85e48654d3620
+  - enabled: 1
+    path: Assets/Scenes/Level-5.unity
+    guid: 0c9fa149d467a454f9acba68124fccda
+  - enabled: 1
+    path: Assets/Scenes/Level-6.unity
+    guid: 081787c30451d6342878e8ff472bbf88
+  - enabled: 1
+    path: Assets/Scenes/Level-7.unity
+    guid: d323bcd9c630f6641af251cc30f4ffca
+  - enabled: 1
+    path: Assets/Scenes/Level-8.unity
+    guid: f14742103ff2ffd46a924579c9c68f11
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Level-9.unity
+    guid: 8a711ca956b59c244a949720dd9237dd
+  - enabled: 1
+    path: Assets/Scenes/Level-10.unity
+    guid: 22defeb729c65bb438af494166f05741
+  - enabled: 1
+    path: Assets/Scenes/Level-11.unity
+    guid: 89a7c3ef143c8d444b064e958129406d
+  - enabled: 1
+    path: Assets/Scenes/Level-12.unity
+    guid: ff786051358453144a8f4f325091aa3a
+  - enabled: 1
+    path: Assets/Scenes/Level-13.unity
+    guid: d3961cbecf27131429f1502756fd147b
+  - enabled: 1
+    path: Assets/Scenes/Level-14.unity
+    guid: 4b36b91ba056d144ab2b74723e0c1fa0
+  - enabled: 1
+    path: Assets/Scenes/Level-15.unity
+    guid: e4cd410f3a723ae4eb8ad270691150c7
+  - enabled: 1
+    path: Assets/Scenes/Level-16.unity
+    guid: 3f316a6f967fedf4f8ec640c48fe0a5c
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 5ab0a7f3d99685c4fa08c4b8d8345e6b
   m_configObjects: {}

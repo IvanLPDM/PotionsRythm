@@ -5,26 +5,32 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
     public float score;
 
+    //ui scene
     public TextMeshProUGUI UiScore;
     public RectTransform RectTransform;
     public TextMeshProUGUI UiMultiplier;
     public TextMeshProUGUI UiScorenumber;
+    public TextMeshProUGUI UiHighScore;
 
     public AudioSource audiosource;
+    public AudioSource audiosource1;
 
     private Vector3 scaleChange;
     private Vector3 originalScale;
     private float RotationChange;
 
+    //feedback color
     public Volume ppVolume;
     private Bloom bloom;
 
     public Light2D light;
+    public bool miss;
 
     public Color InitialColor;
     public Color colorx2;
@@ -32,33 +38,105 @@ public class Score : MonoBehaviour
     public Color colorx4;
     public Color colorx5;
 
+    //datos score y multiplicador
     public float multiplicador;
     public float goodTouchs;
     private float scoreWin;
     private string scoretext;
     private string multipliertext;
 
-    private float delayScoreUI;
+    //sliders
+    public healthBar healthBar;
+    public multiplierBar multiplierbar;
 
-    // Start is called before the first frame update
     void Start()
     {
         ppVolume.profile.TryGet<Bloom>(out bloom);
 
-
         multiplicador = 1;
         score = 0.0f;
+
+        switch (SceneManager.GetActiveScene().buildIndex)
+        {
+            case 2:
+                PlayerPrefs.GetFloat("HighScoreLevel1", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel1", 0).ToString();
+                break;
+            case 3:
+                PlayerPrefs.GetFloat("HighScoreLevel2", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel2", 0).ToString();
+                break;
+            case 4:
+                PlayerPrefs.GetFloat("HighScoreLevel3", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel3", 0).ToString();
+                break;
+            case 5:
+                PlayerPrefs.GetFloat("HighScoreLevel4", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel4", 0).ToString();
+                break;
+            case 6:
+                PlayerPrefs.GetFloat("HighScoreLevel5", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel5", 0).ToString();
+                break;
+            case 7:
+                PlayerPrefs.GetFloat("HighScoreLevel6", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel6", 0).ToString();
+                break;
+            case 8:
+                PlayerPrefs.GetFloat("HighScoreLevel7", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel7", 0).ToString();
+                break;
+            case 9:
+                PlayerPrefs.GetFloat("HighScoreLevel8", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel8", 0).ToString();
+                break;
+            case 10:
+                PlayerPrefs.GetFloat("HighScoreLevel9", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel9", 0).ToString();
+                break;
+            case 11:
+                PlayerPrefs.GetFloat("HighScoreLevel10", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel10", 0).ToString();
+                break;
+            case 12:
+                PlayerPrefs.GetFloat("HighScoreLevel11", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel11", 0).ToString();
+                break;
+            case 13:
+                PlayerPrefs.GetFloat("HighScoreLevel12", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel12", 0).ToString();
+                break;
+            case 14:
+                PlayerPrefs.GetFloat("HighScoreLevel13", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel13", 0).ToString();
+                break;
+            case 15:
+                PlayerPrefs.GetFloat("HighScoreLevel14", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel14", 0).ToString();
+                break;
+            case 16:
+                PlayerPrefs.GetFloat("HighScoreLevel15", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel15", 0).ToString();
+                break;
+            case 17:
+                PlayerPrefs.GetFloat("HighScoreLevel16", 0).ToString();
+                UiHighScore.text = PlayerPrefs.GetFloat("HighScoreLevel16", 0).ToString();
+                break;
+        }
+        
 
         UiScore.enabled = false;
         UiMultiplier.enabled = false;
 
-        originalScale = new Vector3(0.5f, 0.5f, 0.5f);
+        originalScale = new Vector3(0.75f, 0.75f, 0.75f);
 
         RotationChange = 0;
 
         RectTransform.localScale = originalScale;
 
-        scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
+        scaleChange = new Vector3(1f, 1f, 1f);
+
+        miss = false;
     }
 
     // Update is called once per frame
@@ -98,6 +176,7 @@ public class Score : MonoBehaviour
 
             UiMultiplier.enabled = true;
             multipliertext = "x3";
+
         }
         else if (goodTouchs >= 20)
         {
@@ -109,6 +188,7 @@ public class Score : MonoBehaviour
 
             UiMultiplier.enabled = true;
             multipliertext = "x2";
+
         }
         else
         {
@@ -119,24 +199,137 @@ public class Score : MonoBehaviour
             bloom.tint = tint;
 
             UiMultiplier.enabled = true;
-            multipliertext = "x1";
+            multipliertext = " ";
         }
-
-        //if (delayScoreUI > 0)
-        //{
-        //    delayScoreUI -= 0.1f;
-        //}
-        //else
-        //    //UiScore.enabled = false;
 
         //scale
         UiScore.text = scoretext;
-        RectTransform.localScale += scaleChange;
+        RectTransform.localScale += scaleChange * Time.deltaTime;
 
         if (RectTransform.localScale.y > 1f)
         {
             RectTransform.localScale = new Vector3(1f, 1f, 1f);
         }
+
+        //highscore
+
+        switch (SceneManager.GetActiveScene().buildIndex)
+        {
+            case 2:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel1", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel1", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 3:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel2", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel2", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 4:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel3", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel3", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 5:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel4", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel4", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 6:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel5", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel5", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 7:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel6", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel6", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 8:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel7", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel7", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 9:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel8", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel8", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 10:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel9", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel9", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 11:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel10", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel10", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 12:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel11", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel11", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 13:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel12", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel12", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 14:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel13", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel13", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 15:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel14", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel14", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 16:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel15", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel15", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+            case 17:
+                if (score > PlayerPrefs.GetFloat("HighScoreLevel16", 0))
+                {
+                    PlayerPrefs.SetFloat("HighScoreLevel16", score);
+                    UiHighScore.text = score.ToString();
+                }
+                break;
+
+        }
+        
     }
 
     public void BadTouch()
@@ -149,7 +342,13 @@ public class Score : MonoBehaviour
 
         RectTransform.localScale = originalScale;
 
+        audiosource.pitch = Random.Range(0.5f, 1.5f);
         audiosource.Play();
+
+        miss = true;
+
+        healthBar.currentHealth -= healthBar.levelMiss;
+        multiplierbar.takeDamage();
     }
     
     public void NiceTouch()
@@ -159,7 +358,6 @@ public class Score : MonoBehaviour
         scoreWin += 10 * multiplicador;
 
         UiScore.enabled = true;
-        delayScoreUI = 8f;
 
         score += 10 * multiplicador;
         UiScorenumber.text = score.ToString();
@@ -169,6 +367,14 @@ public class Score : MonoBehaviour
         scoretext = "Good";
 
         RectTransform.localScale = originalScale;
+
+        audiosource1.pitch = Random.Range(0.5f, 1.5f);
+        audiosource1.Play();
+
+        miss = false;
+
+        healthBar.currentHealth += healthBar.levelHealing;
+        multiplierbar.currentHealth += multiplierbar.levelHealing;
     }
 
     public void PerfectTouch()
@@ -177,7 +383,6 @@ public class Score : MonoBehaviour
         scoreWin += 25 * multiplicador;
 
         UiScore.enabled = true;
-        delayScoreUI = 8f;
 
         score += 25 * multiplicador;
         UiScorenumber.text = score.ToString();
@@ -187,6 +392,14 @@ public class Score : MonoBehaviour
         scoretext = "Perfect";
 
         RectTransform.localScale = originalScale;
+
+        audiosource1.pitch = Random.Range(0.5f, 1.5f);
+        audiosource1.Play();
+
+        miss = false;
+
+        healthBar.currentHealth += healthBar.levelHealing;
+        multiplierbar.currentHealth += multiplierbar.levelHealing;
     }
 
     public void TextLeft()

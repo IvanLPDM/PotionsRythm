@@ -6,22 +6,34 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 54080353000458025b585427407b0644464f417e2e7f23647f7a4b31b5b3306d
+      value: 0702065507560d020e585f721675094447161e78797925337e791b67e4e63739
       flags: 0
     RecentlyUsedSceneGuid-1:
-      value: 54080353000458025b585427407b0644464f417e2e7f23647f7a4b31b5b3306d
+      value: 050000515107580b5e080a7016255b4440164178787d71692e701e65bae66569
       flags: 0
     RecentlyUsedSceneGuid-2:
-<<<<<<< Updated upstream
-      value: 56055052040d0d0b5a0f0a7615260d4440151c2c7e7a20637b791b65b6e6633d
+      value: 5057075753545f5d54585b2415275944104f1d297a7c763379711b36b2e1613b
       flags: 0
     RecentlyUsedSceneGuid-3:
-      value: 5305075e54075b0a0b5a5c21137a5b4413154b7c78797364752b1f31bbb16139
+      value: 0557035e53055c0a5e5b547645700e444216402c782e756278794462e3e16739
       flags: 0
     RecentlyUsedSceneGuid-4:
-=======
->>>>>>> Stashed changes
-      value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
+      value: 5b08555106060c5d5c5a5f2148270b444215487c782d7f6575784f6ab6b0623c
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 5103500303500b0c5f570f7445215d44454f192c787172617b7f1b63b7b76069
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 5b5003575456080258580e7749200d444216417e757f7460292d4461b1b7303c
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 07020d5054560b5e0e085e7541700e44444e1e7b79787467787f1b37b3b4633a
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 060557025104595d5e0f5b7043225a441315402b287a71607b704c62b7b0376f
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 57530750070c58590c5e597414720b4417154a287b7c71627e2c4d30b3e63568
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
@@ -31,8 +43,8 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
-  m_DesiredImportWorkerCount: 3
-  m_StandbyImportWorkerCount: 2
+  m_DesiredImportWorkerCount: 1
+  m_StandbyImportWorkerCount: 1
   m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1
   m_VCOverwriteFailedCheckoutAssets: 1
