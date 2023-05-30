@@ -14,11 +14,6 @@ public class ControladorScenas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            goback();
-        }
-
         if (Input.GetKeyDown(KeyCode.T))
         {
             PlayerPrefs.SetInt("DoTutorialOnce", 0);
