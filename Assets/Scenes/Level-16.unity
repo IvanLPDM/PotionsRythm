@@ -6258,7 +6258,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: af0dcb91f10a6044aafcd34185722400, type: 2}
   m_audioClip: {fileID: 8300000, guid: 57d964094cb885b4aa06550a482ceefe, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14485,7 +14485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5773787, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15924,7 +15924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 293833989472387645, guid: 0e5cc2daf0de397498e6f247c77ebade, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 500
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 293833989472387645, guid: 0e5cc2daf0de397498e6f247c77ebade, type: 3}
       propertyPath: m_LocalPosition.z
@@ -48172,7 +48172,7 @@ MonoBehaviour:
   currentHealth: 0
   leveldamage: 3
   levelHealing: 10
-  levelMiss: 20
+  levelMiss: 10
   save: {fileID: 1944910661}
 --- !u!114 &1722318516
 MonoBehaviour:
@@ -59858,8 +59858,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

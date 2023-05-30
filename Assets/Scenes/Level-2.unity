@@ -1347,8 +1347,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6071,7 +6071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 293833989472387645, guid: 0e5cc2daf0de397498e6f247c77ebade, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 500
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 293833989472387645, guid: 0e5cc2daf0de397498e6f247c77ebade, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22649,7 +22649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -105.69999, y: 265.99997}
+  m_AnchoredPosition: {x: -70, y: 265.99997}
   m_SizeDelta: {x: 36.32, y: 35.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376785163
@@ -22721,7 +22721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5773787, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -43288,7 +43288,7 @@ MonoBehaviour:
   currentHealth: 0
   leveldamage: 3
   levelHealing: 10
-  levelMiss: 20
+  levelMiss: 10
   save: {fileID: 1944910661}
 --- !u!114 &1722318516
 MonoBehaviour:
